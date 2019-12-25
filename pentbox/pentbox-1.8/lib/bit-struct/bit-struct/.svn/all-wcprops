@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct
+END
+unsigned-field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/unsigned-field.rb
+END
+char-field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/char-field.rb
+END
+octet-field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/octet-field.rb
+END
+bit-struct.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/bit-struct.rb
+END
+hex-octet-field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/hex-octet-field.rb
+END
+vector.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/vector.rb
+END
+yaml.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/yaml.rb
+END
+nested-field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/nested-field.rb
+END
+vector-field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/vector-field.rb
+END
+pad-field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/pad-field.rb
+END
+text-field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/text-field.rb
+END
+fields.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/fields.rb
+END
+float-field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/float-field.rb
+END
+signed-field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/pentbox/!svn/ver/1/trunk/lib/bit-struct/bit-struct/signed-field.rb
+END

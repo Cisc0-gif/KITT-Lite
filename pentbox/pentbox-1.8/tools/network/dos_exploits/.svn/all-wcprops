@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/pentbox/!svn/ver/9/trunk/tools/network/dos_exploits
+END
+ms_pptp.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/pentbox/!svn/ver/9/trunk/tools/network/dos_exploits/ms_pptp.rb
+END
+iis7_ftp.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/pentbox/!svn/ver/9/trunk/tools/network/dos_exploits/iis7_ftp.rb
+END
+3com_ssswitch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/pentbox/!svn/ver/9/trunk/tools/network/dos_exploits/3com_ssswitch.rb
+END
+3com_offconn.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/pentbox/!svn/ver/9/trunk/tools/network/dos_exploits/3com_offconn.rb
+END
+smbv2.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/pentbox/!svn/ver/9/trunk/tools/network/dos_exploits/smbv2.rb
+END
+solar_ftp.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/pentbox/!svn/ver/9/trunk/tools/network/dos_exploits/solar_ftp.rb
+END

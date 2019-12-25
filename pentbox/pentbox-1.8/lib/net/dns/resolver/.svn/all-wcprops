@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/resolver
+END
+socks.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/resolver/socks.rb
+END
+timeouts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/resolver/timeouts.rb
+END

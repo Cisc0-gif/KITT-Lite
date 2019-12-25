@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l5
+END
+ntp.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l5/ntp.rb
+END
+bootp.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l5/bootp.rb
+END
+dns.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l5/dns.rb
+END
+misc.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l5/misc.rb
+END
+hsrp.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l5/hsrp.rb
+END

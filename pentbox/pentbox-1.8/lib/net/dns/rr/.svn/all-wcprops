@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr
+END
+classes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/classes.rb
+END
+mr.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/mr.rb
+END
+txt.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/txt.rb
+END
+a.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/a.rb
+END
+ns.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/ns.rb
+END
+soa.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/soa.rb
+END
+aaaa.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/aaaa.rb
+END
+cname.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/cname.rb
+END
+hinfo.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/hinfo.rb
+END
+mx.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/mx.rb
+END
+types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/types.rb
+END
+ptr.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/ptr.rb
+END
+null.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/null.rb
+END
+srv.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr/srv.rb
+END

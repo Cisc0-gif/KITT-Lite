@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svnroot/pentbox/!svn/ver/16/trunk/other
+END
+pentbox-wlist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/pentbox/!svn/ver/11/trunk/other/pentbox-wlist.txt
+END
+hosts.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/pentbox/!svn/ver/1/trunk/other/hosts.txt
+END
+http_dirs.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/pentbox/!svn/ver/13/trunk/other/http_dirs.txt
+END

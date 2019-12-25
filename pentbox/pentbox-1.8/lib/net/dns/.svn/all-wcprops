@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns
+END
+resolver.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/resolver.rb
+END
+rr.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/rr.rb
+END
+version.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/version.rb
+END
+packet.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/packet.rb
+END
+question.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/question.rb
+END
+core_ext.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/core_ext.rb
+END
+header.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/pentbox/!svn/ver/1/trunk/lib/net/dns/header.rb
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l2
+END
+ethernet.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l2/ethernet.rb
+END
+vlan.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l2/vlan.rb
+END
+snap.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l2/snap.rb
+END
+eightotwodotthree.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l2/eightotwodotthree.rb
+END
+vtp.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l2/vtp.rb
+END
+llc.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l2/llc.rb
+END
+misc.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/pentbox/!svn/ver/1/trunk/lib/racket/racket/l2/misc.rb
+END

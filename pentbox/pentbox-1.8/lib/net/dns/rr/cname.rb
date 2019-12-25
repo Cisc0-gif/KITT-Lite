@@ -1,0 +1,63 @@
+module Net
+  module DNS
+
+    class RR
+      
+      #------------------------------------------------------------
+      # RR type CNAME
+      #------------------------------------------------------------
+      class CNAME < RR
+        attr_reader :cname
+
+        private
+        
+        def check_name(name)
+          unless name =~ /(\w\.?)+\s*$/ and name =~ /[a-zA-Z]/
+            raise ArgumentError, "Canonical Name not valid: #{name}"
+          end
+          name
+        end
+
+        def build_pack
+          @cname_pack = pack_name(@cname)
+          @rdlength = @cname_pack.size
+        end
+
+        def get_data
+          @cname_pack
+        end
+
+        def get_inspect
+          "#@cname"
+        end
+
+        def subclass_new_from_hash(args)
+          if args.has_key? :cname
+            @cname = check_name args[:cname]
+          else
+            raise ArgumentError, ":cname field is mandatory but missing"
+          end
+        end
+
+        def subclass_new_from_string(str)
+          @cname = check_name(str)
+        end
+
+        def subclass_new_from_binary(data,offset)
+          @cname,offset = dn_expand(data,offset)
+          return offset
+        end
+        
+        private
+        
+          def set_type
+            @type = Net::DNS::RR::Types.new("CNAME")
+          end
+        
+      end # class CNAME
+       
+    end # class RR
+  end # module DNS
+end # module Net
+
+
