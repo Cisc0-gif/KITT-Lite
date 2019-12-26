@@ -3,6 +3,8 @@
 The KITT Penetration Testing Framework was developed as an open source solution for pentesters and programmers alike to compile the tools they use with what they know into an open source project.
 With KITT, users are able to easily access a list of commonly used tools to their profession which are all open to configuration in the source code.
 
+If you want to check out the full GUI version of KITT its repo can be found [here](<https://github.com/Cisc0-gif/KITT.git>)
+
 DISCLAIMER: This tool is for educational purposes only. I am not responsible for the misuse of others of this tool in any way, shape or form.
 
 
