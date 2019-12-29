@@ -250,7 +250,7 @@ if tool == '-pc' or tool == '--proxyconfig':
 
 if tool == '-fb' or tool == '--fail2ban':
   try:
-    ipbu = input(Fore.CYAN + '[*]Are you going to [B]an or [U]nban an IP?: ' + Style.RESET_AL>
+    ipbu = input(Fore.CYAN + '[*]Are you going to [B]an or [U]nban an IP?: ' + Style.RESET_ALL)
     if ipbu == 'B' or ipbu == 'b':
       ip = input(Fore.CYAN + '[*]Enter IP: ' + Style.RESET_ALL)
       os.system('sudo fail2ban-client set sshd banip ' + ip)
