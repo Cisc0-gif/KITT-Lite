@@ -199,7 +199,7 @@ if tool == '-mj' or tool == '--mousejack':
       logwrite('--[*]Failed to upload mouesjack firmware to CrazyRadio PA @ ' + timecheck() + '--')
   elif moj == 'J' or moj == 'j':
     try:
-      print(Fore.CYAN + "[*]Insert CrazyRadio PA device w/ mousejack firmware..." + Style.RES>
+      print(Fore.CYAN + "[*]Insert CrazyRadio PA device w/ mousejack firmware..." + Style.RESET_ALL)
       wait()
       os.system('jackit')
       print(Fore.GREEN + '[+]Scan complete!' + Style.RESET_ALL)
