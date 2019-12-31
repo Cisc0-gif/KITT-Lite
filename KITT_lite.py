@@ -72,10 +72,12 @@ def gohome():
   wait()
   os.chdir(root)
 
+gohome()
+  
 if tool == '-ds' or tool == '--domainsticate':
   try:
     os.chdir('hg')
-    os.system('python3 /opt/KITT-Lite/domain_sticate.py')
+    os.system('python3 domain_sticate.py')
     logwrite('--[+]Successfully ran domainsticate @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running domainsticate @ ' + timecheck() + '--')
@@ -83,7 +85,7 @@ if tool == '-ds' or tool == '--domainsticate':
 
 if tool == '-sh' or tool == '--shodan_search':
   try:
-    os.system('python3 /opt/KITT-Lite/shodan_search.py')
+    os.system('python3 shodan_search.py')
     logwrite('--[+]Successfully ran shodan_search @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running shodan_search @ ' + timecheck() + '--')
@@ -92,7 +94,7 @@ if tool == '-sh' or tool == '--shodan_search':
 if tool == '-pi' or tool == '--phone_infoga':
   try:
     os.chdir('PhoneInfoga')
-    os.system('python3 /opt/KITT-Lite/phoneinfoga.py')
+    os.system('python3 phoneinfoga.py')
     logwrite('--[+]Successfully ran phone_infoga @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error runnning phone_infoga @ ' + timecheck() + '--')
@@ -100,7 +102,7 @@ if tool == '-pi' or tool == '--phone_infoga':
 
 if tool == '-pe' or tool == '--escalate':
   try:
-    os.chdir('/opt/KITT-Lite/escalate')
+    os.chdir('escalate')
     print('[*]Starting python SimpleHTTPServer on Port 80 to curl payloads')
     print('[*]Enter ^C or ^Z To Stop HTTP Server...')
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -117,7 +119,7 @@ if tool == '-pe' or tool == '--escalate':
 
 if tool == '-nc' or tool == '--netcrack':
   try:
-    os.system('python3 /opt/KITT-Lite/network_crack.py')
+    os.system('python3 network_crack.py')
     logwrite('--[+]Successfully ran network_crack @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running network_crack @ ' + timecheck() + '--')
@@ -125,7 +127,8 @@ if tool == '-nc' or tool == '--netcrack':
 
 if tool == '-ap' or tool == '--apspoof':
   try:
-    os.system('bash /opt/KITT-Lite/AP_Spoof/setup.sh')
+    os.chdir('AP_Spoof')
+    os.system('bash setup.sh')
     logwrite('--[+]Successfully ran AP_Spoof setup.sh @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running AP_Spoof setup.sh @ ' + timecheck() + '--')
@@ -133,7 +136,7 @@ if tool == '-ap' or tool == '--apspoof':
 
 if tool == '-pd' or tool == '--packdump':
   try:
-    os.system('bash /opt/KITT-Lite/packetdump.sh')
+    os.system('bash packetdump.sh')
     logwrite('--[+]Successfully ran packetdump.sh @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running packetdump.sh @ ' + timecheck() + '--')
@@ -141,7 +144,8 @@ if tool == '-pd' or tool == '--packdump':
 
 if tool == '-hp' or tool == '--homepwn':
   try:
-    os.system('python3 /opt/KITT-Lite/HomePWN/homePwn.py')
+    os.chdir('HomePWN')
+    os.system('python3 homePwn.py')
     logwrite('--[+]Successfully ran HomePWN @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running HomePWN @ ' + timecheck() + '--')
@@ -149,7 +153,8 @@ if tool == '-hp' or tool == '--homepwn':
 
 if tool == '-pb' or tool == '--pentbox':
   try:
-    os.system('ruby /opt/KITT-Lite/pentbox/pentbox-1.8/pentbox.rb')
+    os.chdir('pentbox/pentbox-1.8')
+    os.system('ruby pentbox.rb')
     logwrite('--[+]Successfully ran pentbox @ ' + timecheck() + '--')
   except:
     logwrite('--[+]Error running pentbox @ ' + timecheck() + '--')
@@ -157,7 +162,7 @@ if tool == '-pb' or tool == '--pentbox':
 
 if tool == '-st' or tool == '--btspoof':
   try:
-    os.system('bash /opt/KITT-Lite/bluespoof.sh')
+    os.system('bash bluespoof.sh')
     logwrite('--[+]Successfully ran bluespoof @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running bluespoof @ ' + timecheck() + '--')
@@ -165,7 +170,7 @@ if tool == '-st' or tool == '--btspoof':
 
 if tool == '-bv' or tool == '--btverify':
   try:
-    os.system('python3 /opt/KITT-Lite/btverifier.py')
+    os.system('python3 btverifier.py')
     logwrite('--[+]Successfully ran btverifier @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running btverifier @ ' + timecheck() + '--')
@@ -173,7 +178,7 @@ if tool == '-bv' or tool == '--btverify':
 
 if tool == '-bs' or tool == '--bluescan':
   try:
-    os.system('bash /opt/KITT-Lite/BlueScan.sh')
+    os.system('bash BlueScan.sh')
     logwrite('--[+]Successfully ran BlueScan @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running BlueScan @ ' + timecheck() + '--')
@@ -185,7 +190,7 @@ if tool == '-mj' or tool == '--mousejack':
     try:
       print("[*]Insert CrazyRadio PA device...")
       wait()
-      os.chdir('/opt/KITT-Lite/mousejack/nrf-research-firmware')
+      os.chdir('mousejack/nrf-research-firmware')
       os.system('sudo make')
       os.system('sudo make install')
       os.system('dmesg')
@@ -212,7 +217,7 @@ if tool == '-mj' or tool == '--mousejack':
 
 if tool == '-gp' or tool == '--gpioctl':
   try:
-    os.system('python3 /opt/KITT-Lite/GPIO_CTL.py')
+    os.system('python3 GPIO_CTL.py')
     logwrite('--[+]Successfully ran GPIO_CTL @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running GPIO_CTL @ ' + timecheck() + '--')
@@ -220,7 +225,8 @@ if tool == '-gp' or tool == '--gpioctl':
 
 if tool == '-sp' or tool == '--sshportrand':
   try:
-    os.system('bash /opt/KITT-Lite/sdefense/ssh_randomizer.sh')
+    os.chdir('sdefense')
+    os.system('bash ssh_randomizer.sh')
     logwrite('--[+]Successfully ran ssh_randomizer @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running ssh_randomizer @ ' + timecheck() + '--')
@@ -228,7 +234,8 @@ if tool == '-sp' or tool == '--sshportrand':
 
 if tool == '-sc' or tool == '--sshautoconfig':
   try:
-    os.system('bash /opt/KITT-Lite/sdefense/ssh_encr7pt.sh')
+    os.chdir('sdefense')
+    os.system('bash ssh_encr7pt.sh')
     logwrite('--[+]Successfully ran ssh_encr7pt @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running ssh_encr7pt @ ' + timecheck() + '--')
@@ -236,7 +243,8 @@ if tool == '-sc' or tool == '--sshautoconfig':
 
 if tool == '-pc' or tool == '--proxyconfig':
   try:
-    os.system('bash /opt/KITT-Lite/sdefense/proxy_config.sh')
+    os.chdir('sdefense')
+    os.system('bash proxy_config.sh')
     logwrite('--[+]Successfully ran proxy_config @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running proxy_config @ ' + timecheck() + '--')
@@ -263,7 +271,7 @@ if tool == '-fb' or tool == '--fail2ban':
 if tool == '-di' or tool == '--dhcpip':
   try:
     os.chdir('sdefense')
-    os.system('bash /opt/KITT-Lite/sdefense/dh_recv.sh')
+    os.system('bash dh_recv.sh')
     logwrite('--[+]Successfully ran dh_recv @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running dh_recv @ ' + timecheck() + '--')
