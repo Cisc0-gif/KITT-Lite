@@ -12,7 +12,7 @@ cd ..
 mv KITT-Lite /opt
 echo "[+]Done!"
 echo "[*]Writing KITT_lite.py to alias..."
-alias KITTlite="python3 /opt/KITT-Lite/KITT_lite.py"
+echo "alias KITTlite='python3 /opt/KITT-Lite/KITT_lite.py'" >> /root/.bashrc
 echo "[+]Done!"
 echo 'Execute "KITTlite" to run KITT Lite Framework'
 
