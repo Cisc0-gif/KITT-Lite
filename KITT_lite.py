@@ -180,33 +180,33 @@ if tool == '-bs' or tool == '--bluescan':
   gohome()
 
 if tool == '-mj' or tool == '--mousejack':
-  moj = input(Fore.CYAN + "[*]Do you want to initialize a [m]ousejack device or scan with [j]ackit?: " + Style.RESET_ALL)
+  moj = input("[*]Do you want to initialize a [m]ousejack device or scan with [j]ackit?: ")
   if moj == 'M' or moj == 'm':
     try:
-      print(Fore.CYAN + "[*]Insert CrazyRadio PA device..." + Style.RESET_ALL)
+      print("[*]Insert CrazyRadio PA device...")
       wait()
       os.chdir('/opt/KITT-Lite/mousejack/nrf-research-firmware')
       os.system('sudo make')
       os.system('sudo make install')
       os.system('dmesg')
-      print(Fore.GREEN + "[+]Firmware Uploaded!" + Style.RESET_ALL)
+      print("[+]Firmware Uploaded!")
       logwrite('--[+]Successfully uploaded mousejack firmware to CrazyRadio PA @ ' + timecheck() + '--')
     except:
-      print(Fore.RED + "[*]Failed to upload Firmware!" + Style.RESET_ALL)
+      print("[*]Failed to upload Firmware!")
       logwrite('--[*]Failed to upload mouesjack firmware to CrazyRadio PA @ ' + timecheck() + '--')
   elif moj == 'J' or moj == 'j':
     try:
-      print(Fore.CYAN + "[*]Insert CrazyRadio PA device w/ mousejack firmware..." + Style.RESET_ALL)
+      print("[*]Insert CrazyRadio PA device w/ mousejack firmware...")
       wait()
       os.system('jackit')
-      print(Fore.GREEN + '[+]Scan complete!' + Style.RESET_ALL)
+      print('[+]Scan complete!')
       logwrite('--[+]Successfully ended jackit scan @ ' + timecheck() + '--')
     except:
-      print(Fore.RED + "[*]Error scanning with jackit" + Style.RESET_ALL)
+      print("[*]Error scanning with jackit")
       logwrite('--[*]Error scanning with jackit @ ' + timecheck() + '--')
       wait()
   else:
-    print(Fore.RED + "[*]Not an option!" + Style.RESET_ALL)
+    print("[*]Not an option!")
     time.sleep(2)
   gohome()
 
@@ -244,20 +244,20 @@ if tool == '-pc' or tool == '--proxyconfig':
 
 if tool == '-fb' or tool == '--fail2ban':
   try:
-    ipbu = input(Fore.CYAN + '[*]Are you going to [B]an or [U]nban an IP?: ' + Style.RESET_ALL)
+    ipbu = input('[*]Are you going to [B]an or [U]nban an IP?: ')
     if ipbu == 'B' or ipbu == 'b':
-      ip = input(Fore.CYAN + '[*]Enter IP: ' + Style.RESET_ALL)
+      ip = input('[*]Enter IP: ')
       os.system('sudo fail2ban-client set sshd banip ' + ip)
-      print(Fore.GREEN + '[+]Banned IP ' + ip + '!' + Style.RESET_ALL)
+      print('[+]Banned IP ' + ip + '!')
       logwrite('--[+]Banned IP ' + ip + ' @ ' + timecheck() + '--')
     else:
-      ip = input(Fore.CYAN + '[*]Enter IP: ' + Style.RESET_ALL)
+      ip = input('[*]Enter IP: ')
       os.system('sudo fail2ban-client set sshd unbanip ' + ip)
-      print(Fore.GREEN + '[+]Unbanned IP ' + ip + '!' + Style.RESET_ALL)
+      print('[+]Unbanned IP ' + ip + '!')
       logwrite('--[+]Unbanned IP ' + ip + ' @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error configuring fail2ban @ ' + timecheck() + '--')
-    print(Fore.RED + '[*]Error configuring fail2ban' + Style.RESET_ALL)
+    print('[*]Error configuring fail2ban')
   gohome()
 
 if tool == '-di' or tool == '--dhcpip':
