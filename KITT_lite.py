@@ -68,6 +68,9 @@ tool = sys.argv[1]
 
 os.chdir('/opt/KITT-Lite')
   
+def gohome():
+  os.chdir('/opt/KITT-Lite')
+  
 if tool == '-ds' or tool == '--domainsticate':
   try:
     os.chdir('hg')
