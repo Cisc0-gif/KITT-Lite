@@ -24,7 +24,7 @@ def timecheck(): #returns current local time
   return time.ctime()
 
 def logwrite(msg): #writes input to RUNTIME.log
-  with open(root + '/RUNTIME.log', 'a+') as f:
+  with open('/opt/KITT-Lite/RUNTIME.log', 'a+') as f:
     f.write(msg + '\n')
     f.close()
 
