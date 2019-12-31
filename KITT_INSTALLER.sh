@@ -1,5 +1,8 @@
 #! /bin/bash
 read -p "*RUN AS ROOT*" root
+echo "[*]Writing File Permissions..."
+chmod -R 777 *
+echo "[*]Done!"
 echo "[*]Running lib installer..."
 ./lib_install.sh
 echo "[+]Done!"
