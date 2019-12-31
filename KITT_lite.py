@@ -5,7 +5,6 @@
 # @url    : https://github.com/Cisc0-gif
 # @author : Cisc0-gif
 import os
-root = os.getcwd() #sets root as current directory for access to all tools
 import time
 import socket
 import requests
@@ -67,12 +66,7 @@ long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '-
 
 tool = sys.argv[1]
 
-def gohome():
-  global root
-  wait()
-  os.chdir(root)
-
-gohome()
+os.chdir('/opt/KITT-Lite')
   
 if tool == '-ds' or tool == '--domainsticate':
   try:
