@@ -79,6 +79,7 @@ if tool == '-ds' or tool == '--domainsticate':
   except:
     logwrite('--[*]Error running domainsticate @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-sh' or tool == '--shodan_search':
   try:
@@ -87,6 +88,7 @@ if tool == '-sh' or tool == '--shodan_search':
   except:
     logwrite('--[*]Error running shodan_search @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-pi' or tool == '--phone_infoga':
   try:
@@ -96,6 +98,7 @@ if tool == '-pi' or tool == '--phone_infoga':
   except:
     logwrite('--[*]Error runnning phone_infoga @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-pe' or tool == '--escalate':
   try:
@@ -113,6 +116,7 @@ if tool == '-pe' or tool == '--escalate':
   except:
     logwrite('--[*]Error running SimpleHTTPServer @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-nc' or tool == '--netcrack':
   try:
@@ -121,6 +125,7 @@ if tool == '-nc' or tool == '--netcrack':
   except:
     logwrite('--[*]Error running network_crack @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-ap' or tool == '--apspoof':
   try:
@@ -130,6 +135,7 @@ if tool == '-ap' or tool == '--apspoof':
   except:
     logwrite('--[*]Error running AP_Spoof setup.sh @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-pd' or tool == '--packdump':
   try:
@@ -138,6 +144,7 @@ if tool == '-pd' or tool == '--packdump':
   except:
     logwrite('--[*]Error running packetdump.sh @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-hp' or tool == '--homepwn':
   try:
@@ -147,6 +154,7 @@ if tool == '-hp' or tool == '--homepwn':
   except:
     logwrite('--[*]Error running HomePWN @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-pb' or tool == '--pentbox':
   try:
@@ -156,6 +164,7 @@ if tool == '-pb' or tool == '--pentbox':
   except:
     logwrite('--[+]Error running pentbox @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-st' or tool == '--btspoof':
   try:
@@ -164,6 +173,7 @@ if tool == '-st' or tool == '--btspoof':
   except:
     logwrite('--[*]Error running bluespoof @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-bv' or tool == '--btverify':
   try:
@@ -172,6 +182,7 @@ if tool == '-bv' or tool == '--btverify':
   except:
     logwrite('--[*]Error running btverifier @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-bs' or tool == '--bluescan':
   try:
@@ -180,6 +191,7 @@ if tool == '-bs' or tool == '--bluescan':
   except:
     logwrite('--[*]Error running BlueScan @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-mj' or tool == '--mousejack':
   moj = input("[*]Do you want to initialize a [m]ousejack device or scan with [j]ackit?: ")
@@ -211,6 +223,7 @@ if tool == '-mj' or tool == '--mousejack':
     print("[*]Not an option!")
     time.sleep(2)
   gohome()
+  exit()
 
 if tool == '-gp' or tool == '--gpioctl':
   try:
@@ -219,6 +232,7 @@ if tool == '-gp' or tool == '--gpioctl':
   except:
     logwrite('--[*]Error running GPIO_CTL @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-sp' or tool == '--sshportrand':
   try:
@@ -228,6 +242,7 @@ if tool == '-sp' or tool == '--sshportrand':
   except:
     logwrite('--[*]Error running ssh_randomizer @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-sc' or tool == '--sshautoconfig':
   try:
@@ -237,6 +252,7 @@ if tool == '-sc' or tool == '--sshautoconfig':
   except:
     logwrite('--[*]Error running ssh_encr7pt @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-pc' or tool == '--proxyconfig':
   try:
@@ -246,6 +262,7 @@ if tool == '-pc' or tool == '--proxyconfig':
   except:
     logwrite('--[*]Error running proxy_config @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool == '-fb' or tool == '--fail2ban':
   try:
@@ -264,6 +281,7 @@ if tool == '-fb' or tool == '--fail2ban':
     logwrite('--[*]Error configuring fail2ban @ ' + timecheck() + '--')
     print('[*]Error configuring fail2ban')
   gohome()
+  exit()
 
 if tool == '-di' or tool == '--dhcpip':
   try:
@@ -273,6 +291,7 @@ if tool == '-di' or tool == '--dhcpip':
   except:
     logwrite('--[*]Error running dh_recv @ ' + timecheck() + '--')
   gohome()
+  exit()
 
 if tool not in short or tool not in long:
   print(sys.argv[1] + ' not an option!')
