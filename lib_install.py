@@ -1,185 +1,80 @@
-#! /bin/bash
+#! /usr/bin/env python3
+import os
+import time
 
-echo '[*]Starting Library Installation...'
-echo '[*]Configuring Apt Installation Sources...'
-echo "
+def wait():
+  wait = input('PRESS ENTER TO CONTINUE')
+
+print('[*]Starting Library Installation...')
+time.sleep(2)
+print('[*]Configuring Apt Installation Sources...')
+
+sources = """\
 deb http://http.kali.org/kali kali-rolling main non-free contrib
 deb-src http://http.kali.org/kali kali-rolling main non-free contrib
-" > /etc/apt/sources.list
-echo '[*]Sources Configured!'
-echo '[*]Updating and Upgrading Packages...'
-sudo apt-get update && sudo apt-get upgrade
-echo '[*]Installing Linux Packages...'
-echo 'Y' | sudo apt-get install figlet
-echo 'Y' | sudo apt-get install metasploit-framework
-echo 'Y' | sudo apt-get install hydra
-echo 'Y' | sudo apt-get install burpsuite
-echo 'Y' | sudo apt-get install tor
-echo 'Y' | sudo apt-get install nmap
-echo 'Y' | sudo apt-get install cryptcat
-echo 'Y' | sudo apt-get install netcat
-echo 'Y' | sudo apt-get install unicornscan
-echo 'Y' | sudo apt-get install python
-echo 'Y' | sudo apt-get install php
-echo 'Y' | sudo apt-get install python-pip
-echo 'Y' | sudo apt-get install maltegoce
-echo 'Y' | sudo apt-get install recon-ng
-echo 'Y' | sudo apt-get install cewl
-echo 'Y' | sudo apt-get install crunch
-echo 'Y' | sudo apt-get install redis
-echo 'Y' | sudo apt-get install tshark
-echo 'Y' | sudo apt-get install tcpdump
-echo 'Y' | sudo apt-get install irssi
-echo 'Y' | sudo apt-get install telnet
-echo 'Y' | sudo apt-get install ftp
-echo 'Y' | sudo apt-get install git
-echo 'Y' | sudo apt-get install fail2ban
-echo 'Y' | sudo apt-get install apache2
-echo 'Y' | sudo apt-get install ssh
-echo 'Y' | sudo apt-get install weevely
-echo 'Y' | sudo apt-get install strace
-echo 'Y' | sudo apt-get install gdb
-echo 'Y' | sudo apt-get install radare2
-echo 'Y' | sudo apt-get install arp-scan
-echo 'Y' | sudo apt-get install dirbuster
-echo 'Y' | sudo apt-get install wfuzz
-echo 'Y' | sudo apt-get install ncrack
-echo 'Y' | sudo apt-get install medusa
-echo 'Y' | sudo apt-get install xxd
-echo 'Y' | sudo apt-get install coreutils
-echo 'Y' | sudo apt-get install exiftool
-echo 'Y' | sudo apt-get install masscan
-echo 'Y' | sudo apt-get install dirb
-echo 'Y' | sudo apt-get install steghide
-echo 'Y' | sudo apt-get install proxychains
-echo 'Y' | sudo apt-get install p7zip
-echo 'Y' | sudo apt-get install macchanger
-echo 'Y' | sudo apt-get install hddtemp
-echo 'Y' | sudo apt-get install lm-sensors
-echo 'Y' | sudo apt-get install python3
-echo 'Y' | sudo apt-get install python3-pip
-echo 'Y' | sudo apt-get install postgresql
-echo 'Y' | sudo apt-get install sqlmap
-echo 'Y' | sudo apt-get install logrotate
-echo 'Y' | sudo apt-get install kali-linux-full
-echo 'Y' | sudo apt-get install btscanner
-echo 'Y' | sudo apt-get install bluez
-echo 'Y' | sudo apt-get install bluelog
-echo 'Y' | sudo apt-get install redfang
-echo 'Y' | sudo apt-get install bluesnarfer
-echo 'Y' | sudo apt-get install spooftooph
-echo 'Y' | sudo apt-get install ettercap-graphical
-echo 'Y' | sudp apt-get install ettercap-text-only
-echo 'Y' | sudo apt-get install build-essential
-echo 'Y' | sudo apt-get install ntfs-3g
-echo 'Y' | sudo apt-get install cifs.utils
-echo 'Y' | sudo apt-get install mount
-echo 'Y' | sudo apt-get install dsniffer
-echo 'Y' | sudo apt-get install reaver
-echo 'Y' | sudo apt-get install aircrack-ng
-echo 'Y' | sudo apt-get install libcurl4-openssl-dev libpcap0.8-dev zlib1g zlib1g-dev libssl-dev
-echo 'Y' | sudo apt-get install john
-echo 'Y' | sudo apt-get install snort
-echo 'Y' | sudo apt-get install fierce
-echo 'Y' | sudo apt-get install openvas
-echo 'Y' | sudo apt-get install nikto
-echo 'Y' | sudo apt-get install wpscan
-echo 'Y' | sudo apt-get install mawk
-echo 'Y' | sudo apt-get install curl
-echo 'Y' | sudo apt-get install dhcpd
-echo 'Y' | sudo apt-get install isc-dhcp-server
-echo 'Y' | sudo apt-get install hostapd
-echo 'Y' | sudo apt-get install lighttpd
-echo 'Y' | sudo apt-get install mdk3
-echo 'Y' | sudo apt-get install php-cgi
-echo 'Y' | sudo apt-get install pyrit
-echo 'Y' | sudo apt-get install unzip
-echo 'Y' | sudo apt-get install xterm
-echo 'Y' | sudo apt-get install openssl
-echo 'Y' | sudo apt-get install rfkill
-echo 'Y' | sudo apt-get install strings
-gem install zsteg
-echo '[*]WARNING: To Run install.sh for fluxion, you must be in a gui (no ssh)'
-read -p 'PRESS ENTER TO CONTINUE' e
-cd fluxion/
-./fluxion.sh
-cd ../
-echo '[*]Running make and install for hashcat, hcxdumptool, hcxtools, and hashcat-utils...'
-cd airgeddon/hashcat-utils
-make
-cd ../..
-cd crackers/hashcat
-make
-make install
-cd ../
-cd hcxdumptool
-make
-make install
-cd ../
-cd hcxtools
-make
-make install
-cd ../..
-echo '[*]Starting postgresql main cluster...'
-pg_ctlcluster 11 main start
-echo '[*]Initiating YAML database for metasploit-framework...'
-msfdb init
-echo '[*]Installing python2.7 and 3.7 libraries...'
-pip install -U -I pyusb
-pip install -U platformio
-pip install bs4
-pip install requests
-pip install argparse
-pip install termcolor
-pip install dnspython
-pip install psutil
-pip install httplib
-pip install scapy==2.3.1
-pip install wsgiref==0.1.2
-pip install pexpect
-pip install http
-pip install pycrypto
-pip install pyopenssl
-pip install pefile
-pip install impacket
-pip install qrcode
-pip install pillow
-pip install pymssql
-pip3 install pwn
-pip3 install shodan
-pip3 install future
-pip3 install datetime
-pip3 install pytz
-pip3 install colorama
-pip3 install phonenumbers
-pip3 install requests
-pip3 install selenium
-pip3 install beautifulsoup4
-pip3 install html5lib
-pip3 install config
-echo '[*]Installing and Initializing mousejack...'
-git clone https://github.com/BastilleResearch/mousejack.git
-cd mousejack
-git submodule init
-git submoudle update
-cd ../
-git clone https://github.com/insecurityofthings/jackit.git
-cd jackit
-pip install -r requirements.txt
-cd ../
-echo '[*]Installing WiFi-Pumpkin...'
-cd WiFi-Pumpkin/
-./installer.sh
-pip install --upgrade pyasn1-modules
-cd ../
-echo '[*]Installing w3af...'
-git clone https://github.com/andresriancho/w3af
-cd w3af/
-python w3af_console
-bash /tmp/w3af_dependency_install.sh
-cd ../
-echo '[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...'
-echo "#
+"""
+with open('/etc/apt/sources.list', 'w+') as f: #config sources list for full package installation
+  f.write(sources)
+f.close()
+
+print('[*]Sources Configured!')
+time.sleep(2)
+print('[*]Updating and Upgrading Packages...')
+os.system('sudo apt-get update && sudo apt-get upgrade')
+print('[*]Installing Linux Packages...')
+os.system('sudo apt-get install figlet metasploit-framework hydra burpsuite tor nmap cryptcat netcat unicornsca php maltegoce recon-ng cewl crunch redis tshark tcpdump irssi telnet ftp git fail2ban apache2 ssh weevely strace gdb radare2 arp-scan dirbuster wfuzz ncrack medusa xxd coreutils exiftool masscan dirb steghide proxychains p7zip macchanger hddtemp lm-sensors postgresql sqlmap logrotate kali-linux-full btscanner bluez bluelog redfang bluesnarfer spooftooph ettercap-graphical ettercap-text-only build-essential ntfs-3g cifs.utils mount dsniffer reaver aircrack-ng libcurl4-openssl-dev libpcap0.8-dev zlib1g zlib1g-dev libssl-dev john snort fierce openvas nikto wpscan mawk curl dhcpd isc-dhcp-server hostapd lighttpd mdk3 php-cgi pyrit unzip xterm openssl rfkill strings -y')
+os.system('gem install zsteg')
+print('[*]WARNING: To Run install.sh for fluxion, you must be in a gui (no ssh)')
+wait()
+os.chdir('fluxion')
+os.system('./fluxion.sh')
+os.chdir('..')
+print('[*]Running make and install for hashcat, hcxdumptool, hcxtools, and hashcat-utils...')
+os.chdir('airgeddon/hashcat-utils')
+os.system('sudo make')
+os.chdir('../..')
+os.chdir('crackers/hashcat')
+os.system('make')
+os.system('make install')
+os.chdir('../hcxdumptool')
+os.system('make')
+os.system('make install')
+os.chdir('../hcxtools')
+os.system('make')
+os.system('make install')
+os.chdir('../..')
+print('[*]Starting postgresql service...')
+os.system('sudo service postgresql start')
+print('[*]Initiating YAML database for metasploit-framework...')
+os.system('msfdb init')
+print('[*]Installing python2 and 3 libraries...')
+os.system('pip install -U -I pyusb')
+os.system('pip install -U platformio')
+os.system('pip install -r requirements2.txt')
+os.system('pip3 install -r requirements3.txt')
+print('[*]Installing and Initializing mousejack...')
+os.system('git clone https://github.com/BastilleResearch/mousejack.git')
+os.chdir('mousejack')
+os.system('git submodule init')
+os.system('git submoudle update')
+os.chdir('..')
+os.system('git clone https://github.com/insecurityofthings/jackit.git')
+os.chdir('jackit')
+os.system('pip install -r requirements.txt')
+os.chdir('..')
+print('[*]Installing WiFi-Pumpkin...')
+os.chdir('WiFi-Pumpkinq')
+os.system('./installer.sh')
+os.system('pip install --upgrade pyasn1-modules')
+os.chdir('..')
+print('[*]Installing w3af...')
+os.system('git clone https://github.com/andresriancho/w3af.git')
+os.chdir('w3af')
+os.system('python w3af_console')
+os.system('bash /tmp/w3af_dependency_install.sh')
+os.chdir('..')
+print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
+fail2ban = """\
 # WARNING: heavily refactored in 0.9.0 release.  Please review and
 #          customize settings for your setup.
 #
@@ -1070,10 +965,17 @@ backend = %(syslog_backend)s
 # Zoneminder HTTP/HTTPS web interface auth
 # Logs auth failures to apache2 error log
 port    = http,https
-logpath = %(apache_error_log)s"  > /etc/fail2ban/jail.local
-sudo service fail2ban restart
-echo '[*]Writing dynamic proxychain to proxychain config...'
-echo "
+logpath = %(apache_error_log)s"
+"""
+
+with open('/etc/fail2ban/jail.local', 'w+') as f:
+  f.write('fail2ban')
+f.close()
+
+os.system('sudo service fail2ban restart')
+print('[*]Writing dynamic proxychain to proxychain config...')
+
+proxychains = """\
 # proxychains.conf  VER 3.1
 #
 #        HTTP, SOCKS4, SOCKS5 tunneling proxifier with DNS.
@@ -1156,38 +1058,29 @@ https 171.5.102.251 8080
 http  54.180.123.253 8080
 http 159.65.168.195 80
 socks4 198.50.177.44 44699
-socks5 159.203.166.41 1080" > /etc/proxychains.conf
-echo '[*]Writing sysctl_sanitize.sh to root crontab...'
-echo "@reboot bash /opt/KITT/sdefense/sysctl_sanitize.sh" >> /var/spool/cron/crontabs/root
-echo "*/59 * * * * bash /opt/KITT/sdefense/sysctl_sanitize.sh" >> /var/spool/cron/crontabs/root
-echo '[*]Installing Sherlock Packages...'
-pip3 install beautifulsoup4
-pip3 install bs4
-pip3 install colorama
-pip3 install certifi
-pip3 install lxml
-pip3 install PySocks
-pip3 install requests
-pip3 install requests_futures
-pip3 install soupsieve
-pip3 install stem
-pip3 install torrequest
-echo '[*]Installing HomePWN libs...'
-cd HomePWN/
-bash install.sh
-cd ..
-echo '[*]Installing theHarvester Packages...'
-pip3 install censys
-pip3 install dnspython
-pip3 install flake8
-pip3 install grequests
-pip3 install gevent
-pip3 install mypy
-pip3 install plotly
-pip3 install pytest
-pip3 install PyYaml
-pip3 install texttable
-echo '[*]Updating and Upgrading Packages...'
-sudo apt-get update && sudo apt-get upgrade
-sudo apt autoremove
-echo '[+]Library Installation Complete...'
+socks5 159.203.166.41 1080
+"""
+
+with open('/etc/proxychains.conf', 'w+') as f:
+  f.write(proxychains)
+f.close()
+
+print('[*]Writing sysctl_sanitize.sh to root crontab...')
+
+sysctl = """\
+@reboot bash /opt/KITT-Lite/sdefense/sysctl_sanitize.sh
+*/59 * * * * bash /opt/KITT-Lite/sdefense/sysctl_sanitize.sh
+"""
+
+with open('/var/spool/cron/crontabs/root', 'a+') as f:
+  f.write(sysctl)
+f.close()
+
+print('[*]Installing HomePWN libs...')
+os.chdir('HomePWN')
+os.system('bash install.sh')
+os.chdir('..')
+print('[*]Updating and Upgrading Packages...')
+os.system('sudo apt-get update && sudo apt-get upgrade')
+os.system('sudo apt autoremove')
+print('[+]Library Installation Complete...')

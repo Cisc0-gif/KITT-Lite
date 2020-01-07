@@ -59,7 +59,7 @@ WARNING: KITT was developed and tested on Kali Linux for RPi, I have not added s
 To begin, run ``` ./KITT_INSTALLER.sh ``` to install all necessary libraries and configure PATH usage.
 Simply follow all instructions in the installer.
 
-If you do not want to install KITT to PATH then simply run ``` ./lib_install.sh ``` to install necessary libraries
+If you do not want to install KITT to PATH then simply run ``` python3 lib_install.py ``` or ``` ./lib_install.py ```to install necessary libraries
 
 
 ### Usage
