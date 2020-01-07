@@ -4,7 +4,7 @@ echo "[*]Writing File Permissions..."
 chmod -R 777 *
 echo "[*]Done!"
 echo "[*]Running lib installer..."
-./lib_install.sh
+./lib_install.py
 echo "[+]Done!"
 echo "[*]Moving KITT-Lite directory to /opt..."
 mkdir /opt
