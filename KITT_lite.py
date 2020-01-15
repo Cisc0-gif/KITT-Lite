@@ -57,12 +57,14 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -pc, --proxyconfig                   ProxyChains Config')
   print('        -fb, --fail2ban                      Fail2ban IP Jail Config')
   print('        -di, --dhcpip                        DHCP IP Receiver')
+  print('Update Tool:')
+  print('        -up, --update                        Update packages and git source for KITTlite')
   print('Example:')
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-st', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-st', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update']
 
 tool = sys.argv[1]
 
@@ -290,6 +292,18 @@ if tool == '-di' or tool == '--dhcpip':
     logwrite('--[+]Successfully ran dh_recv @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running dh_recv @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-up' or tool == '--update':
+  try:
+    print('Updating and Upgrading Packages...')
+    os.system('sudo apt-get update && sudo apt-get upgrade')
+    print('Updating git source for KITTlite')
+    os.system('sudo git pull origin master')
+    logwrite('--[+]Successfully updated packages and git source @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error updating packages and git source @ ' + timecheck() + '--')
   gohome()
   exit()
 
