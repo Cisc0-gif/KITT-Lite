@@ -33,14 +33,13 @@ def main():
   except:
     print(Fore.RED + '[*]Nameserver scan incomplete!' + Style.RESET_ALL)
   print(Fore.CYAN + '[*]Output of dig scan directed to report.txt!' + Style.RESET_ALL)
-  os.chdir('theHarvester')
   print(Fore.RED +'[*]:WARNING: Once you run this, google will read your pings as a DDoS attack and block your IP temporarily!' + Style.RESET_ALL)
   wait()
   harv = input(Fore.CYAN + "[*]Do you want to run a harvester scan?[y/N]: " + Style.RESET_ALL)
   if harv == 'y' or harv == 'Y':
     print(Fore.CYAN + "[*]Running harvester scan..." + Style.RESET_ALL)
     try:
-      os.system('python3.7 theHarvester.py -d ' + domain + ' -l 200 -b google -s -g -p -f ../harvester.html > ../harvest.txt')
+      os.system('theHarvester -d ' + domain + ' -l 200 -b google -s -p -f ../harvester.html > ../harvest.txt')
       print(Fore.GREEN + '[+]Harvester scan complete!')
     except:
       print(Fore.RED + '[*]Harvester scan incomplete!')
@@ -154,17 +153,6 @@ def main():
     print(Fore.GREEN + '[+]XSStrike scan complete!' + Style.RESET_ALL)
   except:
     print(Fore.RED + '[*]XSStrike scan incomplete!' + Style.RESET_ALL)
-  print(Fore.CYAN + '[*]Running vBulletin 5 - 5.5.4 scan on domain...' + Style.RESET_ALL)
-  try:
-    os.chdir('vBulletinScan')
-    http = input(Fore.CYAN + '[*]HTT(P) or HTTP(S)?: ' + Style.RESET_ALL)
-    if http == 'P':
-      os.system('python exploit.py http://' + domain  + ' >> report.txt')
-    else:
-      os.system('python exploit.py https://' + domain + ' >> report.txt')
-    print(Fore.GREEN + '[+]vBulletin scan complete!' + Style.RESET_ALL)
-  except:
-    print(Fore.RED + '[*]vBulletin scan incomplete!' + Style.RESET_ALL)
   print('=========================================================================')
   print(Fore.GREEN + '[+]Domainstication Complete!' + Style.RESET_ALL)
   wait()
@@ -174,6 +162,6 @@ if ins == 'y' or ins == 'Y':
   wait()
   main()
 else:
-  print(Fore.RED + '[*]Please run lib_install.sh or KITT_INSTALLER.sh first...' + Style.RESET_ALL)
+  print(Fore.RED + '[*]Please run lib_install.py or KITT_INSTALLER.sh first...' + Style.RESET_ALL)
   wait()
   exit()
