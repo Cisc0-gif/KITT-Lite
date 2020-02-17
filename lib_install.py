@@ -41,7 +41,6 @@ os.system('sudo chmod +x install.sh')
 os.system('sudo ./install.sh')
 os.chdir('..')
 os.system('sudo git clone https://github.com/dreadlocked/Drupalgeddon2')
-os.system('sudo git clone 
 os.chdir('..')
 print('[*]Installing and Initializing mousejack...')
 os.system('sudo git clone https://github.com/BastilleResearch/mousejack.git')
