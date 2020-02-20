@@ -962,7 +962,7 @@ logpath = %(apache_error_log)s"
 """
 
 with open('/etc/fail2ban/jail.local', 'w+') as f:
-  f.write('fail2ban')
+  f.write(fail2ban)
 f.close()
 
 os.system('sudo service fail2ban restart')
