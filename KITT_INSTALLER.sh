@@ -15,7 +15,7 @@ cd ..
 sudo mv KITT-Lite /opt
 echo "[+]Done!"
 echo "[*]Writing KITT_lite.py to alias..."
-sudo echo "alias KITTlite='python3 /opt/KITT-Lite/KITT_lite.py'" >> /home/kali/.bashrc
+sudo echo "alias KITTlite='sudo python3 /opt/KITT-Lite/KITT_lite.py'" >> /home/kali/.bashrc
 echo "[+]Done!"
 echo 'Execute "KITTlite" to run KITT Lite Framework'
 

@@ -76,7 +76,7 @@ def gohome():
 if tool == '-ds' or tool == '--domainsticate':
   try:
     os.chdir('hg')
-    os.system('python3 domain_sticate.py')
+    os.system('sudo python3 domain_sticate.py')
     logwrite('--[+]Successfully ran domainsticate @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running domainsticate @ ' + timecheck() + '--')
@@ -85,7 +85,7 @@ if tool == '-ds' or tool == '--domainsticate':
 
 if tool == '-sh' or tool == '--shodan_search':
   try:
-    os.system('python3 shodan_search.py')
+    os.system('sudo python3 shodan_search.py')
     logwrite('--[+]Successfully ran shodan_search @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running shodan_search @ ' + timecheck() + '--')
@@ -95,7 +95,7 @@ if tool == '-sh' or tool == '--shodan_search':
 if tool == '-pi' or tool == '--phone_infoga':
   try:
     os.chdir('PhoneInfoga')
-    os.system('python3 phoneinfoga.py')
+    os.system('sudo python3 phoneinfoga.py')
     logwrite('--[+]Successfully ran phone_infoga @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error runnning phone_infoga @ ' + timecheck() + '--')
@@ -112,7 +112,7 @@ if tool == '-pe' or tool == '--escalate':
     r = requests.get("http://ifconfig.me").text
     print('[*]Private IP: ' + str(s.getsockname()[0]))
     print('[*]Public IP: ' + str(r))
-    os.system("python -m SimpleHTTPServer 80")
+    os.system("sudo python -m SimpleHTTPServer 80")
     s.close()
     logwrite('--[*]Successfully ended SimpleHTTPServer @ ' + timecheck() + '--')
   except:
@@ -122,7 +122,7 @@ if tool == '-pe' or tool == '--escalate':
 
 if tool == '-nc' or tool == '--netcrack':
   try:
-    os.system('python3 network_crack.py')
+    os.system('sudo python3 network_crack.py')
     logwrite('--[+]Successfully ran network_crack @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running network_crack @ ' + timecheck() + '--')
@@ -132,7 +132,7 @@ if tool == '-nc' or tool == '--netcrack':
 if tool == '-ap' or tool == '--apspoof':
   try:
     os.chdir('AP_Spoof')
-    os.system('bash setup.sh')
+    os.system('sudo bash setup.sh')
     logwrite('--[+]Successfully ran AP_Spoof setup.sh @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running AP_Spoof setup.sh @ ' + timecheck() + '--')
@@ -141,7 +141,7 @@ if tool == '-ap' or tool == '--apspoof':
 
 if tool == '-pd' or tool == '--packdump':
   try:
-    os.system('bash packetdump.sh')
+    os.system('sudo bash packetdump.sh')
     logwrite('--[+]Successfully ran packetdump.sh @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running packetdump.sh @ ' + timecheck() + '--')
@@ -151,7 +151,7 @@ if tool == '-pd' or tool == '--packdump':
 if tool == '-hp' or tool == '--homepwn':
   try:
     os.chdir('HomePWN')
-    os.system('python3 homePwn.py')
+    os.system('sudo python3 homePwn.py')
     logwrite('--[+]Successfully ran HomePWN @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running HomePWN @ ' + timecheck() + '--')
@@ -161,7 +161,7 @@ if tool == '-hp' or tool == '--homepwn':
 if tool == '-pb' or tool == '--pentbox':
   try:
     os.chdir('pentbox/pentbox-1.8')
-    os.system('ruby pentbox.rb')
+    os.system('sudo ruby pentbox.rb')
     logwrite('--[+]Successfully ran pentbox @ ' + timecheck() + '--')
   except:
     logwrite('--[+]Error running pentbox @ ' + timecheck() + '--')
@@ -170,7 +170,7 @@ if tool == '-pb' or tool == '--pentbox':
 
 if tool == '-st' or tool == '--btspoof':
   try:
-    os.system('bash bluespoof.sh')
+    os.system('sudo bash bluespoof.sh')
     logwrite('--[+]Successfully ran bluespoof @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running bluespoof @ ' + timecheck() + '--')
@@ -179,7 +179,7 @@ if tool == '-st' or tool == '--btspoof':
 
 if tool == '-bv' or tool == '--btverify':
   try:
-    os.system('python3 btverifier.py')
+    os.system('sudo python3 btverifier.py')
     logwrite('--[+]Successfully ran btverifier @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running btverifier @ ' + timecheck() + '--')
@@ -188,7 +188,7 @@ if tool == '-bv' or tool == '--btverify':
 
 if tool == '-bs' or tool == '--bluescan':
   try:
-    os.system('bash BlueScan.sh')
+    os.system('sudo bash BlueScan.sh')
     logwrite('--[+]Successfully ran BlueScan @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running BlueScan @ ' + timecheck() + '--')
@@ -204,7 +204,7 @@ if tool == '-mj' or tool == '--mousejack':
       os.chdir('mousejack/nrf-research-firmware')
       os.system('sudo make')
       os.system('sudo make install')
-      os.system('dmesg')
+      os.system('sudo dmesg')
       print("[+]Firmware Uploaded!")
       logwrite('--[+]Successfully uploaded mousejack firmware to CrazyRadio PA @ ' + timecheck() + '--')
     except:
@@ -214,7 +214,7 @@ if tool == '-mj' or tool == '--mousejack':
     try:
       print("[*]Insert CrazyRadio PA device w/ mousejack firmware...")
       wait()
-      os.system('jackit')
+      os.system('sudo jackit')
       print('[+]Scan complete!')
       logwrite('--[+]Successfully ended jackit scan @ ' + timecheck() + '--')
     except:
@@ -229,7 +229,7 @@ if tool == '-mj' or tool == '--mousejack':
 
 if tool == '-gp' or tool == '--gpioctl':
   try:
-    os.system('python3 GPIO_CTL.py')
+    os.system('sudo python3 GPIO_CTL.py')
     logwrite('--[+]Successfully ran GPIO_CTL @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running GPIO_CTL @ ' + timecheck() + '--')
@@ -239,7 +239,7 @@ if tool == '-gp' or tool == '--gpioctl':
 if tool == '-sp' or tool == '--sshportrand':
   try:
     os.chdir('sdefense')
-    os.system('bash ssh_randomizer.sh')
+    os.system('sudo bash ssh_randomizer.sh')
     logwrite('--[+]Successfully ran ssh_randomizer @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running ssh_randomizer @ ' + timecheck() + '--')
@@ -249,7 +249,7 @@ if tool == '-sp' or tool == '--sshportrand':
 if tool == '-sc' or tool == '--sshautoconfig':
   try:
     os.chdir('sdefense')
-    os.system('bash ssh_encr7pt.sh')
+    os.system('sudo bash ssh_encr7pt.sh')
     logwrite('--[+]Successfully ran ssh_encr7pt @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running ssh_encr7pt @ ' + timecheck() + '--')
@@ -259,7 +259,7 @@ if tool == '-sc' or tool == '--sshautoconfig':
 if tool == '-pc' or tool == '--proxyconfig':
   try:
     os.chdir('sdefense')
-    os.system('bash proxy_config.sh')
+    os.system('sudo bash proxy_config.sh')
     logwrite('--[+]Successfully ran proxy_config @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running proxy_config @ ' + timecheck() + '--')
@@ -288,7 +288,7 @@ if tool == '-fb' or tool == '--fail2ban':
 if tool == '-di' or tool == '--dhcpip':
   try:
     os.chdir('sdefense')
-    os.system('bash dh_recv.sh')
+    os.system('sudo bash dh_recv.sh')
     logwrite('--[+]Successfully ran dh_recv @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running dh_recv @ ' + timecheck() + '--')
