@@ -1,7 +1,6 @@
-#! python3
+#!/usr/bin/env python3
 import os
 from colorama import Fore, Style
-
 
 interface = input(Fore.CYAN + '[*]Enter interface to use: ' + Style.RESET_ALL)
 
@@ -27,7 +26,8 @@ def main():
   print('*[9] Airgeddon (Attack Framework - Graphical)            *')
   print('*[10] WiFi-Pumpkin (Rogue AP - Graphical)                *')
   print('*[11] WPA/WPA2 Handshake Cracking (Hashcat BF, WL, & RB) *')
-  print('*[12] Exit                                               *' + Style.RESET_ALL)
+  print('*[12] WifiJammer (Use for RPi or w/ multiple adapters)   *')
+  print('*[13] Exit                                               *' + Style.RESET_ALL)
   print('==========================================================')
   in_put = input(': ')
   if in_put == '1':
@@ -179,6 +179,19 @@ def main():
     elif atk == '4':
       wait()
   if in_put == '12':
+    print(Fore.CYAN + '[*]Starting WiFiJammer Process...')
+    print('[*]Shutting down onboard WiFi adapter...' + Style.RESET_ALL)
+    os.system('sudo ifconfig wlan0 down')
+    os.chdir('wifijam')
+    s_o_m = input(Fore.CYAN + "[*]Do you want to run in [s]tationary or [m]oving mode?: " + Style.RESET_ALL)
+    if s_o_m == 's' or s_o_m == 'S':
+      os.system('sudo python wifijammer.py')
+    elif s_o_m == 'm' or s_o_m == 'M':
+      os.system('sudo python wifi-jammer.py -m 10')
+    else:
+      print(Fore.RED + '[*]Not an option!' + Style.RESET_ALL)
+    wait()
+  if in_put == '13':
     print(Fore.CYAN + '[*]Shutting down ' + interface + 'mon...' + Style.RESET_ALL)
     os.system('airmon-ng stop ' + interface)
     os.system('airmon-ng stop ' + interface + 'mon')
