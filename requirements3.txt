@@ -2,6 +2,7 @@ pwn
 shodan
 future
 datetime
+scrapy
 pytz
 colorama
 phonenumbers
