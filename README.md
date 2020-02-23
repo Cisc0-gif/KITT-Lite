@@ -35,6 +35,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * Ettercap - MiTM Attack Suite
 * Airgeddon - Network Auditing Tool
 * WiFi-Pumpkin - GUI AP Spoofing Tool
+* Wifijammer - Stationary or Mobile WiFi Jammer
 
 ### IoT Exploitation
 * HomePwn - IoT Exploitation Framework
