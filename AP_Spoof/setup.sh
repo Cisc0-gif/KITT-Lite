@@ -1,8 +1,8 @@
 #! /bin/bash
 
-ifconfig
+sudo ifconfig
 read -p '[*]Enter network adapter to use: ' netadp
-ifconfig $netadp 10.0.0.1/24 up
+sudo ifconfig $netadp 10.0.0.1/24 up
 echo '[*]Adapter IP: 10.0.0.1'
 read -p "PRESS ENTER TO CONTINUE" e
 sudo apt-get install dnsmasq
