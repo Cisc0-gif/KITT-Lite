@@ -17,6 +17,10 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * Shodan Search - Quick Shodan search tool
 * PhoneInfoga - OSINT tool for phone numbers
 
+### Phishing
+* Blackeye - Webpage Phishing Tool
+* SET - Social Engineers Toolkit
+
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
 * LinEnum - Linux shell enumeration tool
