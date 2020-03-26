@@ -1,0 +1,95 @@
+/*
+ *
+ *  * Copyright (c) 2004-2018, School Loop, Inc. All Rights Reserved.
+ *
+ */
+
+/**
+ * Created by russellward on 2/13/17.
+ * Globals CKEDITOR,sl *
+ */
+
+var accessibleDropdown = Class.$extend({
+    __init__: function (options) {
+        this.oldStyleMenuId = options.oldStyleMenuId;
+        if (this.oldStyleMenuId != null) {
+            this.menuElement = jQuery("#" + this.oldStyleMenuId);
+            this.menuElement.attr("role", "navigation");     //508 compliance attribute
+            this.topLevelItems = this.menuElement.find("a");
+            this.rejigOldHtml()
+            this.initListeners();
+        }
+    },
+
+    initListeners: function () {
+        /* allow focus or hover to open submenu so tabbing works */
+        this.topLevelItems.on({
+            hover: jQuery.proxy(this.hoverHandler, this),
+            focus: jQuery.proxy(this.hoverHandler, this)
+        })
+
+        // Hide menu if click or focus occurs outside of navigation
+        this.menuElement.find('a').last().keydown(jQuery.proxy(this.tabbingOutHandler, this));
+        jQuery(document).click(jQuery.proxy(this.clearCurrentDropdown, this))
+        /* close menu if you leave the menu or its parent item */
+        this.menuElement.on("mouseleave", ".jsCurrentSelected", jQuery.proxy(this.clearCurrentDropdown, this));
+    },
+
+    tabbingOutHandler: function (event) {
+        if (event.keyCode == 9) {
+            // If the user tabs out of the navigation hide all menus
+            this.clearCurrentDropdown();
+        }
+    },
+
+    clearCurrentDropdown: function () {
+        this.menuElement
+            .find(".jsCurrentSelected").removeClass("jsCurrentSelected")
+            .find(".selected").removeClass("selected")
+            .next(".jsDropdownSubmenu").css({
+                "visibility": "hidden"
+            })
+            .attr('aria-hidden', 'true')
+    },
+
+    hoverHandler: function (event) {
+        var target = jQuery(event.target);
+        this.clearCurrentDropdown();
+        target.closest("li")
+            .addClass("jsCurrentSelected")
+        target.addClass("selected")
+            .trigger("hover");
+        var targetSubmenu = target.next(".jsDropdownSubmenu");
+        targetSubmenu.css({
+            "visibility": "visible"
+        }).attr('aria-hidden', 'false')
+        targetSubmenu.find("a").attr("tabindex", 0);     //508 compliance attribute to allow tabbing in DOM order
+    },
+
+    /* the old HTML puts the submenus are in a div with class dropmenudiv_a in an inaccessible location for tabbing
+     rejigOldHtml method moves them within their associated list item after the <a>
+     the CSS to maintain custom or global rules is in css_nav_public.st
+     */
+
+    rejigOldHtml: function () {
+        var i, currentItem, submenuId, oldSubmenu;
+        for (i = 0; i < this.topLevelItems.length; i++) {
+            currentItem = jQuery(this.topLevelItems[i]);
+            currentItem.closest("li").attr({
+                role: "menuitem"            //508 compliance attribute
+            }).addClass("jsParentNavItem");
+            submenuId = currentItem.attr("rel");
+            if (submenuId != null) {
+                currentItem.closest("li").attr({
+                    "aria-haspopup": true             //508 compliance attribute
+                });
+                oldSubmenu = jQuery("#" + submenuId).attr({
+                    "aria-hidden": true,              //508 compliance attribute
+                    "role": "menu"                    //508 compliance attribute
+                }).addClass("jsDropdownSubmenu");
+                currentItem.after(oldSubmenu);
+            }
+        }
+    }
+
+});

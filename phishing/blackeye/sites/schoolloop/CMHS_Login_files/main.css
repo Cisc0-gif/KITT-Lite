@@ -1,0 +1,713 @@
+/* --////// Page Structure //////-- */
+#container_page {
+    width: 980px;
+    min-height: 350px;
+    background: #ffffff;
+    text-align: left;
+    margin: 0px auto;
+    border: 1px #e7e7e7 solid;
+    padding-top: 65px;
+}
+
+
+/* ---Login page styles--- */
+
+#container_login_page {
+    width: 100%;
+    height: calc(100vh - 42px);
+    min-height: 350px;
+    background: #236e9f;
+    text-align: left;
+    margin: 0 0 42px;
+}
+
+.sl-login-page__container, .sl-reset-password__container {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 480px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.sl-login-page__sl-logo img {
+    width: 175px;
+}
+
+.sl-login-page__form-holder, .sl-reset-password__form-holder {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 40px;
+    text-align: left;
+}
+
+.sl-reset-password__form-holder {
+    margin-bottom: 20px;
+}
+
+.sl-reset-password__form-holder h2 {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.sl-login-page__google-sso-holder {
+    text-align: center;
+    margin-top: 0;
+}
+
+.sl-login-page__name-language-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sl-login-page__form-holder .form_label_above {
+    margin-top: 10px;
+}
+
+.sl-login-page__choose-language {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.sl-login-page__text-input,
+.sl-reset-password__text-input {
+    border: 1px solid #ddd;
+    background-color: #faf8f5;
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 3px;
+    box-sizing: border-box;
+}
+
+.sl-reset-password__text-input {
+    margin-top: 15px;
+}
+
+.sl-login-page__form-holder .btn-action-highlight-lg {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a.sl-login-page__reset-password-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0 80px;
+}
+
+a.sl-login-page__reset-password-link:hover {
+    color: #ff9900;
+}
+
+.sl-reset-password__instructions {
+    margin-top: 20px;
+}
+
+.sl-reset-password__form-holder--button-holder {
+    margin-top: 15px;
+}
+
+.sl-reset-password__container a.sl-reset-password__login-help {
+    display: block;
+    color: #fff;
+}
+
+
+
+.sl-login-page__footer--school-loop-container {
+    width: 100%;
+    background: #000000;
+    padding: 10px 0;
+    min-height: 23px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+.sl-login-page__footer--school-loop-container-inner {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 0 35px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sl-login-page__footer--powered-by {
+    display: flex;
+    flex-direction: row;
+}
+
+.sl-login-page__footer--logo {
+    margin: 0 8px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.sl-login-page__footer--unordered-list {
+    margin: 0;
+    padding: 0;
+}
+
+.sl-login-page__footer--list-item {
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+
+a.sl-login-page__footer--text-link {
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.sl-login-page__footer--text-link:focus,
+a.sl-login-page__footer--text-link:hover {
+    text-decoration: underline;
+}
+
+a.sl-login-page__footer--button-small {
+    background: transparent;
+    border: 1px solid #666666;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #ffffff;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8pt;
+    padding: 4px 10px 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+}
+
+.sl-login-page__footer--button--small:focus,
+.sl-login-page__footer--button--small:hover {
+    background: #333333;
+}
+
+.sl-login-page__messages .error .left,
+ .sl-login-page__messages .success .left {
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #fff;
+    font-size: 40px;
+    vertical-align: middle;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sl-login-page__messages .error .left {
+    background: ##ff9999;
+    background-image: none;
+}
+
+.sl-login-page__messages .error .left:before {
+    content: "\f12a";
+}
+
+.sl-login-page__messages .success .left {
+    background: #a5cc47;
+    background-image: none;
+}
+
+.sl-login-page__messages .success .left:before {
+    content: "\f00c";
+}
+
+.container_width {width: 950px; margin: 0px auto;}
+
+/* ------Header-------*/
+
+
+.fixedHeader {
+        position:fixed;
+        top : 0px;
+        width: 100%
+}
+
+.fixedHeader_background   {
+    width: 100%;
+    background: #4a7dbb;
+    position:fixed;
+    top : 0px;
+    height:26px;
+    z-index: 10;
+}
+
+#container_header_links {width: 100%; background: #4a7dbb;}
+
+#container_header_top {width: 980px; padding: 0px; margin: 0px auto; font-size: 11px;}
+
+#container_header_nav {width: 980px; height: auto; margin: 0px auto;}
+
+.header_icons {
+    background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_background.png) repeat;
+    float: right;
+    padding: 0px;
+    margin:0px;
+    margin-top: 10px;
+    -moz-box-shadow:    0px 0px 2px #999;
+    -webkit-box-shadow: 0px 0px 2px #999;
+    box-shadow:         0px 0px 2px #999;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+}
+
+
+
+/* --// 2 Column School Loop Pages //--*/
+#container_page_left {float: left; width: 460px; text-align: left; margin: 0px 30px 10px 0px; padding: 0px 0px 0px 15px;}
+#container_page_right {float: left; width: 240px; text-align: left; margin: 0px 0px 10px 0px;}
+
+/* --// 3 Column Pages //--*/
+
+#container_content_left {float: left; width: 360px; text-align: left; margin: 0px 0px 10px 0px; padding: 0px 0px 0px 15px;}
+#container_content_right {float: left; width: 180px; text-align: left; margin: 0px 0px 10px 10px;}
+#container_content_left1 {width: 360px; text-align: left; margin: 0px 0px 10px 0px; padding: 0px 0px 0px 15px;}
+
+.container_content {
+    float: left;
+    width: 630px;
+
+}
+
+.container_side {
+    float: right;
+    width: 310px;
+}
+
+
+
+.home_left {float: left; width:620px; padding: 0px 25px 0px 0px;}
+/* .home_left h2 {padding: 0px 10px;} */
+.home_right {float: left; width: 310px; padding: 0px;}
+
+/* --// 3 Column Pages //--*/
+.hub_table {display: table; width: 100%}
+.hub_table .hub_page_column_left {float: left; width:210px; padding: 0px; margin: 0px; vertical-align: top;}
+.hub_table .hub_page_column_middle {float: left; width:470px; padding: 0px 15px;}
+.hub_table .hub_page_column_right {float: right; width: 245px; vertical-align: top;}
+
+/* --// 2 Column Pages //--*/
+.page_table {display: table; width: 100%}
+.page_table .page_column_left {display: table-cell; width:210px; padding: 0px; vertical-align: top;}
+.page_table .page_column_main {display: table-cell; width:715px; padding 0px; padding-left: 15px;vertical-align: top;}
+
+.content_page {width: 720px; text-align: left; margin: 0px 15px 10px 15px;}
+.content_left {width: 615px; text-align: left; margin: 0px 0px 10px 15px;}
+.content_width {width: 580px;}
+
+.content_spacing {display: block; height: 25px; margin-top: 0px; clear: both;}
+.content_spacing_sm {display: block; height: 10px; margin-top: 0px; clear: both;}
+.module_spacing {display: block; height: 10px; margin-top: 0px;}
+
+.column_left {width:225px; padding: 0px 0px 10px 15px;}
+.column_spacer {width:25px; padding: 0px 0px 0px 0px;}
+
+.column_right {padding: 0px 15px 10px 0px;}
+
+.column_text {width:435px; padding: 0px 0px 10px 15px;}
+
+
+.form_column01 {display: table-cell; width:175px; padding: 5px;}
+.form_column02 {display: table-cell; width:235px; padding: 5px;}
+.form_column03 {display: table-cell;width: 505px; padding: 5px;}
+.form_column_spacer {width: 10px;}
+
+.form_column01 label{
+        font-weight: bold;
+        clear: both;
+}
+
+.form_column02 label{
+        font-weight: bold;
+        clear: both;
+}
+
+
+.form_column03 label{
+        font-weight: bold;
+        clear: both;
+}
+
+.form_column03 textarea{
+        font-family: Arial, helvetica, sans-serif;
+
+}
+
+.form_column01, .form_column02, .form_column03, h2 {
+   margin-bottom: 5px;
+}
+
+.form_column01 .container, .form_column02 .container, .form_column03 .container{
+   background-color: #f9f8f4;
+   padding: 5px;
+}
+
+#description {
+ font-family: Arial, helvetica, san-serif;
+}
+
+
+#description_placeholder {
+ position:absolute;top:10px;left:10px; font-size: 18px; color:#999; z-index:2;
+}
+
+#description_inline {
+    width:95%; background:#fff; border: 1px #ccc solid; min-height:70px;padding:10px
+}
+
+
+
+
+
+
+/* --Header Icons--*/
+a.icon_mail {float: left; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_mail.png) top center no-repeat; display: block; width: 75px; height: 20px; font-size: 10px; color:#003387; text-decoration:none; padding: 30px 0px 0px 0px; margin: 0px; text-align: center;}
+a.icon_mail:hover {background-color: #ff9900; color:#fff; text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;}
+
+a.icon_mail_new {float: left; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_mail_new.gif ) center no-repeat; display: block; width: 75px; height: 22px; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color:#003387; text-decoration:none; padding: 38px 0px 0px 0px; margin: 0px; text-align: center; vertical-align: bottom;}
+a.icon_mail_new:hover {float: left; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_mail_new.gif ) bottom left no-repeat; color:#3366cc; text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    }
+
+
+a.icon_mail_alert {background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_sl_mail.gif ) center no-repeat; display: block; width: 75px; height: 14px; font-size: 10px; color:#3366cc; text-decoration:none; padding: 7px 3px 0px 32px; margin: 5px 0px 5px 0px; text-align: left;}
+a.icon_mail_alert:hover {background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_sl_mail.gif ) bottom left no-repeat; color:#3366cc; text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    }
+
+
+a.icon_dropbox {float: left; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_dropbox.png ) top center no-repeat; display: block; width: 75px; height: 20px; font-size: 10px; color:#003387; text-decoration:none; padding: 30px 0px 0px 0px; margin: 0px; text-align: center;}
+a.icon_dropbox:hover {background-color: #ff9900; color:#fff; text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;}
+
+a.icon_locker {float: left; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_locker.png ) top center no-repeat; display: block; width: 75px; height: 20px; font-size: 10px; color:#003387; text-decoration:none; padding: 30px 0px 0px 0px; margin: 0px; text-align: center;}
+a.icon_locker:hover {background-color: #ff9900; color:#ffffff; text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;}
+
+
+a.icon_calendar {float: left; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_calendar.png ) top center no-repeat; display: block; width: 75px; height: 20px; font-size: 10px; color:#003387; text-decoration:none; padding: 30px 0px 0px 0px; margin: 0px; text-align: center;}
+a.icon_calendar:hover {background-color: #ff9900; color:#ffffff; text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    }
+
+
+a.icon_groups {float: left; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_groups.png ) top center no-repeat; display: block; width: 75px; height: 20px; font-size: 10px; color:#003387; text-decoration:none; padding: 30px 0px 0px 0px; margin: 0px; text-align: center;}
+a.icon_groups:hover {background-color: #ff9900; color:#ffffff; text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    }
+
+a.icon_website {float: left; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_website.png) top center no-repeat; display: block; width: 75px; height: 20px; font-size: 10px; color:#003387; text-decoration:none; padding: 30px 0px 0px 0px; margin: 0px; text-align: center;}
+a.icon_website:hover {background-color: #ff9900; color:#fff; text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;}
+
+
+
+#translate {width: auto; margin-top: 10px; text-align: center;}
+#translate img{padding: 10px;}
+
+a.icon_settings {text-align: left; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_settings.png) no-repeat top left; color: #fff; text-decoration:none; padding: 9px 10px 9px 28px; line-height: 15px;}
+a.icon_settings:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_settings.png) no-repeat bottom left; color: #fff; text-decoration:none;}
+
+a.icon_settings_module {text-align: left; height: 21px; display: block; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_settings.png) no-repeat; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #4A719E; text-decoration:none; margin-top: 10px; padding: 10px 2px 2px 32px;}
+a.icon_settings_module:hover {display: block; background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_settings.png) bottom left no-repeat; color: #fff; text-decoration:none; }
+
+a.icon_dropbox_pr {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_dropbox_pr2.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
+a.icon_dropbox_pr:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_dropbox_pr2.png) center no-repeat; text-decoration:none;}
+
+a.icon_dropbox_pr_late {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_dropbox_pr_late2.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
+a.icon_dropbox_pr_late:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_dropbox_pr_late2.png) center no-repeat; text-decoration:none;}
+
+a.icon_comment {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_comment.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
+a.icon_comment:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_comment.png) center no-repeat; text-decoration:none;}
+
+a.icon_print {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_print.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
+a.icon_print:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_print.png) center no-repeat; text-decoration:none;}
+
+a.icon_outlook {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_outlook.png) center no-repeat; height: 25px; width: 35px; text-decoration:none; margin-top: 0px;}
+a.icon_outlook:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_outlook.png) center no-repeat; text-decoration:none;}
+
+a.icon_checked {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_checked.png) center no-repeat; height: 17px; width: 19px; text-decoration:none;}
+a.icon_checked.hot_spot:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_checked.png) center no-repeat; text-decoration:none;}
+a.cold_spot {cursor:default;
+                -khtml-opacity:.50;
+                -moz-opacity:.50;
+                -ms-filter:"alpha(opacity=50)";
+                filter:alpha(opacity=50);
+                filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+                opacity:.50;  }
+
+a.icon_unchecked {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_unchecked.png) center no-repeat; height: 17px; width: 19px; text-decoration:none;}
+a.icon_unchecked.hot_spot:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_unchecked.png) center no-repeat; text-decoration:none;}
+
+
+
+a.icon_cal_day {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_cal_day.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
+a.icon_cal_day:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_cal_day.png) center no-repeat; text-decoration:none;}
+
+a.icon_cal_week {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_cal_week.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
+a.icon_cal_week:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_cal_week.png) center no-repeat; text-decoration:none;}
+
+a.icon_cal_month {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_cal_month.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
+a.icon_cal_month:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_cal_month.png) center no-repeat; text-decoration:none;}
+
+a.icon_next {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_arrow_next.png) top no-repeat; height: 25px; width: 35px; text-decoration:none;}
+a.icon_next:hover {background:  url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_arrow_next.png) bottom no-repeat; text-decoration:none;}
+
+a.icon_previous {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_arrow_previous.png) top no-repeat; height: 25px; width: 35px; text-decoration:none;}
+a.icon_previous:hover {background:  url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_arrow_previous.png) bottom no-repeat; text-decoration:none;}
+
+a.btn_module {text-align: left; height: 17px; display: block; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/btn_module.gif) repeat-x; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #3366cc; text-decoration:none; margin: 0px; padding: 5px 10px 2px 10px; border: 1px #dfdfdf solid;}
+a.btn_module:hover {display: block; background: #ffffbb url(https://cdn.schoolloop.com/release_1.0.4.2/img/btn_module.gif) bottom repeat-x; color: #3366cc; text-decoration:underline; }
+
+
+a.icon_loopmail_sm {text-indent: -9000px; float: left; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_loopmail_sm.png) center no-repeat; height: 18px; width: 25px; text-decoration:none;}
+a.icon_loopmail_sm:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_loopmail_sm.png) center no-repeat; text-decoration:none;}
+
+a.icon_loopmail_all {background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_loopmail_button_sm.png) top left no-repeat; padding: 8px 5px 7px 37px; text-decoration:none; font-size: 11px; border: 0px;}
+a.icon_loopmail_all:hover {color: #fff; background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_loopmail_button_sm.png) top left no-repeat; text-decoration:none; border: 0px;}
+
+a.icon_dropbox_link {background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_dropbox_sm.png) center left no-repeat; padding: 5px 5px 5px 25px; text-decoration:none;}
+a.icon_dropbox_link:hover {color: #f90; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_dropbox_sm.png) top left no-repeat; text-decoration:none; border: 0px;}
+
+
+a.icon_site_sm {text-indent: -9000px; float: left; display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_course_site.png) center no-repeat; height: 18px; width: 20px; text-decoration:none;}
+a.icon_site_sm:hover {background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_course_site.png) center no-repeat; text-decoration:none;}
+
+.icon_download_file {background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_download_file.png) top right no-repeat;}
+.icon_download_file:hover {background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_download_file.png) top right no-repeat;}
+
+.icon_web_section_portal a{display: block; background: transparent url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_web_section_portal.png) center left no-repeat; padding: 3px 3px 3px 22px;}
+.icon_web_section_portal a:hover{background: #f90 url(https://cdn.schoolloop.com/release_1.0.4.2/img/icon_web_section_portal.png) center left no-repeat; color: #fff; text-decoration: none;}
+
+
+a.btn-standard {
+    white-space: nowrap;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #5d8dc5;
+    border: 1px #b7d4ec solid;
+    padding:  3px 10px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+a.btn-standard:hover {
+    color:#fff; text-decoration:none;
+    background:#f90;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ff9900',GradientType=0 ); /* IE6-9 */
+    border: #f90 solid 1px;
+}
+
+/* ------Content-------*/
+#container_content_columns {width: 930px; background: #ffffff; text-align: left; padding: 0px 15px 10px 0px; margin: 0px 0px 0px 0px; }
+
+
+.content_top_left {height: 7px; width:195px; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/content_top_left.gif) no-repeat; line-height: 1px;}
+.content_top_center {height: 7px; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/content_top_center.gif) repeat-x; line-height: 1px;}
+.content_top_right {height: 7px; width:15px; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/content_top_right.gif) no-repeat right; line-height: 1px;}
+
+.content_top_left_nav {height: auto; width:15px; background: #efefef; border-bottom:#aaaaaa solid 1px;}
+.content_top_center_nav {height: auto; background: #efefef; border-bottom:#aaaaaa solid 1px;}
+.content_top_right_nav {height: auto; width:15px; background: #efefef; border-bottom:#aaaaaa solid 1px;}
+
+/*content_top_right_nav {height: auto; width:15px; background: #ffffff url(https://cdn.schoolloop.com/release_1.0.4.2/img/content_top_right_nav.gif) no-repeat; border-bottom:#cccccc solid 1px; }*/
+
+
+.content_main {background: #ffffff ;}
+
+
+
+.page_bottom_left {width:15px; height: 10px; background: #ffffff url(https://cdn.schoolloop.com/release_1.0.4.2/img/content_bottom_left.gif) no-repeat left bottom;}
+.page_bottom_center {height: 10px; background: #ffffff url(https://cdn.schoolloop.com/release_1.0.4.2/img/content_bottom_center.gif) repeat-x bottom;}
+.page_bottom_right {width:15px; height: 10px; background: #ffffff url(https://cdn.schoolloop.com/release_1.0.4.2/img/content_bottom_right.gif) right bottom no-repeat; }
+
+
+
+/* ----- ajax content ----- */
+.ajax_content_width {
+width:100%;
+
+}
+
+.ajax_accordion_scroll {max-height: 600px; overflow:auto;}
+
+
+.ajax_accordion_content, .cal_Detail_holder, .prog_Detail_holder, .curAss_Detail_holder {
+    display:none;
+    background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/accordion_content_bottom.png) bottom right no-repeat;
+    padding-top: 5px;
+    padding-left: 3px;
+    padding-right 10px;
+    padding-bottom: 7px;
+    margin-left: 2px;
+}
+
+.day_content {
+min-height:300px;
+}
+
+.attendance_cont {
+display:none;
+}
+
+#tourGroup {
+display:none;
+}
+
+.cat_rect {
+display:block;
+border:1px solid black;
+width:32px;
+height:16px;
+}
+
+.hidden {
+    display:none;
+    background:none;
+}
+
+.draggable {
+    cursor: ns-resize;
+}
+
+tr.draggable td {
+    border-top:1px #e9efd8 solid;
+    border-bottom:1px #e9efd8 solid;
+    background:white;
+}
+
+.ui-placeholder {
+    background:#e9efd8;
+    height:25px;
+}
+
+.read_item {
+opacity:.6;
+}
+.news_for_delete img {
+    float:right;
+    cursor:pointer;
+    opacity:.3;
+}
+.unhide_btn {
+font-size:11px;
+float:right;
+border:1px #4A719E solid;
+padding: 1px;
+cursor:pointer;
+margin:5px;
+}
+
+.big_checkbox {
+float:left;
+margin:5px;
+}
+
+#refreshing {
+font-size: 22px;
+font-weight: bold;
+color: #ea8e05;
+padding-top: 7px;
+padding-left: 5px;
+}
+
+.completed {
+font-size: 22px;
+font-weight: bold;
+color: #89b61c;
+padding-top: 7px;
+padding-left: 5px;
+}
+
+.glow {
+    text-shadow: 1px 2px 3px #fbbf66;
+}
+
+.sending {
+font-weight: bold;
+color: #ea8e05;
+}
+
+.sent {
+font-weight: bold;
+color: #89b61c;
+}
+
+/* ------Page Nav-------*/
+
+
+#nav_page {width: 195px; height:auto; list-style: none; margin:  0px; padding: 0px; border-top: 4px #f3c240 solid; border-right: 1px #f3c240 solid; border-bottom: 8px #f3c240 solid;}
+#nav_page ul {width: 195px; height:auto; list-style: none; margin:  0px; padding: 0px;}
+#nav_page li{width: 195px;list-style: none;}
+.page_button a{width: 165px; height: auto; font-weight: bold; font-size: 12px; padding: 5px 20px 5px 10px; background: #ffffff; display: block;}
+.page_button a:visited{width: 165px; height: auto; font-weight: bold; font-size: 12px; padding: 5px 20px 5px 10px; background: #ffffff; display: block;}
+.page_button a:hover{width: 165px; font-weight: bold; font-size: 12px; padding: 5px 20px 5px 10px; background: #ffffbb;}
+
+.page_button_selected a{width: 165px; height: auto; font-weight: bold; font-size: 12px; padding: 5px 20px 5px 10px; background: url(https://cdn.schoolloop.com/release_1.0.4.2/img/nav_page_selected.gif); display: block;}
+
+
+
+
+/* ------Footer-------*/
+#container_footer {width: 950px; font-size: 11px; color: #666; background: #f2f0e9; text-align: left; margin: 0px auto; padding: 10px 10px;}
+#container_footer_login {width: 560px; color: #666; font-size: 11px; background: #f2f0e9; text-align: left; margin: 0px auto; padding: 0px 10px;}
+
+
+.button_spacer {margin-bottom: 3px;}
+a.button_footer {font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #2a487c; text-decoration:none; padding: 0px 2px 0px 2px;}
+a.button_footer:hover {font-family: Arial, Helvetica, sans-serif; font-size: 11px; color:#f90; text-decoration:none;}
+
+a.footer {color: #2a487c; text-decoration:none;}
+a.footer:hover {text-decoration: underline;}
+
+ /* --////// END Page Structure //////-- */
+
+/*Copy to clipboard button*/
+
+.sl-chrome-copy-to-clipboard__button {
+    width: 30px; height: 30px;
+    padding: 5px;
+    margin: 0 10px;
+    border: none;
+}
+
+.sl-chrome-copy-to-clipboard__button:hover {
+    background: #f90;
+}

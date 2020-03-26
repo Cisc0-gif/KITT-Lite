@@ -36,6 +36,9 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -ds, --domainsticate                 Extensive Domain Enumeration')
   print('        -sh, --shodan_search                 Search for IP info on shodan')
   print('        -pi, --phone_infoga                  Search for Phone # info ')
+  print('Phising:')
+  print('        -be, --blackeye                      Tool for Hosting Phishing Sites')
+  print('        -st, --set                           Social Engineering Toolkit (SET)')
   print('PrivEsc:')
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
   print('Network Cracking:')
@@ -63,8 +66,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-st', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-st', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set']
 
 tool = sys.argv[1]
 
@@ -292,6 +295,26 @@ if tool == '-di' or tool == '--dhcpip':
     logwrite('--[+]Successfully ran dh_recv @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running dh_recv @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-be' or tool == '--blackeye':
+  try:
+    os.chdir('phishing/blackeye')
+	os.system('sudo bash blackeye.sh')
+	logwrite('--[+]Successfully ran blackeye @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running blackeye @ ' + timecheck() + '--')
+  gohome()
+  exit()
+  
+if tool == '-st' or tool == '--set':
+  try:
+    os.chdir('phishing/SET')
+	os.system('sudo python3 setoolkit')
+	logwrite('--[+]Successfully ran SET @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running SET @ ' + timecheck() + '--')
   gohome()
   exit()
 

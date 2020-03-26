@@ -1063,6 +1063,11 @@ os.chdir('HomePWN')
 os.system("sudo ./install.sh")
 os.chdir('..')
 
+print("[*]Setting Up Social-Engineer-Toolkit...")
+os.chdir('phishing/SET')
+os.system('sudo pip3 install -r requirements.txt')
+os.sysetm('sudo python3 setup.py')
+
 print('[*]Updating and Upgrading Packages...')
 os.system('sudo apt-get update && sudo apt-get upgrade')
 os.system('sudo apt autoremove')
