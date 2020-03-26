@@ -86,7 +86,7 @@ To begin the framework, type ``` KITTlite ``` and execute in terminal.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.txt file for details
+This project is licensed under the MIT License - see the LICENSE file for details
 
 
 ## Acknowledgments
