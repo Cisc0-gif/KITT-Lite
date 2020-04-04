@@ -36,6 +36,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -ds, --domainsticate                 Extensive Domain Enumeration')
   print('        -sh, --shodan_search                 Search for IP info on shodan')
   print('        -pi, --phone_infoga                  Search for Phone # info ')
+  print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('Phising:')
   print('        -be, --blackeye                      Tool for Hosting Phishing Sites')
   print('        -st, --set                           Social Engineering Toolkit (SET)')

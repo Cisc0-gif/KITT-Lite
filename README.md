@@ -16,6 +16,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * Domainsticate - Custom domain enumeration tool 
 * Shodan Search - Quick Shodan search tool
 * PhoneInfoga - OSINT tool for phone numbers
+* gitGraber - Unprotected Token search tool for GitHub
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit

@@ -66,6 +66,11 @@ os.chdir('w3af')
 os.system('python w3af_console')
 os.system('bash /tmp/w3af_dependency_install.sh')
 os.chdir('..')
+print('[*]Installing gitGraber...')
+os.system('sudo git clone https://github.com/hisxo/gitGraber')
+os.chdir('gitGraber')
+os.system('sudo pip3 install -r requirements.txt')
+os.chdir('..')
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\
 # WARNING: heavily refactored in 0.9.0 release.  Please review and
