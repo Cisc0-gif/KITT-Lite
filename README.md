@@ -14,46 +14,46 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 
 ### OSINT
 * Domainsticate - Custom domain enumeration tool 
-* Shodan Search - Quick Shodan search tool
-* PhoneInfoga - OSINT tool for phone numbers
-* gitGraber - Unprotected Token search tool for GitHub
-* TweetShell - Twitter Account Brute-Forcer
-* Katana - Google Dork Scanner
-* TIDoS-Framework - WebApp Recon and Vulnerability Analysis Framework
+* [Shodan Search](<https://github.com/achillean/shodan-python>) - Quick Shodan search tool
+* [PhoneInfoga](<https://github.com/sundowndev/PhoneInfoga>) - OSINT tool for phone numbers
+* [gitGraber](<https://github.com/hisxo/gitGraber>) - Unprotected Token search tool for GitHub
+* [TweetShell](<https://github.com/thelinuxchoice/tweetshell>) - Twitter Account Brute-Forcer
+* [Katana](<https://github.com/adnane-X-tebbaa/Katana>) - Google Dork Scanner
+* [TIDoS-Framework](<https://github.com/0xInfection/TIDoS-Framework>) - WebApp Recon and Vulnerability Analysis Framework
 
 ### Phishing
-* Blackeye - Webpage Phishing Tool
-* SET - Social Engineers Toolkit
+* [Blackeye](<https://github.com/thelinuxchoice/blackeye>) - Webpage Phishing Tool
+* [SET](<https://github.com/trustedsec/social-engineer-toolkit>) - Social Engineers Toolkit
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
-* LinEnum - Linux shell enumeration tool
+* [LinEnum](<https://github.com/rebootuser/LinEnum>) - Linux shell enumeration tool
 * Linux - Linux Exploits and Enumeration Scripts
-* Mimikatz_trunk - Windows post exploitation tool 
+* [Mimikatz_trunk](<https://github.com/gentilkiwi/mimikatz>) - Windows post exploitation tool 
 * mysql - MSQL exploits and enumeration scripts
 * passwd_backdoor.sh - Custom passwd/ backdoor exploit for post-exploitation
-* pspy - Process scanner for linux
-* windows-privesc-check - Windows PrivEsc Scripts
+* [pspy](<https://github.com/DominicBreuker/pspy>) - Process scanner for linux
+* [windows-privesc-check](<https://github.com/pentestmonkey/windows-privesc-check>) - Windows PrivEsc Scripts
 * Windows-Privlege-Escalation - Windows PrivEsc Scripts
-* Chromepass - AV-Undetectable Chrome Login Extraction Tool (Local exec)
+* [Chromepass](<https://github.com/darkarp/chromepass>) - AV-Undetectable Chrome Login Extraction Tool (Local exec)
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool
 * Wash & Reaver - WPS Cracking tools
-* Wifite2 - Network Auditing Tool
+* [Wifite2](<https://github.com/derv82/wifite2>) - Network Auditing Tool
 * Ettercap - MiTM Attack Suite
-* Airgeddon - Network Auditing Tool
-* WiFi-Pumpkin - GUI AP Spoofing Tool
-* Wifijammer - Stationary or Mobile WiFi Jammer
+* [Airgeddon](<https://github.com/v1s1t0r1sh3r3/airgeddon>) - Network Auditing Tool
+* [WiFi-Pumpkin](<https://github.com/P0cL4bs/WiFi-Pumpkin>) - GUI AP Spoofing Tool
+* [Wifijammer](<https://github.com/DanMcInerney/wifijammer>) - Stationary or Mobile WiFi Jammer
 
 ### IoT Exploitation
-* HomePwn - IoT Exploitation Framework
-* PentBox - HoneyPot Setup Tool
+* [HomePwn](<https://github.com/ElevenPaths/HomePWN>) - IoT Exploitation Framework
+* [PentBox](<https://github.com/H4CK3RT3CH/pentbox-1.8>) - HoneyPot Setup Tool
 * Spooftooph - BT Spoofing
 * BtVerifier - Rfcomm Channel Verifier
 
 ### Hardware Hacking
-* MouseJack - BT Keyboard and Mouse Hijacker
+* [MouseJack](<https://github.com/BastilleResearch/mousejack>) - BT Keyboard and Mouse Hijacker
 * GPIO_CTL - Custom GPIO Controller for RPi
 
 ### System Security
