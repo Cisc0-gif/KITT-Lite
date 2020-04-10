@@ -35,7 +35,10 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('OSINT:')
   print('        -ds, --domainsticate                 Extensive Domain Enumeration')
   print('        -sh, --shodan_search                 Search for IP info on shodan')
-  print('        -pi, --phone_infoga                  Search for Phone # info ')
+  print('        -pi, --phone_infoga                  Search for Phone # info')
+  print('        -ka, --katana                        Google Dork Scanner')
+  print('        -ts, --tweet_shell                   Twitter Account Brute-Forcer')
+  print('        -td, --tidos                         WebApp Pentesting Framework')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('Phising:')
   print('        -be, --blackeye                      Tool for Hosting Phishing Sites')
@@ -67,8 +70,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-st', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-st', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-ts', '-td']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--tweet_shell', '--tidos']
 
 tool = sys.argv[1]
 
@@ -302,20 +305,51 @@ if tool == '-di' or tool == '--dhcpip':
 if tool == '-be' or tool == '--blackeye':
   try:
     os.chdir('phishing/blackeye')
-	os.system('sudo bash blackeye.sh')
-	logwrite('--[+]Successfully ran blackeye @ ' + timecheck() + '--')
+    os.system('sudo bash blackeye.sh')
+    logwrite('--[+]Successfully ran blackeye @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running blackeye @ ' + timecheck() + '--')
   gohome()
   exit()
-  
+
 if tool == '-st' or tool == '--set':
   try:
     os.chdir('phishing/SET')
-	os.system('sudo python3 setoolkit')
-	logwrite('--[+]Successfully ran SET @ ' + timecheck() + '--')
+    os.system('sudo python3 setoolkit')
+    logwrite('--[+]Successfully ran SET @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running SET @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-ka' or tool == '--katana':
+  try:
+    os.chdir('Katana')
+    os.system('sudo python3 kds.py')
+    logwrite('--[+]Successfully ran Katana @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running Katana @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-ts' or tool == '--tweet_shell':
+  try:
+    os.chdir('tweetshell')
+    os.system('sudo service tor start')
+    os.system('sudo ./tweetshell.sh')
+    logwrite('--[+]Successfully ran TweetShell @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running TweetShell @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-td' or tool == '--tidos':
+  try:
+    os.chdir("TIDoS-Framework")
+    os.system("sudo tidos")
+    logwrite("--[+]Successfully ran Tidos-Framework @ " + timecheck() + '--')
+  except:
+    logwrite("--[*]Error running Tidos-Framework @ " + timecheck() + '--')
   gohome()
   exit()
 

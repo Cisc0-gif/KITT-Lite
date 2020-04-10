@@ -17,6 +17,9 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * Shodan Search - Quick Shodan search tool
 * PhoneInfoga - OSINT tool for phone numbers
 * gitGraber - Unprotected Token search tool for GitHub
+* TweetShell - Twitter Account Brute-Forcer
+* Katana - Google Dork Scanner
+* TIDoS-Framework - WebApp Recon and Vulnerability Analysis Framework
 
 ### Phishing
 * Blackeye - Webpage Phishing Tool
@@ -32,6 +35,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * pspy - Process scanner for linux
 * windows-privesc-check - Windows PrivEsc Scripts
 * Windows-Privlege-Escalation - Windows PrivEsc Scripts
+* Chromepass - AV-Undetectable Chrome Login Extraction Tool (Local exec)
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool
