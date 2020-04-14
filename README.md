@@ -65,6 +65,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * ssh_encryption - Buffing SSHD Security Protocols
 * Fail2ban Configurations - Fail2ban Protocol Auditer
 * [PTF](<https://github.com/trustedsec/ptf/>) - PenTesting Tool Installation Framework
+* [ClamAV](<https://www.clamav.net/>) - CLI Virus/Malware Scanner
 
 ## Getting Started
 
