@@ -64,6 +64,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * proxy router - Traffic Proxy Router
 * ssh_encryption - Buffing SSHD Security Protocols
 * Fail2ban Configurations - Fail2ban Protocol Auditer
+* [PTF](<https://github.com/trustedsec/ptf/>) - PenTesting Tool Installation Framework
 
 ## Getting Started
 

@@ -117,6 +117,8 @@ print('[*]Installing Python3.7 libs for Chromepass...')
 os.chdir('escalate/chromepass')
 os.system('sudo pip3 install -r requirements.txt')
 os.chdir('../..')
+print("[*]Installing PTF...")
+os.system("sudo git clone https://github.com/trustedsec/ptf/")
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\
 # WARNING: heavily refactored in 0.9.0 release.  Please review and

@@ -66,12 +66,13 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -di, --dhcpip                        DHCP IP Receiver')
   print('Update Tool:')
   print('        -up, --update                        Update packages and git source for KITTlite')
+  print('        -pf, --ptf                           PenTesting Framework for Installing and Updating Tools')
   print('Example:')
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-st', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-ts', '-td']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--tweet_shell', '--tidos']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-st', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-ts', '-td', '-pf']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--tweet_shell', '--tidos', '--ptf']
 
 tool = sys.argv[1]
 
@@ -362,6 +363,16 @@ if tool == '-up' or tool == '--update':
     logwrite('--[+]Successfully updated packages and git source @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error updating packages and git source @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-pf' or tool == '--ptf':
+  try:
+    os.chdir('ptf')
+    os.system('sudo ./ptf')
+    logwrite('--[+]Successfully ran ptf @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running ptf @ ' + timecheck() + '--')
   gohome()
   exit()
 
