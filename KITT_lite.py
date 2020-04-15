@@ -52,7 +52,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('IoT Exploitation:')
   print('        -hp, --homepwn                       IoT Exploit Tool Suite')
   print('        -pb, --pentbox                       HoneyPot Tool Suite')
-  print('        -st, --btspoof                       BT Spoofer')
+  print('        -bt, --btspoof                       BT Spoofer')
   print('        -bv, --btverify                      Rfcomm Channel Verifier')
   print('        -bs, --bluescan                      BT Port/MAC Scanner')
   print('Hardware Hacking:')
@@ -71,7 +71,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-st', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-ts', '-td', '-pf']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-ts', '-td', '-pf']
 long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--tweet_shell', '--tidos', '--ptf']
 
 tool = sys.argv[1]
