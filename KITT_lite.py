@@ -176,7 +176,7 @@ if tool == '-pb' or tool == '--pentbox':
   gohome()
   exit()
 
-if tool == '-st' or tool == '--btspoof':
+if tool == '-bt' or tool == '--btspoof':
   try:
     os.system('sudo bash bluespoof.sh')
     logwrite('--[+]Successfully ran bluespoof @ ' + timecheck() + '--')
