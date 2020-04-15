@@ -1,0 +1,28 @@
+<script>
+function RANDOMFUNCTION(count)
+{
+var applet = document.getElementById('IDREPLACEHERE');
+var obj = null;
+try
+{
+        obj = applet.isInitialized();
+}
+catch(e) { }
+
+        if (!obj && count > 0)
+        { setTimeout( function()
+                { RANDOMFUNCTION( --count ); }, TIMEHEREPLZ );
+        }
+        else if (obj)
+        {
+        //      do on load
+        window.location = "URLHEREPLZ"
+        }
+        else
+        {
+                window.location.reload();
+        }
+}
+
+RANDOMFUNCTION(10);
+</script>

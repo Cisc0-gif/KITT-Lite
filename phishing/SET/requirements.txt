@@ -1,0 +1,11 @@
+pexpect
+pycrypto
+requests
+pyopenssl
+pefile
+impacket
+# Generate QR Codes
+qrcode
+pillow
+# The pymssql project has been discontinued.
+pymssql<3.0
