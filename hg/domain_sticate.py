@@ -153,6 +153,12 @@ def main():
     print(Fore.GREEN + '[+]XSStrike scan complete!' + Style.RESET_ALL)
   except:
     print(Fore.RED + '[*]XSStrike scan incomplete!' + Style.RESET_ALL)
+  print(Fore.CYAN + '[*]Running domained scan on domain...' + Style.RESET_ALL)
+  try:
+    os.chdir("../domained")
+    os.system("sudo python3 domained.py -d " + domain + " -b --bruteall > ../domained.txt")
+  except:
+    print(Fore.RED + '[*]domained scan incomplete!' + Style.RESET_ALL)
   print('=========================================================================')
   print(Fore.GREEN + '[+]Domainstication Complete!' + Style.RESET_ALL)
   wait()

@@ -22,6 +22,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [TweetShell](<https://github.com/thelinuxchoice/tweetshell>) - Twitter Account Brute-Forcer
 * [Katana](<https://github.com/adnane-X-tebbaa/Katana>) - Google Dork Scanner
 * [TIDoS-Framework](<https://github.com/0xInfection/TIDoS-Framework>) - WebApp Recon and Vulnerability Analysis Framework
+* [Domained](<https://github.com/TypeError/domained>) - Subdomain Enumeration Tool
 
 ### Phishing
 * [Blackeye](<https://github.com/thelinuxchoice/blackeye>) - Webpage Phishing Tool
@@ -38,6 +39,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [windows-privesc-check](<https://github.com/pentestmonkey/windows-privesc-check>) - Windows PrivEsc Scripts
 * Windows-Privlege-Escalation - Windows PrivEsc Scripts
 * [Chromepass](<https://github.com/darkarp/chromepass>) - AV-Undetectable Chrome Login Extraction Tool (Local exec)
+* [htbenum](<https://github.com/SolomonSklash/htbenum>) - Offline Local Enum Server (Mainly for HTB)
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool
