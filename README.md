@@ -19,7 +19,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [gitGraber](<https://github.com/hisxo/gitGraber>) - Unprotected Token search tool for GitHub
 * [gitHound](<https://github.com/tillson/git-hound>) - Sensitive Data Fuzzer for GitHub
 * [GitRob](<https://github.com/michenriksen/gitrob>) - Sensitive File Fuzzer for GitHub
-* [TweetShell](<https://github.com/thelinuxchoice/tweetshell>) - Twitter Account Brute-Forcer
+* [SocialBox](<https://github.com/TunisianEagles/SocialBox.git>) - Social Media Password Bruteforcer
 * [Katana](<https://github.com/adnane-X-tebbaa/Katana>) - Google Dork Scanner
 * [TIDoS-Framework](<https://github.com/0xInfection/TIDoS-Framework>) - WebApp Recon and Vulnerability Analysis Framework
 * [Domained](<https://github.com/TypeError/domained>) - Subdomain Enumeration Tool

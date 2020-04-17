@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!/usr/bin/e
+nv python3
 # -*- coding:utf-8 -*-
 #
 # @name   : KITT Lite - Lite Version of KITT Framework
@@ -37,7 +38,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -sh, --shodan_search                 Search for IP info on shodan')
   print('        -pi, --phone_infoga                  Search for Phone # info')
   print('        -ka, --katana                        Google Dork Scanner')
-  print('        -ts, --tweet_shell                   Twitter Account Brute-Forcer')
+  print('        -sb, --socialbox                     Social Media Password Bruteforcer')
   print('        -td, --tidos                         WebApp Pentesting Framework')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('Phising:')
@@ -71,8 +72,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-ts', '-td', '-pf']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--tweet_shell', '--tidos', '--ptf']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf']
 
 tool = sys.argv[1]
 
@@ -333,14 +334,13 @@ if tool == '-ka' or tool == '--katana':
   gohome()
   exit()
 
-if tool == '-ts' or tool == '--tweet_shell':
+if tool == '-sb' or tool == '--socialbox':
   try:
-    os.chdir('tweetshell')
-    os.system('sudo service tor start')
-    os.system('sudo ./tweetshell.sh')
-    logwrite('--[+]Successfully ran TweetShell @ ' + timecheck() + '--')
+    os.chdir('SocialBox')
+    os.system('sudo ./SocialBox.sh')
+    logwrite('--[+]Successfully ran SocialBox @ ' + timecheck() + '--')
   except:
-    logwrite('--[*]Error running TweetShell @ ' + timecheck() + '--')
+    logwrite('--[*]Error running SocialBox @ ' + timecheck() + '--')
   gohome()
   exit()
 
