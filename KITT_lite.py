@@ -1,5 +1,4 @@
-#!/usr/bin/e
-nv python3
+#!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 #
 # @name   : KITT Lite - Lite Version of KITT Framework
