@@ -43,6 +43,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -be, --blackeye                      Tool for Hosting Phishing Sites')
   print('        -st, --set                           Social Engineering Toolkit (SET)')
   print('        -sb, --socialbox                     Social Media Password Bruteforcer')
+  print('        -ps, --pwnstar                       Fake AP Tool Framework')
+  print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
   print('PrivEsc:')
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
   print('Network Cracking:')
@@ -71,8 +73,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar']
 
 tool = sys.argv[1]
 
@@ -372,6 +374,16 @@ if tool == '-pf' or tool == '--ptf':
     logwrite('--[+]Successfully ran ptf @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running ptf @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-ps' or tool == '--pwnstar':
+  try:
+    os.chdir('PwnSTAR')
+    os.system('sudo ./pwnstar')
+    logwrite("--[+]Successfully ran pwnstar @ " + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running pwnstar @ ' + timecheck() + '--')
   gohome()
   exit()
 
