@@ -139,6 +139,13 @@ os.chdir('PwnSTAR')
 os.system('sudo chmod 777 installer.sh')
 os.system('sudo ./installer.sh')
 os.chdir('..')
+print('[*]Installing hate_crack...')
+os.system('sudo git clone https://github.com/trustedsec/hate_crack.git')
+os.chdir('hate_crack')
+os.system('sudo python hate_crack.py')
+print('[!]config.json file generated! User configuration needed in /opt/KITT-Lite/hate_crack/config.json...')
+wait()
+os.chdir('..')
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\
 # WARNING: heavily refactored in 0.9.0 release.  Please review and

@@ -23,6 +23,9 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [TIDoS-Framework](<https://github.com/0xInfection/TIDoS-Framework>) - WebApp Recon and Vulnerability Analysis Framework
 * [Domained](<https://github.com/TypeError/domained>) - Subdomain Enumeration Tool
 
+### Cracking
+* [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
+
 ### Phishing
 * [Blackeye](<https://github.com/thelinuxchoice/blackeye>) - Webpage Phishing Tool
 * [SET](<https://github.com/trustedsec/social-engineer-toolkit>) - Social Engineers Toolkit

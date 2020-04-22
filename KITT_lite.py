@@ -39,6 +39,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -ka, --katana                        Google Dork Scanner')
   print('        -td, --tidos                         WebApp Pentesting Framework')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
+  print('Cracking:')
+  print('        /opt/KITT-Lite/hate_crack/           Automated Hashcat Cracker')
   print('Phising:')
   print('        -be, --blackeye                      Tool for Hosting Phishing Sites')
   print('        -st, --set                           Social Engineering Toolkit (SET)')
