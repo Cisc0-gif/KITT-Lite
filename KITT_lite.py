@@ -38,6 +38,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -pi, --phone_infoga                  Search for Phone # info')
   print('        -ka, --katana                        Google Dork Scanner')
   print('        -td, --tidos                         WebApp Pentesting Framework')
+  print('        /opt/KITT-Lite/vulnx/                WebApp Bot Auto Shell Injector')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('Cracking:')
   print('        /opt/KITT-Lite/hate_crack/           Automated Hashcat Cracker')
@@ -45,7 +46,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -be, --blackeye                      Tool for Hosting Phishing Sites')
   print('        -st, --set                           Social Engineering Toolkit (SET)')
   print('        -sb, --socialbox                     Social Media Password Bruteforcer')
-  print('        -ps, --pwnstar                       Fake AP Tool Framework')
+  print('        -bd, --brutedum                      Common Protocol Bruteforcer')
   print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
   print('PrivEsc:')
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
@@ -59,6 +60,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -bt, --btspoof                       BT Spoofer')
   print('        -bv, --btverify                      Rfcomm Channel Verifier')
   print('        -bs, --bluescan                      BT Port/MAC Scanner')
+  print('        -ps, --pwnstar                       Fake AP Tool Framework')
   print('Hardware Hacking:')
   print('        -mj, --mousejack                     Intel Keyboard/Mice Hijacker')
   print('        -gp, --gpioctl                       GPIO Controller (Only for RPi)')
@@ -68,15 +70,18 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -pc, --proxyconfig                   ProxyChains Config')
   print('        -fb, --fail2ban                      Fail2ban IP Jail Config')
   print('        -di, --dhcpip                        DHCP IP Receiver')
+  print('        /opt/KITT-Lite/wotop/                Tunnels Traffic Over HTTP ')
+  print('        /opt/KITT-Lite/torghost              Filters All Traffic Through Tor Proxy') 
   print('Update Tool:')
   print('        -up, --update                        Update packages and git source for KITTlite')
   print('        -pf, --ptf                           PenTesting Framework for Installing and Updating Tools')
+  print('        -tx, --toolx                         PenTesting Tool Installer')
   print('Example:')
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx']
 
 tool = sys.argv[1]
 
@@ -386,6 +391,26 @@ if tool == '-ps' or tool == '--pwnstar':
     logwrite("--[+]Successfully ran pwnstar @ " + timecheck() + '--')
   except:
     logwrite('--[*]Error running pwnstar @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-bd' or tool == '--brutedum':
+  try:
+    os.chdir('BruteDum')
+    os.system('sudo python3 brutedum.py')
+    logwrite("--[+]Successfully ran brutedum @ " + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running brutedum @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-tx' or tool == '--toolx':
+  try:
+    os.chdir('Tool-X')
+    os.system('sudo toolx')
+    logwrite("--[*]Successfully ran toolx @ " + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running toolx @ ' + timecheck() + '--')
   gohome()
   exit()
 

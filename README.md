@@ -22,6 +22,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Katana](<https://github.com/adnane-X-tebbaa/Katana>) - Google Dork Scanner
 * [TIDoS-Framework](<https://github.com/0xInfection/TIDoS-Framework>) - WebApp Recon and Vulnerability Analysis Framework
 * [Domained](<https://github.com/TypeError/domained>) - Subdomain Enumeration Tool
+* [Vulnx](<https://github.com/anouarbensaad/VulnX.git>) - WebApp Bot Auto Shell Injector
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -31,7 +32,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [SET](<https://github.com/trustedsec/social-engineer-toolkit>) - Social Engineers Toolkit
 * [SocialBox](<https://github.com/TunisianEagles/SocialBox.git>) - Social Media Password Bruteforcer
 * [Seeker](<https://github.com/thewhiteh4t/seeker>) - Social Engineering IP GeoLocator (Give/Take 30m)
-* [PwnSTAR](<https://github.com/SilverFoxx/PwnSTAR>) - Fake AP Tool Framework
+* [BruteDum](<https://github.com/GitHackTools/BruteDum>) - Common Protocol Bruteforcer
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
@@ -54,6 +55,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Airgeddon](<https://github.com/v1s1t0r1sh3r3/airgeddon>) - Network Auditing Tool
 * [WiFi-Pumpkin](<https://github.com/P0cL4bs/WiFi-Pumpkin>) - GUI AP Spoofing Tool
 * [Wifijammer](<https://github.com/DanMcInerney/wifijammer>) - Stationary or Mobile WiFi Jammer
+* [PwnSTAR](<https://github.com/SilverFoxx/PwnSTAR>) - Fake AP Tool Framework
 
 ### IoT Exploitation
 * [HomePwn](<https://github.com/ElevenPaths/HomePWN>) - IoT Exploitation Framework
@@ -73,6 +75,8 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * Fail2ban Configurations - Fail2ban Protocol Auditer
 * [PTF](<https://github.com/trustedsec/ptf/>) - PenTesting Tool Installation Framework
 * [ClamAV](<https://www.clamav.net/>) - CLI Virus/Malware Scanner
+* [Wotop](<https://github.com/nishitm/wotop>) - Tunnels Internet Traffic Over HTTP
+* [Torghost](<https://github.com/SusmithKrishnan/torghost>) - Directs All Internet Traffic Through Tor Proxy
 
 ## Getting Started
 
