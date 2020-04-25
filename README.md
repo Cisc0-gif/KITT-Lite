@@ -30,8 +30,8 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Blackeye](<https://github.com/thelinuxchoice/blackeye>) - Webpage Phishing Tool
 * [SET](<https://github.com/trustedsec/social-engineer-toolkit>) - Social Engineers Toolkit
 * [SocialBox](<https://github.com/TunisianEagles/SocialBox.git>) - Social Media Password Bruteforcer
-* [Seeker](<https://github.com/thewhiteh4t/seeker>) - Fake AP Tool Framework
-* [PwnSTAR](<https://github.com/SilverFoxx/PwnSTAR>) - Social Engineering IP GeoLocator (Give/Take 30m)
+* [Seeker](<https://github.com/thewhiteh4t/seeker>) - Social Engineering IP GeoLocator (Give/Take 30m)
+* [PwnSTAR](<https://github.com/SilverFoxx/PwnSTAR>) - Fake AP Tool Framework
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
