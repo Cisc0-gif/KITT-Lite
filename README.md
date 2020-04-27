@@ -57,6 +57,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [WiFi-Pumpkin](<https://github.com/P0cL4bs/WiFi-Pumpkin>) - GUI AP Spoofing Tool
 * [Wifijammer](<https://github.com/DanMcInerney/wifijammer>) - Stationary or Mobile WiFi Jammer
 * [PwnSTAR](<https://github.com/SilverFoxx/PwnSTAR>) - Fake AP Tool Framework
+* [HT-WPS](<https://github.com/SilentGhostX/HT-WPS-Breaker>) - WPS Pin Extractor
 
 ### IoT Exploitation
 * [HomePwn](<https://github.com/ElevenPaths/HomePWN>) - IoT Exploitation Framework
