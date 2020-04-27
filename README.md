@@ -66,6 +66,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 ### Hardware Hacking
 * [MouseJack](<https://github.com/BastilleResearch/mousejack>) - BT Keyboard and Mouse Hijacker
 * GPIO_CTL - Custom GPIO Controller for RPi
+* [Brutal](<https://github.com/screetsec/brutal>) - RubberDucky Payload Generator
 
 ### System Security
 * ssh_port_randomizer - SSHD Port Randomizer

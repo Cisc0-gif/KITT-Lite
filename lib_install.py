@@ -171,6 +171,12 @@ os.chdir('Tool-X')
 os.system('sudo chmod 777 install.aex')
 os.system('sudo ./install.aex')
 os.chdir('..')
+print("[*]Installing Brutal...")
+os.system('sudo git clone https://github.com/Screetsec/Brutal.git')
+os.chdir('Brutal')
+os.system('sudo chmod 777 Brutal.sh')
+os.system('sudo apt-get install zenity -y')
+os.chdir('..')
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\
 # WARNING: heavily refactored in 0.9.0 release.  Please review and

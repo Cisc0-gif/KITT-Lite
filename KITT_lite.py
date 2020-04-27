@@ -64,6 +64,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('Hardware Hacking:')
   print('        -mj, --mousejack                     Intel Keyboard/Mice Hijacker')
   print('        -gp, --gpioctl                       GPIO Controller (Only for RPi)')
+  print('        -br, --brutal                        RubberDucky Payload Generator (Teensy, Digispark, Ardu Leo, Ardu Pro Micro)')
   print('System Security:')
   print('        -sp, --sshportrand                   SSH Port Randomizer')
   print('        -sc, --sshautoconfig                 SSHD Config Buff')
@@ -80,8 +81,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal']
 
 tool = sys.argv[1]
 
@@ -408,9 +409,19 @@ if tool == '-tx' or tool == '--toolx':
   try:
     os.chdir('Tool-X')
     os.system('sudo toolx')
-    logwrite("--[*]Successfully ran toolx @ " + timecheck() + '--')
+    logwrite("--[+]Successfully ran toolx @ " + timecheck() + '--')
   except:
     logwrite('--[*]Error running toolx @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-br' or tool == '--brutal':
+  try:
+    os.chdir('Brutal')
+    os.system('sudo ./Brutal.sh')
+    logwrite("--[+]Successfully ran brutal @ " + timecheck() + '--')
+  except:
+    logwrite("--[*]Error running brutal @ " + timecheck() + '--')
   gohome()
   exit()
 
