@@ -46,6 +46,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * Windows-Privlege-Escalation - Windows PrivEsc Scripts
 * [Chromepass](<https://github.com/darkarp/chromepass>) - AV-Undetectable Chrome Login Extraction Tool (Local exec)
 * [htbenum](<https://github.com/SolomonSklash/htbenum>) - Offline Local Enum Server (Mainly for HTB)
+* [PeekABoo](<https://github.com/Viralmaniar/PeekABoo>) - Enables RDP Service (Only on WinRM Machines - Enabled by default on WinServer machines but not client machines)
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool
