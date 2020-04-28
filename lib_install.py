@@ -190,11 +190,6 @@ os.system("sudo wget https://github.com/Viralmaniar/PeekABoo/releases/download/v
 os.system("sudo wget https://github.com/Viralmaniar/PeekABoo/releases/download/v1.0/rdpe.ps1")
 os.system("sudo wget https://github.com/Viralmaniar/PeekABoo/releases/download/v1.0/testconnection.ps1")
 os.chdir('../..')
-print("[*]Installing HT-WPS...")
-os.system("sudo git clone https://github.com/SilentGhostX/HT-WPS-Breaker")
-os.chdir("HT-WPS-Breaker")
-os.system("sudo chmod 777 HT-WB.sh")
-os.chdir('..')
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\
 # WARNING: heavily refactored in 0.9.0 release.  Please review and
