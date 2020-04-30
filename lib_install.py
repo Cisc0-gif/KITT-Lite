@@ -190,6 +190,17 @@ os.system("sudo wget https://github.com/Viralmaniar/PeekABoo/releases/download/v
 os.system("sudo wget https://github.com/Viralmaniar/PeekABoo/releases/download/v1.0/rdpe.ps1")
 os.system("sudo wget https://github.com/Viralmaniar/PeekABoo/releases/download/v1.0/testconnection.ps1")
 os.chdir('../..')
+print('[*]Installing webkiller...')
+os.system('sudo git clone https://github.com/ultrasecurity/webkiller.git')
+os.chdir('webkiller')
+os.system('sudo pip3 install -r requirements.txt')
+os.system('sudo chmod 777 webkiller.py')
+os.chdir('..')
+print('[*]Installing evil-droid...')
+os.system('sudo git clone https://github.com/M4sc3r4n0/Evil-Droid.git')
+os.chdir('Evil-Droid')
+os.system('sudo chmod 777 evil-droid')
+os.chdir('..')
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\
 # WARNING: heavily refactored in 0.9.0 release.  Please review and

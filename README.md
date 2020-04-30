@@ -23,6 +23,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [TIDoS-Framework](<https://github.com/0xInfection/TIDoS-Framework>) - WebApp Recon and Vulnerability Analysis Framework
 * [Domained](<https://github.com/TypeError/domained>) - Subdomain Enumeration Tool
 * [Vulnx](<https://github.com/anouarbensaad/VulnX.git>) - WebApp Bot Auto Shell Injector
+* [Webkiller](<https://github.com/ultrasecurity/webkiller.git>) - Domain OSINT Tool
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -47,6 +48,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Chromepass](<https://github.com/darkarp/chromepass>) - AV-Undetectable Chrome Login Extraction Tool (Local exec)
 * [htbenum](<https://github.com/SolomonSklash/htbenum>) - Offline Local Enum Server (Mainly for HTB)
 * [PeekABoo](<https://github.com/Viralmaniar/PeekABoo>) - Enables RDP Service (Only on WinRM Machines - Enabled by default on WinServer machines but not client machines)
+* [Evil-Droid](<https://github.com/M4sc3r4n0/Evil-Droid.git>) - Android APK Payloading & Embedding Framework
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool

@@ -38,6 +38,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -pi, --phone_infoga                  Search for Phone # info')
   print('        -ka, --katana                        Google Dork Scanner')
   print('        -td, --tidos                         WebApp Pentesting Framework')
+  print('        -wk, --webkiller                     Domain OSINT Tool')
   print('        /opt/KITT-Lite/vulnx/                WebApp Bot Auto Shell Injector')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('Cracking:')
@@ -50,6 +51,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
   print('PrivEsc:')
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
+  print('        -ed, --evildroid                     Android APK Payloading & Embedding Framework')
   print('Network Cracking:')
   print('        -nc, --netcrack                      Network Cracking Tool Suite')
   print('        -ap, --apspoof                       AP Spoofing Tool')
@@ -81,8 +83,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', -'wk', '-ed']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid']
 
 tool = sys.argv[1]
 
@@ -422,6 +424,26 @@ if tool == '-br' or tool == '--brutal':
     logwrite("--[+]Successfully ran brutal @ " + timecheck() + '--')
   except:
     logwrite("--[*]Error running brutal @ " + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-wk' or tool == '--webkiller':
+  try:
+    os.chdir('webkiller')
+    os.system('sudo python3 webkiller.py')
+    logwrite("--[+]Successfully ran webkiller @ " + timecheck() + '--')
+  except:
+    logwrite("--[*]Error running brutal @ " + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-ed' or tool == '--evildroid':
+  try:
+    os.chdir('Evil-Droid')
+    os.system('sudo ./evil-droid')
+    logwrite("--[+]Successfully ran evil-droid @ " + timecheck() + '--')
+  except:
+    logwrite("--[*]Error running evil-droid @ " + timecheck() + '--')
   gohome()
   exit()
 
