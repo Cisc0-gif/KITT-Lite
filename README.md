@@ -34,6 +34,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [SocialBox](<https://github.com/TunisianEagles/SocialBox.git>) - Social Media Password Bruteforcer
 * [Seeker](<https://github.com/thewhiteh4t/seeker>) - Social Engineering IP GeoLocator (Give/Take 30m)
 * [BruteDum](<https://github.com/GitHackTools/BruteDum>) - Common Protocol Bruteforcer
+* [SayCheese](<https://github.com/thelinuxchoice/saycheese>) - Takes Webcam pic on site visit
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
@@ -49,6 +50,8 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [htbenum](<https://github.com/SolomonSklash/htbenum>) - Offline Local Enum Server (Mainly for HTB)
 * [PeekABoo](<https://github.com/Viralmaniar/PeekABoo>) - Enables RDP Service (Only on WinRM Machines - Enabled by default on WinServer machines but not client machines)
 * [Evil-Droid](<https://github.com/M4sc3r4n0/Evil-Droid.git>) - Android APK Payloading & Embedding Framework
+* [Catchyou](<https://github.com/thelinuxchoice/catchyou>) - Undetectable Win32 Payload Generator
+* [firefox_decrypt](<https://github.com/Unode/firefox_decrypt>) - Mozilla Browser Saved Login Extractor
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool

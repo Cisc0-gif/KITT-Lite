@@ -48,6 +48,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -st, --set                           Social Engineering Toolkit (SET)')
   print('        -sb, --socialbox                     Social Media Password Bruteforcer')
   print('        -bd, --brutedum                      Common Protocol Bruteforcer')
+  print('        -cy, --catchyou                      Undetectable Win32 Payload Generator')
+  print('        -sy, --saycheese                     Takes Webcam shots on link visit')
   print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
   print('PrivEsc:')
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
@@ -83,8 +85,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese']
 
 tool = sys.argv[1]
 
@@ -444,6 +446,26 @@ if tool == '-ed' or tool == '--evildroid':
     logwrite("--[+]Successfully ran evil-droid @ " + timecheck() + '--')
   except:
     logwrite("--[*]Error running evil-droid @ " + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-cy' or tool == '--catchyou':
+  try:
+    os.chdir('catchyou')
+    os.system('sudo ./catchyou.sh')
+    logwrite("--[+]Successfully ran catchyou @ " + timecheck() + '--')
+  except:
+    logwrite("--[*]Error running catchyou @ " + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-sy' or tool == '--saycheese':
+  try:
+    os.chdir('saycheese')
+    os.system('sudo ./saycheese.sh')
+    logwrite("--[+]Successfully ran saycheese @ " + timecheck() + '--')
+  except:
+    logwrite("--[*]Error running saycheese @ " + timecheck() + '--')
   gohome()
   exit()
 
