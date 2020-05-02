@@ -52,6 +52,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Evil-Droid](<https://github.com/M4sc3r4n0/Evil-Droid.git>) - Android APK Payloading & Embedding Framework
 * [Catchyou](<https://github.com/thelinuxchoice/catchyou>) - Undetectable Win32 Payload Generator
 * [firefox_decrypt](<https://github.com/Unode/firefox_decrypt>) - Mozilla Browser Saved Login Extractor
+* [Powershell-reverse-tcp](<https://github.com/ivan-sincek/powershell-reverse-tcp>) - Reverse TCP Powershell Payload w/ Obfuscation
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool
