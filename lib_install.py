@@ -214,6 +214,8 @@ os.chdir('..')
 print('[*]Installing firefox_decrypt...')
 os.chdir('escalate')
 os.system('sudo git clone https://github.com/Unode/firefox_decrypt')
+print('[*]Installing invoker...')
+os.system('sudo git clone https://github.com/ivan-sincek/invoker')
 os.chdir('..')
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\
