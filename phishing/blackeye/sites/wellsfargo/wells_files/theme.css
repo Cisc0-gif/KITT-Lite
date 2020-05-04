@@ -1,0 +1,257 @@
+html {
+  text-size-adjust: 100%;
+}
+body[theme="commitment"] {
+  margin: 0;
+}
+body[theme="commitment"] #header {
+  background-color: #fff;
+}
+body[theme="commitment"] #header #mainheader {
+  min-width: 0;
+  margin: 0;
+  width: 100%;
+}
+body[theme="commitment"] #header #mainheader #masthead {
+  padding-left: 4px;
+  height: auto;
+}
+body[theme="commitment"] .antiClickjackContent {
+  background-color: #fff;
+}
+body[theme="commitment"] #utility,
+body[theme="commitment"] #topSearch {
+  display: none;
+}
+body[theme="commitment"] #commitment-hero {
+  width: 100%;
+  border-top: solid 10px #bb0826;
+  display: flex;
+}
+body[theme="commitment"] #commitment-hero .message {
+  background: linear-gradient(#7a6855 0, #574537 100%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+  width: 100%;
+}
+body[theme="commitment"] #commitment-hero .message h1 {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+body[theme="commitment"] #commitment-hero .message p {
+  font-family: Verdana, Arial, Sans-Serif;
+  font-size: 1em;
+  margin: 0 0 20px;
+  line-height: 1.4em;
+}
+body[theme="commitment"] #commitment-hero .message a.c7 {
+  background: linear-gradient(#ce4c00 0, #c94a00 50%, #b54300 52%, #a43d01 100%);
+  padding: 5px 15px;
+  text-shadow: #a14300 1px 1px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-size: 104%;
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.5em;
+}
+body[theme="commitment"] #commitment-signon-body {
+  padding: 8px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #574537;
+}
+body[theme="commitment"] #commitment-signon-body #skip {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 1em;
+}
+body[theme="commitment"] #commitment-signon-body form label {
+  font-weight: normal;
+  font-family: verdana, arial, helvetica, sans-serif;
+  margin-bottom: 3px;
+  font-size: 0.9em;
+  display: block;
+}
+body[theme="commitment"] #commitment-signon-body form input {
+  height: 3em;
+  line-height: 3em;
+  vertical-align: middle;
+  width: calc(100% - 10px);
+  border-radius: 5px;
+  border: 1px solid #8f8f8f;
+  padding-left: 8px;
+  font-size: 1em;
+}
+body[theme="commitment"] #commitment-signon-body form [control="forms:input:submit"] {
+  display: block;
+  height: 3em;
+  width: 100%;
+  background-color: #d50000;
+  margin: 14px 0 8px;
+  color: #fff;
+  border: none;
+  padding: 0;
+  font-size: 1em;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: normal;
+}
+body[theme="commitment"] #commitment-signon-body form [control="forms:input:submit"]:active,
+body[theme="commitment"] #commitment-signon-body form [control="forms:input:submit"]:hover {
+  background-color: #bb0826;
+  cursor: pointer;
+}
+body[theme="commitment"] #commitment-signon-body form [control="forms:link"] {
+  line-height: 2em;
+}
+body[theme="commitment"] #commitment-signon-body form .nucaptcha-widget-container {
+  margin: 20px 0 0;
+}
+body[theme="commitment"] #commitment-signon-body form .nucaptcha-widget-container #media-container {
+  padding: 0;
+  width: calc(100% - 40px);
+  border-radius: 5px;
+  border: 1px solid #8f8f8f;
+}
+body[theme="commitment"] #commitment-signon-body form .nucaptcha-widget-container #nucaptcha-button-wrapper {
+  right: 0;
+  left: auto;
+}
+body[theme="commitment"] #commitment-signon-body form #faqLinkMob {
+  font-weight: bold;
+}
+body[theme="commitment"] #commitment-signon-body aside.faq-aside {
+  display: none;
+}
+body[theme="commitment"] #footer .hz-navlinks {
+  padding-left: 0;
+}
+body[theme="commitment"][device-type=Desktop],
+body[theme="commitment"][device-type=Tablet] {
+  max-width: 975px;
+  margin: 0 auto;
+  background-color: #ebeff8;
+}
+body[theme="commitment"][device-type=Desktop] #utility,
+body[theme="commitment"][device-type=Tablet] #utility,
+body[theme="commitment"][device-type=Desktop] #topSearch,
+body[theme="commitment"][device-type=Tablet] #topSearch {
+  display: block;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-hero,
+body[theme="commitment"][device-type=Tablet] #commitment-hero {
+  height: 185px;
+  width: 100%;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-hero .banner,
+body[theme="commitment"][device-type=Tablet] #commitment-hero .banner {
+  background: url(../../images/wellsfargo-storefront_outdoors-street_cars-and-people-crossing_722x185.png) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-hero .message,
+body[theme="commitment"][device-type=Tablet] #commitment-hero .message {
+  width: 350px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 40px;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-hero .message h1,
+body[theme="commitment"][device-type=Tablet] #commitment-hero .message h1 {
+  font-size: 240%;
+  width: 100%;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-hero .message p,
+body[theme="commitment"][device-type=Tablet] #commitment-hero .message p {
+  font-size: 110%;
+  width: 100%;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-hero .message a,
+body[theme="commitment"][device-type=Tablet] #commitment-hero .message a {
+  align-self: center;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body,
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body {
+  padding: 20px;
+  margin: 0 10px;
+  box-shadow: 0px 3px 5px 0px #b8b8b8;
+  background-color: #fff;
+  position: relative;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body #skip,
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body #skip {
+  font-size: 1.5em;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body input,
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body input {
+  width: 18em;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body [control="forms:input:submit"],
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body [control="forms:input:submit"] {
+  position: absolute;
+  margin-left: 240px;
+  margin-top: -60px;
+  width: 7em;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body .nucaptcha-widget-container,
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body .nucaptcha-widget-container {
+  margin: 20px 0 23px;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body .nucaptcha-widget-container #media-container,
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body .nucaptcha-widget-container #media-container {
+  padding: 3px 0 0;
+  width: 193px;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body .nucaptcha-widget-container #nucaptcha-button-wrapper,
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body .nucaptcha-widget-container #nucaptcha-button-wrapper {
+  right: auto;
+  left: 200px;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body aside.faq-aside,
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body aside.faq-aside {
+  display: block;
+  position: relative;
+  right: 10px;
+  float: right;
+  border-top: 2px solid #dfdfdf;
+  border-bottom: 2px solid #dfdfdf;
+  max-width: 260px;
+  background-color: #fff;
+  padding: 0 5px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body aside.faq-aside p,
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body aside.faq-aside p {
+  font-weight: bold;
+  font-size: 1.3em;
+  font-family: verdana, arial, helvetica, sans-serif;
+  line-height: 1.1em;
+  margin: 1.3em 0;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body aside.faq-aside p a,
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body aside.faq-aside p a {
+  text-decoration: none;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body form .formPseudoRow,
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body form .formPseudoRow {
+  display: inline-block;
+}
+body[theme="commitment"][device-type=Desktop] #commitment-signon-body #faqLinkMob,
+body[theme="commitment"][device-type=Tablet] #commitment-signon-body #faqLinkMob {
+  display: none;
+}
+body[theme="commitment"][device-type=Desktop] #footer,
+body[theme="commitment"][device-type=Tablet] #footer {
+  border: none;
+}
