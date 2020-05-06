@@ -217,6 +217,18 @@ os.system('sudo git clone https://github.com/Unode/firefox_decrypt')
 print('[*]Installing invoker...')
 os.system('sudo git clone https://github.com/ivan-sincek/invoker')
 os.chdir('..')
+print('[*]Installing badmod...')
+os.system('sudo git clone https://github.com/MrSqar-Ye/BadMod.git')
+os.chdir('BadMod')
+os.system('sudo chmod 777 -R *')
+os.system('sudo ./INSTALL')
+os.chdir('..')
+print('[*]Installing shellphish...')
+os.system('sudo git clone https://github.com/thelinuxchoice/shellphish')
+os.chdir('shellphish')
+os.system('sudo chmod 777 shellphish.sh')
+os.chdir('..')
+#WORK_HERE
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\
 # WARNING: heavily refactored in 0.9.0 release.  Please review and

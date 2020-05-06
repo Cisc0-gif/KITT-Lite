@@ -39,6 +39,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -ka, --katana                        Google Dork Scanner')
   print('        -td, --tidos                         WebApp Pentesting Framework')
   print('        -wk, --webkiller                     Domain OSINT Tool')
+  print('        -bm, --badmod                        Website Scanner & Auto Exploiter')
   print('        /opt/KITT-Lite/vulnx/                WebApp Bot Auto Shell Injector')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('Cracking:')
@@ -49,6 +50,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -sb, --socialbox                     Social Media Password Bruteforcer')
   print('        -bd, --brutedum                      Common Protocol Bruteforcer')
   print('        -sy, --saycheese                     Takes Webcam shots on link visit')
+  print('        -si, --shellphish                    Blackeye w/ Automated Ngrok')
   print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
   print('PrivEsc:')
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
@@ -85,8 +87,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish']
 
 tool = sys.argv[1]
 
@@ -466,6 +468,25 @@ if tool == '-sy' or tool == '--saycheese':
     logwrite("--[+]Successfully ran saycheese @ " + timecheck() + '--')
   except:
     logwrite("--[*]Error running saycheese @ " + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-bm' or tool == '--badmod':
+  try:
+    os.system('sudo badmod')
+    logwrite("--[+]Successfully ran badmod @ " + timecheck() + '--')
+  except:
+    logwrite("--[*]Error running badmod @ " + timechcek() + '--')
+  gohome()
+  exit()
+
+if tool == '-si' or tool == '--shellphish':
+  try:
+    os.chdir('shellphish')
+    os.system('sudo ./shellphish.sh')
+    logwrite("--[+]Successfully ran shellphish @ " + timecheck() + '--')
+  except:
+    logwrite("--[*]Error running shellphish @ " + timecheck() + '--')
   gohome()
   exit()
 

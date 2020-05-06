@@ -24,6 +24,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Domained](<https://github.com/TypeError/domained>) - Subdomain Enumeration Tool
 * [Vulnx](<https://github.com/anouarbensaad/VulnX.git>) - WebApp Bot Auto Shell Injector
 * [Webkiller](<https://github.com/ultrasecurity/webkiller.git>) - Domain OSINT Tool
+* [BadMod](<https://github.com/MrSqar-Ye/BadMod.git>) - Website Scanner & Auto Exploiter
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -35,6 +36,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Seeker](<https://github.com/thewhiteh4t/seeker>) - Social Engineering IP GeoLocator (Give/Take 30m)
 * [BruteDum](<https://github.com/GitHackTools/BruteDum>) - Common Protocol Bruteforcer
 * [SayCheese](<https://github.com/thelinuxchoice/saycheese>) - Takes Webcam pic on site visit
+* [Shellphish](<https://github.com/thelinuxchoice/shellphish>) - Blackeye w/ Automated Ngrok
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
