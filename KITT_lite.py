@@ -56,6 +56,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
   print('        -ed, --evildroid                     Android APK Payloading & Embedding Framework')
   print('        -cy, --catchyou                      Undetectable Win32 Payload Generator')
+  print('        -lt, --lstools                       Lists all tools hosts on --escalate')
   print('Network Cracking:')
   print('        -nc, --netcrack                      Network Cracking Tool Suite')
   print('        -ap, --apspoof                       AP Spoofing Tool')
@@ -87,8 +88,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools']
 
 tool = sys.argv[1]
 
@@ -487,6 +488,25 @@ if tool == '-si' or tool == '--shellphish':
     logwrite("--[+]Successfully ran shellphish @ " + timecheck() + '--')
   except:
     logwrite("--[*]Error running shellphish @ " + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-lt' or tool == '--lstools':
+  print('[*]BIOS_UBTU_Rooter.sh - Ubuntu BIOS USB Boot Exploit')
+  print('[*]LinEnum - Linux Shell Enumeration Tool')
+  print('[*]Linux - Linux Exploits & Enumeration Scripts')
+  print('[*]Mimikatz_trunk - Windows Post Exploitation Tool')
+  print('[*]mysql - SQL Exploits & Enumeration Scripts')
+  print('[*]passwd_backdoor.sh - Post Exploit /etc/passwd backdoor user inserter')
+  print('[*]pspy - Process Scanner for Linux')
+  print('[*]windows-privesc-check - Windows Privelege Escalation Scripts')
+  print('[*]Windows-Privelege-Escalation - Windows Privelege Escalation Scripts')
+  print('[*]Chrompass - AV-Undetectable Chrome Login Extraction Tool')
+  print('[*]htbenum - Offline Local Enum Server (Mainly for HTB)')
+  print('[*]PeekABoo - Enables RDP Service (WinRM/WinServer only')
+  print('[*]firefox_decrypt - Mozilla Browser Saved Login Extractor')
+  print('[*]Powershell-reverse-tcp - Reverse TCP Powershell Payload w/ Obfuscation')
+  print('[*]Invoker - Post Windows Non-GUI Shell Utility')
   gohome()
   exit()
 
