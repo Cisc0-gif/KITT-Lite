@@ -88,7 +88,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [PTF](<https://github.com/trustedsec/ptf/>) - PenTesting Tool Installation Framework
 * [ClamAV](<https://www.clamav.net/>) - CLI Virus/Malware Scanner
 * [Wotop](<https://github.com/nishitm/wotop>) - Tunnels Internet Traffic Over HTTP
-* [Torghost](<https://github.com/SusmithKrishnan/torghost>) - Directs All Internet Traffic Through Tor Proxy
+* [TorghostNG](<https://github.com/githacktools/TorghostNG>) - Directs All Internet Traffic Through Tor Proxy
 
 ## Getting Started
 

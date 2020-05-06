@@ -78,7 +78,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -fb, --fail2ban                      Fail2ban IP Jail Config')
   print('        -di, --dhcpip                        DHCP IP Receiver')
   print('        /opt/KITT-Lite/wotop/                Tunnels Traffic Over HTTP ')
-  print('        /opt/KITT-Lite/torghost              Filters All Traffic Through Tor Proxy') 
+  print('        /opt/KITT-Lite/TorghostNG            Filters All Traffic Through Tor Proxy') 
   print('Update Tool:')
   print('        -up, --update                        Update packages and git source for KITTlite')
   print('        -pf, --ptf                           PenTesting Framework for Installing and Updating Tools')
