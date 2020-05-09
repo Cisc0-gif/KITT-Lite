@@ -40,6 +40,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -td, --tidos                         WebApp Pentesting Framework')
   print('        -wk, --webkiller                     Domain OSINT Tool')
   print('        -bm, --badmod                        Website Scanner & Auto Exploiter')
+  print('        -w3, --w3af                          WebApp Security Scanner')
   print('        /opt/KITT-Lite/vulnx/                WebApp Bot Auto Shell Injector')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('        /opt/KITT-Lite/deep-explorer/        Tor Browser')
@@ -90,8 +91,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af']
 
 tool = sys.argv[1]
 
@@ -500,6 +501,16 @@ if tool == '-np' or tool == '--nexphisher':
     logwrite("--[+]Successfully ran nexphisher @ " + timecheck() + '--')
   except:
     logwrite("--[*]Error running nexphisher @ " + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-w3' or tool == '--w3af':
+  try:
+    os.chdir('w3af')
+    os.system('sudo ./w3af_console')
+    logwrite("--[+]Successfully ran w3af @ " + timecheck() + '--')
+  except:
+    logwrite("--[*]Error running w3af @ " + timecheck() + '--')
   gohome()
   exit()
 

@@ -26,6 +26,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Webkiller](<https://github.com/ultrasecurity/webkiller.git>) - Domain OSINT Tool
 * [BadMod](<https://github.com/MrSqar-Ye/BadMod.git>) - Website Scanner & Auto Exploiter
 * [Deep-Explorer](<https://github.com/blueudp/deep-explorer>) - .Onion link browser
+* [W3af](<https://github.com/andresriancho/w3af>) - Website Security Scanner
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
