@@ -25,6 +25,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Vulnx](<https://github.com/anouarbensaad/VulnX.git>) - WebApp Bot Auto Shell Injector
 * [Webkiller](<https://github.com/ultrasecurity/webkiller.git>) - Domain OSINT Tool
 * [BadMod](<https://github.com/MrSqar-Ye/BadMod.git>) - Website Scanner & Auto Exploiter
+* [Deep-Explorer](<https://github.com/blueudp/deep-explorer>) - .Onion link browser
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -37,6 +38,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [BruteDum](<https://github.com/GitHackTools/BruteDum>) - Common Protocol Bruteforcer
 * [SayCheese](<https://github.com/thelinuxchoice/saycheese>) - Takes Webcam pic on site visit
 * [Shellphish](<https://github.com/thelinuxchoice/shellphish>) - Blackeye w/ Automated Ngrok
+* [Nexphisher](<https://github.com/htr-tech/nexphisher>) - Webpage Phishing Tool
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
@@ -56,6 +58,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [firefox_decrypt](<https://github.com/Unode/firefox_decrypt>) - Mozilla Browser Saved Login Extractor
 * [Powershell-reverse-tcp](<https://github.com/ivan-sincek/powershell-reverse-tcp>) - Reverse TCP Powershell Payload w/ Obfuscation
 * [Invoker](<https://github.com/ivan-sincek/invoker>) - Post Windows Non-GUI Shell Utility
+* [HiveJack](<https://github.com/Viralmaniar/HiveJack>) - Windows SAM Dump Tool
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool

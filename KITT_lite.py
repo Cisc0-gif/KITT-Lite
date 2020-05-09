@@ -42,6 +42,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -bm, --badmod                        Website Scanner & Auto Exploiter')
   print('        /opt/KITT-Lite/vulnx/                WebApp Bot Auto Shell Injector')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
+  print('        /opt/KITT-Lite/deep-explorer/        Tor Browser')
   print('Cracking:')
   print('        /opt/KITT-Lite/hate_crack/           Automated Hashcat Cracker')
   print('Phising:')
@@ -51,6 +52,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -bd, --brutedum                      Common Protocol Bruteforcer')
   print('        -sy, --saycheese                     Takes Webcam shots on link visit')
   print('        -si, --shellphish                    Blackeye w/ Automated Ngrok')
+  print('        -np, --nexphisher                    Tool for Hosting Phishing Sites')
   print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
   print('PrivEsc:')
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
@@ -88,8 +90,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher']
 
 tool = sys.argv[1]
 
@@ -491,6 +493,16 @@ if tool == '-si' or tool == '--shellphish':
   gohome()
   exit()
 
+if tool == '-np' or tool == '--nexphisher':
+  try:
+    os.chdir('nexphisher')
+    os.system('sudo ./nexphisher')
+    logwrite("--[+]Successfully ran nexphisher @ " + timecheck() + '--')
+  except:
+    logwrite("--[*]Error running nexphisher @ " + timecheck() + '--')
+  gohome()
+  exit()
+
 if tool == '-lt' or tool == '--lstools':
   print('[*]BIOS_UBTU_Rooter.sh - Ubuntu BIOS USB Boot Exploit')
   print('[*]LinEnum - Linux Shell Enumeration Tool')
@@ -507,6 +519,7 @@ if tool == '-lt' or tool == '--lstools':
   print('[*]firefox_decrypt - Mozilla Browser Saved Login Extractor')
   print('[*]Powershell-reverse-tcp - Reverse TCP Powershell Payload w/ Obfuscation')
   print('[*]Invoker - Post Windows Non-GUI Shell Utility')
+  print('[*]HiveJack - Windows SAM Dump Tool')
   gohome()
   exit()
 
