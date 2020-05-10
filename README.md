@@ -108,17 +108,15 @@ If you do not want to install KITT to PATH then simply run ``` python3 lib_insta
 
 To begin the framework, type ``` KITTlite ``` and execute in terminal. 
 
-
 ## Built With
 
 * RPi 3B+ - Micro-Computer Developed by the Raspberry Pi Foundation
 * Kali Linux - Pentesting OS Developed by Offensive Security
 * GitHub - This Website!
 
-
 ## Authors
 
-* **Cisc0-gif** - *Main Contributor/Author*: Ecorp7@protonmail.com
+* **Cisc0-gif** - *Main Contributor/Author*: Ecorp7@protonmail.com : Fergo310#5226
 
 ## License
 
