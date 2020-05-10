@@ -116,7 +116,9 @@ To begin the framework, type ``` KITTlite ``` and execute in terminal.
 
 ## Authors
 
-* **Cisc0-gif** - *Main Contributor/Author*: Ecorp7@protonmail.com : Fergo310#5226
+* **Cisc0-gif** - *Main Contributor/Author*
+* Email: Ecorp7@protonmail.com 
+* Discord: Fergo310#5226
 
 ## License
 
