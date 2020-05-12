@@ -28,6 +28,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Deep-Explorer](<https://github.com/blueudp/deep-explorer>) - .Onion link browser
 * [W3af](<https://github.com/andresriancho/w3af>) - Website Security Scanner
 * [UserRecon](<https://github.com/thelinuxchoice/userrecon>) - Social Media Username Search Tool
+* [Th3inspector](<https://github.com/Moham3dRiahi/Th3inspector>) - Full Stack OSINT Tool
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -70,7 +71,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Wifite2](<https://github.com/derv82/wifite2>) - Network Auditing Tool
 * Ettercap - MiTM Attack Suite
 * [Airgeddon](<https://github.com/v1s1t0r1sh3r3/airgeddon>) - Network Auditing Tool
-* [WiFi-Pumpkin](<https://github.com/P0cL4bs/WiFi-Pumpkin>) - GUI AP Spoofing Tool
+* [WiFipumpkin3](<https://github.com/P0cL4bs/wifipumpkin3>) - Network Cracking Framework
 * [Wifijammer](<https://github.com/DanMcInerney/wifijammer>) - Stationary or Mobile WiFi Jammer
 * [PwnSTAR](<https://github.com/SilverFoxx/PwnSTAR>) - Fake AP Tool Framework
 * [HT-WPS](<https://github.com/SilentGhostX/HT-WPS-Breaker>) - WPS Pin Extractor

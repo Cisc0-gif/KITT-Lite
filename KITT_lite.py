@@ -42,6 +42,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -bm, --badmod                        Website Scanner & Auto Exploiter')
   print('        -w3, --w3af                          WebApp Security Scanner')
   print('        -ur, --userrecon                     Social Media Username Search')
+  print('        -ti, --th3inspector                  Full Stack OSINT Tool')
   print('        /opt/KITT-Lite/vulnx/                WebApp Bot Auto Shell Injector')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('        /opt/KITT-Lite/deep-explorer/        Tor Browser')
@@ -66,6 +67,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -nc, --netcrack                      Network Cracking Tool Suite')
   print('        -ap, --apspoof                       AP Spoofing Tool')
   print('        -pd, --packdump                      Packet Capture Tool')
+  print('        -wp, --wifipumpkin                   Network Cracking Framework')
   print('IoT Exploitation:')
   print('        -hp, --homepwn                       IoT Exploit Tool Suite')
   print('        -pb, --pentbox                       HoneyPot Tool Suite')
@@ -93,13 +95,13 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin']
 
 tool = sys.argv[1]
 
 os.chdir('/opt/KITT-Lite')
-  
+
 def gohome():
   os.chdir('/opt/KITT-Lite')
   
@@ -533,6 +535,24 @@ if tool == '-ws' or tool == '--winspy':
     logwrite('--[+]Successfully ran winspy @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running winspy @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-ti' or tool == '--th3inspector':
+  try:
+    os.system('Th3inspector')
+    logwrite('--[+]Successfully ran th3inspector @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running th3inspector @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-wp' or tool == '--wifipumpkin':
+  try:
+    os.system('sudo wifipumpkin3')
+    logwrite('--[+]Successfully ran wifipumpkin3 @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running wifipumpkin3 @ ' + timecheck() + '--')
   gohome()
   exit()
 
