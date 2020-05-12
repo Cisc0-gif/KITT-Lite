@@ -41,6 +41,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -wk, --webkiller                     Domain OSINT Tool')
   print('        -bm, --badmod                        Website Scanner & Auto Exploiter')
   print('        -w3, --w3af                          WebApp Security Scanner')
+  print('        -ur, --userrecon                     Social Media Username Search')
   print('        /opt/KITT-Lite/vulnx/                WebApp Bot Auto Shell Injector')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('        /opt/KITT-Lite/deep-explorer/        Tor Browser')
@@ -59,6 +60,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
   print('        -ed, --evildroid                     Android APK Payloading & Embedding Framework')
   print('        -cy, --catchyou                      Undetectable Win32 Payload Generator')
+  print('        -ws, --winspy                        Win Reverse Shell Generator w/ IP Poisoning')
   print('        -lt, --lstools                       Lists all tools hosts on --escalate')
   print('Network Cracking:')
   print('        -nc, --netcrack                      Network Cracking Tool Suite')
@@ -91,8 +93,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy']
 
 tool = sys.argv[1]
 
@@ -511,6 +513,26 @@ if tool == '-w3' or tool == '--w3af':
     logwrite("--[+]Successfully ran w3af @ " + timecheck() + '--')
   except:
     logwrite("--[*]Error running w3af @ " + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-ur' or tool == '--userrecon':
+  try:
+    os.chdir('userrecon')
+    os.system('sudo ./userrecon.sh')
+    logwrite('--[+]Successfully ran userrecon @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running userrecon @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-ws' or tool == '--winspy':
+  try:
+    os.chdir('winspy')
+    os.system('sudo ./winspy.sh')
+    logwrite('--[+]Successfully ran winspy @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running winspy @ ' + timecheck() + '--')
   gohome()
   exit()
 

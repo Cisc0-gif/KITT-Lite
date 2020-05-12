@@ -27,6 +27,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [BadMod](<https://github.com/MrSqar-Ye/BadMod.git>) - Website Scanner & Auto Exploiter
 * [Deep-Explorer](<https://github.com/blueudp/deep-explorer>) - .Onion link browser
 * [W3af](<https://github.com/andresriancho/w3af>) - Website Security Scanner
+* [UserRecon](<https://github.com/thelinuxchoice/userrecon>) - Social Media Username Search Tool
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -60,6 +61,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Powershell-reverse-tcp](<https://github.com/ivan-sincek/powershell-reverse-tcp>) - Reverse TCP Powershell Payload w/ Obfuscation
 * [Invoker](<https://github.com/ivan-sincek/invoker>) - Post Windows Non-GUI Shell Utility
 * [HiveJack](<https://github.com/Viralmaniar/HiveJack>) - Windows SAM Dump Tool
+* [Winspy](<https://github.com/Cyb0r9/winspy>) - Windows Reverse Shell Generator w/ IP Poisoning
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool
