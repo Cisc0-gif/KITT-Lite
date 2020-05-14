@@ -573,6 +573,7 @@ if tool == '-lt' or tool == '--lstools':
   print('[*]Powershell-reverse-tcp - Reverse TCP Powershell Payload w/ Obfuscation')
   print('[*]Invoker - Post Windows Non-GUI Shell Utility')
   print('[*]HiveJack - Windows SAM Dump Tool')
+  print('[*]Impacket - Python Network Protocol Tools')
   gohome()
   exit()
 
