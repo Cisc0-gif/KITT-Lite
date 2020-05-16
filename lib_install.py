@@ -156,7 +156,7 @@ os.system("sudo git clone https://github.com/nishitm/wotop")
 os.chdir('wotop')
 os.system('sudo make')
 os.chdir('..')
-print("[*]Installing TorghostNG..."_
+print("[*]Installing TorghostNG...")
 os.system("sudo git clone https://github.com/githacktools/TorghostNG")
 os.chdir('TorghostNG')
 os.system('sudo chmod 777 *')
