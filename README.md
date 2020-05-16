@@ -42,6 +42,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [SayCheese](<https://github.com/thelinuxchoice/saycheese>) - Takes Webcam pic on site visit
 * [Shellphish](<https://github.com/thelinuxchoice/shellphish>) - Blackeye w/ Automated Ngrok
 * [Nexphisher](<https://github.com/htr-tech/nexphisher>) - Webpage Phishing Tool
+* [Lockphish](<https://github.com/thelinuxchoice/lockphish>) - Lock Screen Phishing Tool
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
@@ -64,6 +65,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [HiveJack](<https://github.com/Viralmaniar/HiveJack>) - Windows SAM Dump Tool
 * [Winspy](<https://github.com/Cyb0r9/winspy>) - Windows Reverse Shell Generator w/ IP Poisoning
 * [Impacket](<https://github.com/SecureAuthCorp/impacket>) - Python Network Protocol Tools
+* [Win-Brute-Logon](<https://github.com/DarkCoderSc/win-brute-logon>) - Post Tool For Cracking User Passwords (XP -> 10)
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool
