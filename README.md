@@ -66,6 +66,10 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Winspy](<https://github.com/Cyb0r9/winspy>) - Windows Reverse Shell Generator w/ IP Poisoning
 * [Impacket](<https://github.com/SecureAuthCorp/impacket>) - Python Network Protocol Tools
 * [Win-Brute-Logon](<https://github.com/DarkCoderSc/win-brute-logon>) - Post Tool For Cracking User Passwords (XP -> 10)
+* [Evilreg](<https://github.com/thelinuxchoice/evilreg>) - Windows .reg reverse shell generator 
+
+###Ransomeware
+* [Hidden-Cry](<https://github.com/thelinuxchoice/hidden-cry>) - Windows 256 AES Encryption/Decryption
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool

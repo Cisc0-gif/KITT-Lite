@@ -63,7 +63,10 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -ed, --evildroid                     Android APK Payloading & Embedding Framework')
   print('        -cy, --catchyou                      Undetectable Win32 Payload Generator')
   print('        -ws, --winspy                        Win Reverse Shell Generator w/ IP Poisoning')
+  print('        -er, --evilreg                       Windows .reg reverse shell generator')
   print('        -lt, --lstools                       Lists all tools hosts on --escalate')
+  print('Ransomeware:')
+  print('        -hc, --hiddencry                     Windows AES 256 Encryption/Decryption')
   print('Network Cracking:')
   print('        -nc, --netcrack                      Network Cracking Tool Suite')
   print('        -ap, --apspoof                       AP Spoofing Tool')
@@ -96,8 +99,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-hc']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--hiddencry']
 
 tool = sys.argv[1]
 
@@ -564,6 +567,26 @@ if tool == '-lp' or tool == '--lockphish':
     logwrite('--[+]Successfully ran lockphish @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running lockphish @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-er' or tool == '--evilreg':
+  try:
+    os.chdir('evilreg')
+    os.system('sudo ./evilreg.sh')
+    logwrite('--[+]Successfully ran evilreg @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running evilreg @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-hc' or tool == '--hiddencry':
+  try:
+    os.chdir('hidden-cry')
+    os.system('sudo ./hidden-cry')
+    logwrite('--[+]Successfully ran hidden-cry @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running hidden-cry @ ' + timecheck() + '--')
   gohome()
   exit()
 
