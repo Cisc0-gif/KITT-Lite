@@ -66,7 +66,8 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Winspy](<https://github.com/Cyb0r9/winspy>) - Windows Reverse Shell Generator w/ IP Poisoning
 * [Impacket](<https://github.com/SecureAuthCorp/impacket>) - Python Network Protocol Tools
 * [Win-Brute-Logon](<https://github.com/DarkCoderSc/win-brute-logon>) - Post Tool For Cracking User Passwords (XP -> 10)
-* [Evilreg](<https://github.com/thelinuxchoice/evilreg>) - Windows .reg reverse shell generator 
+* [Evilreg](<https://github.com/thelinuxchoice/evilreg>) - Windows .reg Reverse Shell Generator 
+* [Badlnk](<https://github.com/thelinuxchoice/badlnk>) - Shortcut (.lnk) Reverse Shell Generator
 
 ### Ransomeware
 * [Hidden-Cry](<https://github.com/thelinuxchoice/hidden-cry>) - Windows 256 AES Encryption/Decryption

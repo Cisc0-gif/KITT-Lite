@@ -296,6 +296,11 @@ os.system('sudo git clone https://github.com/thelinuxchoice/evilreg')
 os.chdir('evilreg')
 os.system('sudo chmod 777 evilreg.sh')
 os.chdir('..')
+print('[*]Installing badlnk...')
+os.system('sudo git clone https://github.com/thelinuxchoice/badlnk')
+os.chdir('badlnk')
+os.system('sudo chmod 777 badlnk.sh')
+os.chdir('..')
 #WORK_HERE
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\
