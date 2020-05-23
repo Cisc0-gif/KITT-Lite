@@ -44,6 +44,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Shellphish](<https://github.com/thelinuxchoice/shellphish>) - Blackeye w/ Automated Ngrok
 * [Nexphisher](<https://github.com/htr-tech/nexphisher>) - Webpage Phishing Tool
 * [Lockphish](<https://github.com/thelinuxchoice/lockphish>) - Lock Screen Phishing Tool
+* [SocialFish](<https://github.com/UndeadSec/SocialFish>) - Common Phishing Tool
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
@@ -69,9 +70,14 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Win-Brute-Logon](<https://github.com/DarkCoderSc/win-brute-logon>) - Post Tool For Cracking User Passwords (XP -> 10)
 * [Evilreg](<https://github.com/thelinuxchoice/evilreg>) - Windows .reg Reverse Shell Generator 
 * [Badlnk](<https://github.com/thelinuxchoice/badlnk>) - Shortcut (.lnk) Reverse Shell Generator
+* [HeraKeylogger](<https://github.com/UndeadSec/HeraKeylogger>) - Chrome Keylogger Extension
+* [Enigma](<https://github.com/UndeadSec/Enigma>) - Multiplatform Payload Dropper
 
 ### Ransomeware
 * [Hidden-Cry](<https://github.com/thelinuxchoice/hidden-cry>) - Windows 256 AES Encryption/Decryption
+
+### Trojan Bot Templates
+* [Idisagree](<https://github.com/UndeadSec/Idisagree>) - Trojan Discord Bot
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool
