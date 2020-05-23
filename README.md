@@ -29,6 +29,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [W3af](<https://github.com/andresriancho/w3af>) - Website Security Scanner
 * [UserRecon](<https://github.com/thelinuxchoice/userrecon>) - Social Media Username Search Tool
 * [Th3inspector](<https://github.com/Moham3dRiahi/Th3inspector>) - Full Stack OSINT Tool
+* [BlackDir-Framework](<https://github.com/RedVirus0/BlackDir-Framework.git>) - WebApp Vulnerability Scanner
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker

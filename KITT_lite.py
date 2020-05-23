@@ -46,6 +46,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        /opt/KITT-Lite/vulnx/                WebApp Bot Auto Shell Injector')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('        /opt/KITT-Lite/deep-explorer/        Tor Browser')
+  print('        /opt/KITT-Lite/BlackDir-Framework    WebApp Vulnerability Scanner')
   print('Cracking:')
   print('        /opt/KITT-Lite/hate_crack/           Automated Hashcat Cracker')
   print('Phising:')

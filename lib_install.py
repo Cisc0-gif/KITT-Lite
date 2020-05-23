@@ -301,6 +301,12 @@ os.system('sudo git clone https://github.com/thelinuxchoice/badlnk')
 os.chdir('badlnk')
 os.system('sudo chmod 777 badlnk.sh')
 os.chdir('..')
+print('[*]Installing BlackDir-Framework...')
+os.system('sudo git clone https://github.com/RedVirus0/BlackDir-Framework.git')
+os.chdir('BlackDir-Framework')
+os.system('sudo pip3 install -r requirements.txt')
+os.system('sudo chmod 777 *')
+os.chdir('..')
 #WORK_HERE
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\
