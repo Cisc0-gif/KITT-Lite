@@ -30,6 +30,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [UserRecon](<https://github.com/thelinuxchoice/userrecon>) - Social Media Username Search Tool
 * [Th3inspector](<https://github.com/Moham3dRiahi/Th3inspector>) - Full Stack OSINT Tool
 * [BlackDir-Framework](<https://github.com/RedVirus0/BlackDir-Framework.git>) - WebApp Vulnerability Scanner
+* [Skiptracer](<https://github.com/xillwillx/skiptracer>) - OSINT Scraping Framework *COMING SOON*
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -45,6 +46,8 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Nexphisher](<https://github.com/htr-tech/nexphisher>) - Webpage Phishing Tool
 * [Lockphish](<https://github.com/thelinuxchoice/lockphish>) - Lock Screen Phishing Tool
 * [SocialFish](<https://github.com/UndeadSec/SocialFish>) - Common Phishing Tool
+* [Locator](<https://github.com/thelinuxchoice/locator>) - Geolocator and IP Tracker
+* [EvilApp](<https://github.com/thelinuxchoice/evilapp>) - MiTM Phishing Attack Using APK
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit

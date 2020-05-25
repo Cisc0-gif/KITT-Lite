@@ -59,6 +59,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -np, --nexphisher                    Tool for Hosting Phishing Sites')
   print('        -lp, --lockphish                     Lock Screen Phishing Tool (iPhone/Android Notifications)')
   print('        -sf, --socialfish                    Common Fishing Tool')
+  print('        -lc, --locator                       Geolocator and IP Tracker')
+  print('        -ep, --evilapp                       MiTM Phishing Attack Using APK')
   print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
   print('PrivEsc:')
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
@@ -106,8 +108,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-hc', '-bl', '-sf', '-hk']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--hiddencry', '--badlnk', '--socialfish', '--herakeylogger']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-hc', '-bl', '-sf', '-hk', '-lc', '-ep']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--hiddencry', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp']
 
 tool = sys.argv[1]
 
@@ -634,6 +636,26 @@ if tool == '-ea' or tool == '--enigma':
     logwrite('--[+]Successfully ran Enigma @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running Enigma @ '+ timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-lc' or tool == '--locator':
+  try:
+    os.chdir('locator')
+    os.system('sudo ./locator.sh')
+    logwrite('--[+]Successfully ran Locator @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running Locator @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-ep' or tool == '--evilapp':
+  try:
+    os.chdir('EvilApp')
+    os.system('sudo ./evilapp.sh')
+    logwrite('--[+]Successfully ran EvilApp @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running EvilApp @ ' + timecheck() + '--')
   gohome()
   exit()
 
