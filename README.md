@@ -75,6 +75,8 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Badlnk](<https://github.com/thelinuxchoice/badlnk>) - Shortcut (.lnk) Reverse Shell Generator
 * [HeraKeylogger](<https://github.com/UndeadSec/HeraKeylogger>) - Chrome Keylogger Extension
 * [Enigma](<https://github.com/UndeadSec/Enigma>) - Multiplatform Payload Dropper
+* [Covermyass](<https://github.com/sundowndev/covermyass>) - Covers Your Tracks on UNIX Systems
+* [Leviathan](<https://github.com/leviathan-framework/leviathan.git>) - System Audit Toolkit
 
 ### Ransomeware
 * [Hidden-Cry](<https://github.com/thelinuxchoice/hidden-cry>) - Windows 256 AES Encryption/Decryption

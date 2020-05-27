@@ -71,6 +71,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -bl, --badlnk                        Shortcut (.lnk) Reverse Shell Generator')
   print('        -hk, --herakeylogger                 Chrome Keylogger Extension')
   print('        -ea, --enigma                        Multiplatform Payload Dropper')
+  print('        -lv, --leviathan                     System Audit Toolkit')
   print('        -lt, --lstools                       Lists all tools hosts on --escalate')
   print('Ransomeware:')
   print('        -hc, --hiddencry                     Windows AES 256 Encryption/Decryption')
@@ -108,8 +109,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-hc', '-bl', '-sf', '-hk', '-lc', '-ep']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--hiddencry', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-hc', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--hiddencry', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan']
 
 tool = sys.argv[1]
 
@@ -659,6 +660,16 @@ if tool == '-ep' or tool == '--evilapp':
   gohome()
   exit()
 
+if tool == '-lv' or tool == '--leviathan':
+  try:
+    os.chdir('leviathan')
+    os.system('sudo python leviathan.py')
+    logwrite('--[+]Successfully ran leviathan @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running leviathan @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
 if tool == '-lt' or tool == '--lstools':
   print('[*]BIOS_UBTU_Rooter.sh - Ubuntu BIOS USB Boot Exploit')
   print('[*]LinEnum - Linux Shell Enumeration Tool')
@@ -677,6 +688,7 @@ if tool == '-lt' or tool == '--lstools':
   print('[*]Invoker - Post Windows Non-GUI Shell Utility')
   print('[*]HiveJack - Windows SAM Dump Tool')
   print('[*]Win-Brute-Logon - Post Tool For Cracking User Passwords (XP -> 10)')
+  print('[*]Covermyass - Covers Your Tracks on UNIX Systems')
   gohome()
   exit()
 
