@@ -3,6 +3,7 @@ import os
 from colorama import Fore, Style
 
 interface = input(Fore.CYAN + '[*]Enter interface to use: ' + Style.RESET_ALL)
+ops = list(range(1,17))
 
 def wait():
   wait = input('PRESS ENTER TO CONTINUE')
@@ -239,7 +240,7 @@ def main():
     os.system('airmon-ng stop ' + interface + 'mon')
     os.system('ifconfig ' + interface + ' up')
     exit()
-  else:
+  elif int(in_put) not in ops:
     print(Fore.RED + '[*]Not an option!' + Style.RESET_ALL)
   main()
 main()
