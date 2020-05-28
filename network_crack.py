@@ -29,7 +29,8 @@ def main():
   print('*[12] WifiJammer (Use for RPi or w/ multiple adapters)   *')
   print('*[13] HT-WPS (WPS Pin Extraction Tool)                   *')
   print('*[14] Kismet GPS Wardriver                               *')
-  print('*[15] Exit                                               *' + Style.RESET_ALL)
+  print('*[15] Linset WPA/WPA2 MiTM Attack Tool                   *')
+  print('*[16] Exit                                               *' + Style.RESET_ALL)
   print('==========================================================')
   in_put = input(': ')
   if in_put == '1':
@@ -224,6 +225,15 @@ def main():
     print(Fore.CYAN + "[*]Upload kismet data to Wigle.net to create network map" + Style.RESET_ALL)
     print(Fore.GREEN + "[+]Done!" + Style.RESET_ALL)
   if in_put == '15':
+    print(Fore.CYAN + '[*]Starting linset...' + Style.RESET_ALL)
+    try:
+      os.chdir('linset')
+      os.system('sudo ./linset')
+      print(Fore.GREEN + '[*]Successfully ran linset' + Style.RESET_ALL)
+    except:
+      print(Fore.RED + '[*]Error running linset' + Style.RESET_ALL)
+    os.chdir('..')
+  if in_put == '16':
     print(Fore.CYAN + '[*]Shutting down ' + interface + 'mon...' + Style.RESET_ALL)
     os.system('airmon-ng stop ' + interface)
     os.system('airmon-ng stop ' + interface + 'mon')

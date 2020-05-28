@@ -352,6 +352,11 @@ os.system('sudo git clone https://github.com/leviathan-framework/leviathan.git')
 os.chdir('leviathan')
 os.system('sudo pip install -r requirements.txt')
 os.chdir('..')
+print('[*]Installing linset...')
+os.system('sudo git clone https://github.com/vk496/linset')
+os.chdir('linset')
+os.system('sudo chmod 777 linset')
+os.chdir('..')
 #WORK_HERE
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\
