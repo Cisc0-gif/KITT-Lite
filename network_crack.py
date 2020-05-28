@@ -29,7 +29,7 @@ def main():
   print('*[12] WifiJammer (Use for RPi or w/ multiple adapters)   *')
   print('*[13] HT-WPS (WPS Pin Extraction Tool)                   *')
   print('*[14] Kismet GPS Wardriver                               *')
-  print('*[15] Linset WPA/WPA2 MiTM Attack Tool                   *')
+  print('*[15] Linset (WPA/WPA2 MiTM Attack Tool)                 *')
   print('*[16] Exit                                               *' + Style.RESET_ALL)
   print('==========================================================')
   in_put = input(': ')
