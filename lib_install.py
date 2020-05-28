@@ -357,6 +357,12 @@ os.system('sudo git clone https://github.com/vk496/linset')
 os.chdir('linset')
 os.system('sudo chmod 777 linset')
 os.chdir('..')
+print('[*]Installing hidden-cry...')
+os.system('sudo git clone https://github.com/sivazozo/hidden-cry')
+os.chdir('hidden-cry')
+os.system('sudo chmod 777 hidden-cry')
+os.system('sudo apt-get install mingw-w64 -y')
+os.chdir('..')
 #WORK_HERE
 print('[*]Writing fail2ban configurations w/ bantime 5ms, findtime 5ms, and maxretry 3...')
 fail2ban = """\

@@ -78,6 +78,9 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Covermyass](<https://github.com/sundowndev/covermyass>) - Covers Your Tracks on UNIX Systems
 * [Leviathan](<https://github.com/leviathan-framework/leviathan.git>) - System Audit Toolkit
 
+### Ransomeware
+* [Hidden-cry](<https://github.com/sivazozo/hidden-cry>) - Windows AES 256 Bit Encrypter/Decrypter
+
 ### Trojan Bot Templates
 * [Idisagree](<https://github.com/UndeadSec/Idisagree>) - Trojan Discord Bot
 
