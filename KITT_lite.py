@@ -61,6 +61,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -sf, --socialfish                    Common Fishing Tool')
   print('        -lc, --locator                       Geolocator and IP Tracker')
   print('        -ep, --evilapp                       MiTM Phishing Attack Using APK')
+  print('        -df, --droidfiles                    Android File Downloader Using APK')
   print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
   print('PrivEsc:')
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
@@ -72,6 +73,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -hk, --herakeylogger                 Chrome Keylogger Extension')
   print('        -ea, --enigma                        Multiplatform Payload Dropper')
   print('        -lv, --leviathan                     System Audit Toolkit')
+  print('        -af, --avetfabric                    Windows AV Evasive Payloader')
   print('        -lt, --lstools                       Lists all tools hosts on --escalate')
   print('Ransomeware:')
   print('        -hc, --hiddencry                     Windows AES 256 Bit Encrypter/Decrypter')
@@ -109,8 +111,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric']
 
 tool = sys.argv[1]
 
@@ -667,6 +669,26 @@ if tool == '-hc' or tool == '--hiddencry':
     logwrite('--[+]Successfully ran hidden-cry @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running hidden-cry @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-df' or tool == '--droidfiles':
+  try:
+    os.chdir('droidfiles')
+    os.system('sudo ./droidfiles.sh')
+    logwrite('--[+]Successfully ran droidfiles @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running droidfiles @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-af' or tool == '--avetfabric':
+  try:
+    os.chdir('avet')
+    os.system('sudo python3 avet.py')
+    logwrite('--[+]Successfully ran avet_fabric @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running avet_fabric @ ' + timecheck() + '--')
   gohome()
   exit()
 

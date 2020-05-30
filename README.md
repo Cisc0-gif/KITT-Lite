@@ -48,6 +48,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [SocialFish](<https://github.com/UndeadSec/SocialFish>) - Common Phishing Tool
 * [Locator](<https://github.com/thelinuxchoice/locator>) - Geolocator and IP Tracker
 * [EvilApp](<https://github.com/thelinuxchoice/evilapp>) - MiTM Phishing Attack Using APK
+* [Droidfiles](<https://github.com/thelinuxchoice/droidfiles>) - Downloads Files from Android Dirs from .apk payload
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
@@ -77,6 +78,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Enigma](<https://github.com/UndeadSec/Enigma>) - Multiplatform Payload Dropper
 * [Covermyass](<https://github.com/sundowndev/covermyass>) - Covers Your Tracks on UNIX Systems
 * [Leviathan](<https://github.com/leviathan-framework/leviathan.git>) - System Audit Toolkit
+* [Avet_Fabric](<https://github.com/govolution/avet>) - Windows AV Evasive Payloads
 
 ### Ransomeware
 * [Hidden-cry](<https://github.com/sivazozo/hidden-cry>) - Windows AES 256 Bit Encrypter/Decrypter
