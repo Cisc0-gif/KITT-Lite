@@ -12,6 +12,7 @@ print('[*]Configuring Apt Installation Sources...')
 sources = """\
 deb http://http.kali.org/kali kali-rolling main non-free contrib
 deb-src http://http.kali.org/kali kali-rolling main non-free contrib
+deb http://old.kali.org/kali moto main non-free contrib
 """
 with open('/etc/apt/sources.list', 'w+') as f: #config sources list for full package installation
   f.write(sources)
@@ -36,6 +37,9 @@ os.system('sudo pip install -U -I pyusb')
 os.system('sudo pip install -U platformio')
 os.system('sudo pip install -r requirements2.txt')
 os.system('sudo pip3 install -r requirements3.txt')
+print('[*]Setting up snort...')
+os.system('sudo mkdir snortlogs')
+os.system('sudo apt-get install snort')
 print('[*]Installing hg libs...')
 os.chdir('hg')
 os.system('sudo git clone https://github.com/NullArray/AutoSploit')

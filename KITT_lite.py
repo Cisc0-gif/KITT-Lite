@@ -96,6 +96,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -gp, --gpioctl                       GPIO Controller (Only for RPi)')
   print('        -br, --brutal                        RubberDucky Payload Generator (Teensy, Digispark, Ardu Leo, Ardu Pro Micro)')
   print('System Security:')
+  print('        -sn, --snort                         Snort NIDS')
   print('        -sp, --sshportrand                   SSH Port Randomizer')
   print('        -sc, --sshautoconfig                 SSHD Config Buff')
   print('        -pc, --proxyconfig                   ProxyChains Config')
@@ -111,8 +112,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort']
 
 tool = sys.argv[1]
 
@@ -689,6 +690,17 @@ if tool == '-af' or tool == '--avetfabric':
     logwrite('--[+]Successfully ran avet_fabric @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running avet_fabric @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-sn' or tool == '--snort':
+  try:
+    ipnet = input('[*]Enter IP net (ex. 192.168.1.0/24): ')
+    print('[*]Putting Snort in NIDS Mode, Enter ^Z to exit...')
+    os.system("sudo snort -d -l snortlogs/ -h " + ipnet + " -A console -c /etc/snort/snort.conf")
+    logwrite('--[+]Successfully ran snort @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running snort @ ' + timecheck() + '--')
   gohome()
   exit()
 
