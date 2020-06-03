@@ -31,6 +31,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Th3inspector](<https://github.com/Moham3dRiahi/Th3inspector>) - Full Stack OSINT Tool
 * [BlackDir-Framework](<https://github.com/RedVirus0/BlackDir-Framework.git>) - WebApp Vulnerability Scanner
 * [Skiptracer](<https://github.com/xillwillx/skiptracer>) - OSINT Scraping Framework *COMING SOON*
+* [Konan](<https://github.com/m4ll0k/Konan>) - Advanced WebApp Dir Scanner
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -49,6 +50,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Locator](<https://github.com/thelinuxchoice/locator>) - Geolocator and IP Tracker
 * [EvilApp](<https://github.com/thelinuxchoice/evilapp>) - MiTM Phishing Attack Using APK
 * [Droidfiles](<https://github.com/thelinuxchoice/droidfiles>) - Downloads Files from Android Dirs from .apk payload
+* [Cuteit](<https://github.com/D4Vinci/Cuteit>) - IP Obfuscator
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
@@ -79,12 +81,15 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Covermyass](<https://github.com/sundowndev/covermyass>) - Covers Your Tracks on UNIX Systems
 * [Leviathan](<https://github.com/leviathan-framework/leviathan.git>) - System Audit Toolkit
 * [Avet_Fabric](<https://github.com/govolution/avet>) - Windows AV Evasive Payloads
+* [ispy](<https://github.com/Cyb0r9/ispy>) - EternalBlue/Bluekeep Scanner/Exploiter
+* [NekoBotV1](<https://github.com/tegal1337/NekoBotV1>) - Auto Exploiter Tool
 
 ### Ransomeware
 * [Hidden-cry](<https://github.com/sivazozo/hidden-cry>) - Windows AES 256 Bit Encrypter/Decrypter
 
-### Trojan Bot Templates
+### Bots
 * [Idisagree](<https://github.com/UndeadSec/Idisagree>) - Trojan Discord Bot
+* [UFOnet](<https://github.com/epsylon/ufonet>) - DDoS Third Party Vector Tool
 
 ### Network Cracking
 * Airsuite-ng - Software suite w/ detector, packet sniffer, WEP and WPA/WPA2-PSK Cracker and analysis tool

@@ -47,6 +47,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('        /opt/KITT-Lite/deep-explorer/        Tor Browser')
   print('        /opt/KITT-Lite/BlackDir-Framework    WebApp Vulnerability Scanner')
+  print('        /opt/KITT-Lite/Konan                 Advanced WebApp Dir Scanner')
   print('Cracking:')
   print('        /opt/KITT-Lite/hate_crack/           Automated Hashcat Cracker')
   print('Phising:')
@@ -62,6 +63,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -lc, --locator                       Geolocator and IP Tracker')
   print('        -ep, --evilapp                       MiTM Phishing Attack Using APK')
   print('        -df, --droidfiles                    Android File Downloader Using APK')
+  print('        -ci, --cuteit                        IP Obfuscator')
   print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
   print('PrivEsc:')
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
@@ -74,11 +76,14 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -ea, --enigma                        Multiplatform Payload Dropper')
   print('        -lv, --leviathan                     System Audit Toolkit')
   print('        -af, --avetfabric                    Windows AV Evasive Payloader')
+  print('        -iy, --ispy                          EternalBlue/Bluekeep Scanner/Exploiter')
+  print('        -nt, --nekobot                       Auto Exploiter Tool')
   print('        -lt, --lstools                       Lists all tools hosts on --escalate')
   print('Ransomeware:')
   print('        -hc, --hiddencry                     Windows AES 256 Bit Encrypter/Decrypter')
-  print('Trojan Bot Templates:')
-  print('        /opt/KITT-Lite/TrojanBot_Templates/Idisagree')
+  print('Bots:')
+  print('        /opt/KITT-Lite/Idisagree             Trojan Discord Bot')
+  print('        /opt/KITT-Lite/ufonet                DDoS 3rd Party Vector Tool')
   print('Network Cracking:')
   print('        -nc, --netcrack                      Network Cracking Tool Suite')
   print('        -ap, --apspoof                       AP Spoofing Tool')
@@ -112,8 +117,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit']
 
 tool = sys.argv[1]
 
@@ -704,6 +709,37 @@ if tool == '-sn' or tool == '--snort':
   gohome()
   exit()
 
+if tool == '-iy' or tool == '--ispy':
+  try:
+    os.chdir('ispy')
+    os.system('sudo ./ispy')
+    logwrite('--[+]Successfully ran ispy @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running ispy @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-nt' or tool == '--nekobot':
+  try:
+    os.chdir('NekoBotV1')
+    os.system('sudo python NekoBot.py')
+    logwrite('--[+]Successfully ran NekoBotV1 @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running NekoBotV1 @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-ci' or tool == '--cuteit':
+  try:
+    ip = input('[*]Enter host IP: ')
+    os.chdir('Cuteit')
+    os.system('sudo python3 Cuteit.py ' + ip)
+    logwrite('--[+]Successfully ran Cuteit @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running Cuteit @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
 if tool == '-lt' or tool == '--lstools':
   print('[*]BIOS_UBTU_Rooter.sh - Ubuntu BIOS USB Boot Exploit')
   print('[*]LinEnum - Linux Shell Enumeration Tool')
@@ -723,6 +759,7 @@ if tool == '-lt' or tool == '--lstools':
   print('[*]HiveJack - Windows SAM Dump Tool')
   print('[*]Win-Brute-Logon - Post Tool For Cracking User Passwords (XP -> 10)')
   print('[*]Covermyass - Covers Your Tracks on UNIX Systems')
+  print('[*]GhostShell - AV Bypass, Anti VM, Anti Disassembly Payload Encoder')
   gohome()
   exit()
 
