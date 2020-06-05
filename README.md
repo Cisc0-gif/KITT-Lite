@@ -83,6 +83,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [Avet_Fabric](<https://github.com/govolution/avet>) - Windows AV Evasive Payloads
 * [ispy](<https://github.com/Cyb0r9/ispy>) - EternalBlue/Bluekeep Scanner/Exploiter
 * [NekoBotV1](<https://github.com/tegal1337/NekoBotV1>) - Auto Exploiter Tool
+* [Eviloffice](<https://github.com/thelinuxchoice/eviloffice>) - Injects Macro & DDE Code into Excel & Word Documents
 
 ### Ransomeware
 * [Hidden-cry](<https://github.com/sivazozo/hidden-cry>) - Windows AES 256 Bit Encrypter/Decrypter

@@ -406,6 +406,8 @@ cd phishing/SET
 sudo pip3 install -r requirements.txt
 sudo python3 setup.py
 cd ../..
+printf " ${BLUE}[*]Installing eviloffice...${NC}\n"
+sudo git clone https://github.com/thelinuxchoice/eviloffice
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

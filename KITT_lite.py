@@ -78,6 +78,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -af, --avetfabric                    Windows AV Evasive Payloader')
   print('        -iy, --ispy                          EternalBlue/Bluekeep Scanner/Exploiter')
   print('        -nt, --nekobot                       Auto Exploiter Tool')
+  print('        /opt/KITT-Lite/eviloffice            Injects Macro & DDE Code into Excel & Word Documents (WINDOWS)')
   print('        -lt, --lstools                       Lists all tools hosts on --escalate')
   print('Ransomeware:')
   print('        -hc, --hiddencry                     Windows AES 256 Bit Encrypter/Decrypter')
