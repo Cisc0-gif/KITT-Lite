@@ -129,12 +129,10 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 ## Getting Started
 
 WARNING: KITT was developed and tested on Kali Linux for RPi, I have not added support for any other distro yet but plan to in the near future.
+WARNING: Installation Takes About 20 Minutes To Finish!
 
-To begin, run ``` ./KITT_INSTALLER.sh ``` to install all necessary libraries and configure PATH usage.
+To begin, run ``` sudo ./setup.sh ``` to install all necessary libraries and configure PATH usage.
 Simply follow all instructions in the installer.
-
-If you do not want to install KITT to PATH then simply run ``` python3 lib_install.py ``` or ``` ./lib_install.py ```to install necessary libraries
-
 
 ### Usage
 
