@@ -35,6 +35,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
+* [FTPBruter](<https://github.com/GitHackTools/FTPBruter>) - FTP Login Brute Forcer
 
 ### Phishing
 * [Blackeye](<https://github.com/thelinuxchoice/blackeye>) - Webpage Phishing Tool
@@ -51,6 +52,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [EvilApp](<https://github.com/thelinuxchoice/evilapp>) - MiTM Phishing Attack Using APK
 * [Droidfiles](<https://github.com/thelinuxchoice/droidfiles>) - Downloads Files from Android Dirs from .apk payload
 * [Cuteit](<https://github.com/D4Vinci/Cuteit>) - IP Obfuscator
+* [TrevorC2](<https://github.com/trustedsec/trevorc2>) - Cmd Injection Masked Phishing Site
 
 ### Enumeration
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
@@ -84,6 +86,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * [ispy](<https://github.com/Cyb0r9/ispy>) - EternalBlue/Bluekeep Scanner/Exploiter
 * [NekoBotV1](<https://github.com/tegal1337/NekoBotV1>) - Auto Exploiter Tool
 * [Eviloffice](<https://github.com/thelinuxchoice/eviloffice>) - Injects Macro & DDE Code into Excel & Word Documents
+* [Gtfo](<https://github.com/t0thkr1s/gtfo>) - Unix Binary Search Tool
 
 ### Ransomeware
 * [Hidden-cry](<https://github.com/sivazozo/hidden-cry>) - Windows AES 256 Bit Encrypter/Decrypter

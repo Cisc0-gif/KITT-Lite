@@ -564,9 +564,27 @@ else
   cd ..
 fi
 if [ -d "eviloffice" ]; then
-  printf "${GREEN}[+]Eviloffice Installed${NC}\n"
+  printf "${GREEN}[+] Eviloffice Installed${NC}\n"
 else
   sudo git clone https://github.com/thelinuxchoice/eviloffice
+fi
+if [ -d "FTPBruter" ]; then
+  printf "${GREEN}[+] FTPBruter Installed${NC}\n"
+else
+  sudo git clone https://github.com/GitHackTools/FTPBruter
+fi
+if [ -d "gtfo" ]; then
+  printf "${GREEN}[+] Gtfo Installed${NC}\n"
+else
+  sudo git clone https://github.com/t0thkr1s/gtfo
+fi
+if [ -d "trevorc2" ]; then
+  printf "${GREEN}[+] TrevorC2 Installed${NC}\n"
+else
+  sudo git clone https://github.com/trustedsec/trevorc2
+  cd trevorc2
+  sudo pip install -r requirements.txt
+  cd ..
 fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"
 

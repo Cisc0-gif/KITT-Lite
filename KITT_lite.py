@@ -49,6 +49,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        /opt/KITT-Lite/BlackDir-Framework    WebApp Vulnerability Scanner')
   print('        /opt/KITT-Lite/Konan                 Advanced WebApp Dir Scanner')
   print('Cracking:')
+  print('        -tb, --ftpbruter                     FTP Login Brute Forcer')
   print('        /opt/KITT-Lite/hate_crack/           Automated Hashcat Cracker')
   print('Phising:')
   print('        -be, --blackeye                      Tool for Hosting Phishing Sites')
@@ -65,6 +66,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -df, --droidfiles                    Android File Downloader Using APK')
   print('        -ci, --cuteit                        IP Obfuscator')
   print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
+  print('        /opt/KITT-Lite/trevorc2              Cmd Injection Masked Phishing Site')
   print('PrivEsc:')
   print('        -pe, --escalate                      SimpleHTTPServer w/ PrivEsc scripts on port 80')
   print('        -ed, --evildroid                     Android APK Payloading & Embedding Framework')
@@ -118,8 +120,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci', '-tb']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit', '--ftpbruter']
 
 tool = sys.argv[1]
 
@@ -744,6 +746,16 @@ if tool == '-ci' or tool == '--cuteit':
   gohome()
   exit()
 
+if tool == '-tb' or tool == '--ftpbruter':
+  try:
+    os.chdir('FTPBruter')
+    os.system('sudo python3 ftpbruter.py')
+    logwrite('--[+]Successfully ran ftpbruter @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running Cuteit @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
 if tool == '-lt' or tool == '--lstools':
   print('[*]BIOS_UBTU_Rooter.sh - Ubuntu BIOS USB Boot Exploit')
   print('[*]LinEnum - Linux Shell Enumeration Tool')
@@ -764,6 +776,7 @@ if tool == '-lt' or tool == '--lstools':
   print('[*]Win-Brute-Logon - Post Tool For Cracking User Passwords (XP -> 10)')
   print('[*]Covermyass - Covers Your Tracks on UNIX Systems')
   print('[*]GhostShell - AV Bypass, Anti VM, Anti Disassembly Payload Encoder')
+  print('[*]gtfo - Unix Binary Search Tool')
   gohome()
   exit()
 
