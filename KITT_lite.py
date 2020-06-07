@@ -407,7 +407,7 @@ if tool == '-up' or tool == '--update':
     print('Updating git source for KITTlite...')
     os.system('sudo git pull origin master')
     print('Making sure all repos are caught up...')
-    os.system('sudo ./catchup.sh'
+    os.system('sudo ./catchup.sh')
     wait()
     logwrite('--[+]Successfully updated packages and git source @ ' + timecheck() + '--')
   except:
