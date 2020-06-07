@@ -15,7 +15,7 @@ cd /opt/KITT-Lite/hg
 
 printf "${BLUE}[*] Installing New Repos...${NC}\n"
 if [ -d "AutoSploit" ]; then
-  printf "${GREEN}[+] AutoSploit Installed${NC\n"
+  printf "${GREEN}[+] AutoSploit Installed${NC}\n"
 else
   sudo git clone https://github.com/NullArray/AutoSploit.git
   cd AutoSploit
