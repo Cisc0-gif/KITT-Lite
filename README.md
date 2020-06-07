@@ -135,6 +135,8 @@ WARNING: Installation Takes About 20 Minutes To Finish!
 
 To begin, run ``` sudo ./setup.sh ``` to install all necessary libraries and configure PATH usage. Simply follow all instructions in the installer.
 
+If you want to only install the tools, run ``` sudo ./catchup.sh ``` 
+
 ### Usage
 
 To begin the framework, type ``` KITTlite ``` and execute in terminal. 
