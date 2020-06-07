@@ -22,7 +22,7 @@ else
   sudo chmod +x install.sh
   sudo ./install.sh
   cd ..
-fi 
+fi
 if [ -d "Drupalgeddon2" ]; then
   printf "${GREEN}[+] Drupalgeddon2 Installed${NC}\n"
 else
@@ -199,7 +199,7 @@ if [ -d "BruteDum" ]; then
 else
   sudo git clone https://github.com/GitHackTools/BruteDum.git
 fi
-if [ -d "Tool-x" ]; then
+if [ -d "Tool-X" ]; then
   printf "${GREEN}[+] Tool-X Installed${NC}\n"
 else
   sudo git clone https://github.com/Rajkumrdusad/Tool-X.git
@@ -279,7 +279,7 @@ else
   sudo git clone https://github.com/ivan-sincek/invoker.git
 fi
 cd ..
-if [ -d "badmod" ]; then
+if [ -d "BadMod" ]; then
   printf "${GREEN}[+] Badmod Installed${NC}\n"
 else
   sudo git clone https://github.com/MrSqar-Ye/BadMod.git
@@ -306,7 +306,7 @@ else
   cd ..
 fi
 cd escalate
-if [ -d "hivejack" ]; then
+if [ -f "HiveJack.exe" ]; then
   printf "${GREEN}[+] Hivejack Installed${NC}\n"
 else
   sudo wget https://github.com/Viralmaniar/HiveJack/releases/download/v1.0/HiveJack.exe
@@ -534,7 +534,7 @@ else
   sudo python3 setup.py build
   cd ..
 fi
-if [ -d "nekobot" ]; then
+if [ -d "NekoBotV1" ]; then
   printf "${GREEN}[+]  NekoBotV1 Installed${NC}\n"
 else
   sudo git clone https://github.com/tegal1337/NekoBotV1.git
