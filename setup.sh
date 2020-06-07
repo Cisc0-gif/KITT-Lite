@@ -151,6 +151,7 @@ cd hate_crack
 sudo python hate_crack.py
 printf " ${RED}[!]config.json file generated! User configuration needed in /opt/KITT-Lite/hate_crack/config.json...${NC}\n"
 wait_func
+cd ..
 printf " ${BLUE}[*]Installing Wotop...${NC}\n"
 sudo git clone https://github.com/nishitm/wotop
 cd wotop
@@ -360,6 +361,7 @@ sudo git clone https://github.com/sivazozo/hidden-cry.git
 cd hidden-cry
 sudo chmod 777 hidden-cry
 sudo apt-get install mingw-w64 -y
+cd ..
 printf " ${BLUE}[*]Installing droidfiles...${NC}\n"
 sudo git clone https://github.com/thelinuxchoice/droidfiles.git
 cd droidfiles

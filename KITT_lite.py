@@ -404,8 +404,11 @@ if tool == '-up' or tool == '--update':
   try:
     print('Updating and Upgrading Packages...')
     os.system('sudo apt-get update && sudo apt-get upgrade')
-    print('Updating git source for KITTlite')
+    print('Updating git source for KITTlite...')
     os.system('sudo git pull origin master')
+    print('Making sure all repos are caught up...')
+    os.system('sudo ./catchup.sh'
+    wait()
     logwrite('--[+]Successfully updated packages and git source @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error updating packages and git source @ ' + timecheck() + '--')
