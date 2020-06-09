@@ -535,7 +535,7 @@ else
   cd ..
 fi
 if [ -d "NekoBotV1" ]; then
-  printf "${GREEN}[+]  NekoBotV1 Installed${NC}\n"
+  printf "${GREEN}[+] NekoBotV1 Installed${NC}\n"
 else
   sudo git clone https://github.com/tegal1337/NekoBotV1.git
   cd NekoBotV1
