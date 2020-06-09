@@ -51,6 +51,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('Cracking:')
   print('        -tb, --ftpbruter                     FTP Login Brute Forcer')
   print('        /opt/KITT-Lite/hate_crack/           Automated Hashcat Cracker')
+  print('        /opt/KITT-Lite/tangalanga/build      Zoom Token Bruteforcer')
   print('Phising:')
   print('        -be, --blackeye                      Tool for Hosting Phishing Sites')
   print('        -st, --set                           Social Engineering Toolkit (SET)')

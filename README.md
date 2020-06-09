@@ -36,6 +36,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
 * [FTPBruter](<https://github.com/GitHackTools/FTPBruter>) - FTP Login Brute Forcer
+* [Tangalang](<https://github.com/elcuervo/tangalanga>) - Zoom Token Brute Forcer
 
 ### Phishing
 * [Blackeye](<https://github.com/thelinuxchoice/blackeye>) - Webpage Phishing Tool

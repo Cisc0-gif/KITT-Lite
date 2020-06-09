@@ -419,6 +419,11 @@ sudo git clone https://github.com/trustedsec/trevorc2
 cd trevorc2
 sudo pip install -r requirements.txt
 cd ..
+printf " ${BLUE}[*]Installing TangaLanga...${NC}\n"
+sudo git clone https://github.com/elcuervo/tangalanga
+cd tangalanga
+sudo make
+cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

@@ -586,5 +586,13 @@ else
   sudo pip install -r requirements.txt
   cd ..
 fi
+if [ -d "tangalanga" ]; then
+  printf "${GREEN}[+] TangaLanga Installed${NC}\n"
+else
+  sudo git clone https://github.com/elcuervo/tangalanga
+  cd tangalanga
+  sudo make
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"
 
