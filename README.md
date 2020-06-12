@@ -7,9 +7,6 @@ UPDATE: **Now Supporting Kali 2020.2!**
 
 If you want to check out the full GUI version of KITT its repo can be found [here](<https://github.com/Cisc0-gif/KITT.git>)
 
-DISCLAIMER: This tool is for educational purposes only. I am not responsible for the misuse of others of this tool in any way, shape or form.
-
-
 ## Features
 
 ### OSINT
@@ -145,6 +142,10 @@ If you want to only install the tools, run ``` sudo ./catchup.sh ```
 ### Usage
 
 To begin the framework, type ``` KITTlite ``` and execute in terminal. 
+
+## Legal Disclaimer
+
+Usage of KITT-Lite and/or the tools installed with KITT-Lite for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state, and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
 ## Built With
 
