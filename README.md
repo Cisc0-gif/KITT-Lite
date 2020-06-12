@@ -91,6 +91,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 
 ### Ransomeware
 * [Hidden-cry](<https://github.com/sivazozo/hidden-cry>) - Windows AES 256 Bit Encrypter/Decrypter
+* [CryDroid](<https://github.com/thelinuxchoice/crydroid>) - Android Encrypter/Decrypter
 
 ### Bots
 * [Idisagree](<https://github.com/UndeadSec/Idisagree>) - Trojan Discord Bot

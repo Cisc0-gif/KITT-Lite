@@ -424,6 +424,11 @@ sudo git clone https://github.com/elcuervo/tangalanga
 cd tangalanga
 sudo make
 cd ..
+printf " ${BLUE}[*]Installing CryDroid...${NC}\n"
+sudo git clone https://github.com/thelinuxchoice/crydroid
+cd crydroid
+sudo chmod 777 crydroid.sh
+cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

@@ -594,5 +594,13 @@ else
   sudo make
   cd ..
 fi
+if [ -d "crydroid" ]; then
+  printf "${GREEN}[+] CryDroid Installed${NC}\n"
+else
+  sudo git clone https://github.com/thelinuxchoice/crydroid
+  cd crydroid
+  sudo chmod 777 crydroid.sh
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"
 
