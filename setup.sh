@@ -37,13 +37,13 @@ sudo pip install -U platformio
 sudo pip3 install protonvpn-cli
 sudo pip install -r requirements2.txt
 sudo pip3 install -r requirements3.txt
-read -p "${BLUE}[*]Do you want to initialize ProtonVPN[y/N]?: ${NC}" ptnvpn
+read -p "[*]Do you want to initialize ProtonVPN[y/N]?: " ptnvpn
 if [ $ptnvpn == 'y' -o $ptnvpn == 'Y' ]; then
   printf "${BLUE}[*]Initializing ProtonVPN...${NC}\n"
   sudo protonvpn init
-  read -p "${BLUE}[*]Do you want to make a cronjob to start ProtonVPN on boot?[y/N]: ${NC}\n" ptncron
+  read -p "[*]Do you want to make a cronjob to start ProtonVPN on boot?[y/N]: " ptncron
   if [ $ptncron == 'y' -o $ptncron == 'Y' ]; then
-    printf "${BLUE}[*]Enter '@reboot sudo protonvpn c -f' into crontab...${NC}"
+    printf "${BLUE}[*]Enter '@reboot sudo protonvpn c -f' into crontab...${NC}\n"
     sudo crontab -e
   else
     printf "${BLUE}[*]Okay!...${NC}\n"
