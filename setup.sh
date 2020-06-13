@@ -26,7 +26,7 @@ printf "${GREEN} [+]Sources Configured! ${BLUE} \n [*]Installing Linux Packages.
 sudo apt-get install figlet metasploit-framework hydra burpsuite tor beef beef-xss nmap cryptcat netcat unicornscan php maltegoce recon-ng cewl crunch redis tshark tcpdump irssi telnet ftp git apache2 ssh weevely strace gdb radare2 arp-scan dirbuster wfuzz ncrack medusa xxd coreutils exiftool masscan dirb steghide proxychains p7zip macchanger hddtemp lm-sensors postgresql sqlmap logrotate kali-linux-full btscanner bluez bluelog redfang bluesnarfer spooftooph ettercap-graphical ettercap-text-only build-essential ntfs-3g cifs.utils mount reaver aircrack-ng libcurl4-openssl-dev libpcap0.8-dev zlib1g zlib1g-dev libssl-dev john snort fierce openvas nikto wpscan mawk curl dhcpd isc-dhcp-server hostapd lighttpd mdk3 php-cgi pyrit unzip xterm openssl rfkill ufw clamav clamav-daemon kismet bully pixiewps mingw-w64 dumpzilla -y
 sudo ufw enable
 sudo gem install zsteg
-sudo apt-get install fail2ban -y
+sudo apt-get install fail2ban openvpn dialog python3-setuptools -y
 printf " ${BLUE}[*]Starting postgresql Service...${NC}\n"
 sudo service postgresql start
 printf " ${BLUE}[*]Initiating YAML Database for Metasploit-Framework...${NC}\n"
@@ -34,8 +34,24 @@ sudo msfdb init
 printf " ${BLUE}[*]Installing python2 and python3 Libraries...${NC}\n"
 sudo pip install -U -I pyusb
 sudo pip install -U platformio
+sudo pip3 install protonvpn-cli
 sudo pip install -r requirements2.txt
 sudo pip3 install -r requirements3.txt
+read -p "${BLUE}[*]Do you want to initialize ProtonVPN[y/N]?: ${NC}" ptnvpn
+if [ $ptnvpn == 'y' -o $ptnvpn == 'Y' ]; then
+  printf "${BLUE}[*]Initializing ProtonVPN...${NC}\n"
+  sudo protonvpn init
+  read -p "${BLUE}[*]Do you want to make a cronjob to start ProtonVPN on boot?[y/N]: ${NC}\n" ptncron
+  if [ $ptncron == 'y' -o $ptncron == 'Y' ]; then
+    printf "${BLUE}[*]Enter '@reboot sudo protonvpn c -f' into crontab...${NC}"
+    sudo crontab -e
+  else
+    printf "${BLUE}[*]Okay!...${NC}\n"
+  fi
+else
+  printf "${BLUE}[*]Use 'sudo protonvpn init' to setup ProtonVPN later...${NC}\n"
+fi
+wait_func
 printf " ${BLUE}[*]Setting Up Snort...${NC}\n"
 sudo mkdir snortlogs
 sudo apt-get install snort -y

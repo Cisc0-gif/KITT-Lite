@@ -85,6 +85,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [NekoBotV1](<https://github.com/tegal1337/NekoBotV1>) - Auto Exploiter Tool
 * [Eviloffice](<https://github.com/thelinuxchoice/eviloffice>) - Injects Macro & DDE Code into Excel & Word Documents
 * [Gtfo](<https://github.com/t0thkr1s/gtfo>) - Unix Binary Search Tool
+* [Evilpdf](<https://github.com/thelinuxchoice/evilpdf>) - Embeds .exe Files into PDF Files
 
 ### Ransomeware
 * [Hidden-cry](<https://github.com/sivazozo/hidden-cry>) - Windows AES 256 Bit Encrypter/Decrypter

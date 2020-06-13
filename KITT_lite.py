@@ -81,6 +81,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -af, --avetfabric                    Windows AV Evasive Payloader')
   print('        -iy, --ispy                          EternalBlue/Bluekeep Scanner/Exploiter')
   print('        -nt, --nekobot                       Auto Exploiter Tool')
+  print('        -vp, --evilpdf                       Embeds .exe Files into PDF Documents')
   print('        /opt/KITT-Lite/eviloffice            Injects Macro & DDE Code into Excel & Word Documents (WINDOWS)')
   print('        -lt, --lstools                       Lists all tools hosts on --escalate')
   print('Ransomeware:')
@@ -122,8 +123,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci', '-tb', '-cd']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit', '--ftpbruter', '--crydroid']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci', '-tb', '-cd', '-vp']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit', '--ftpbruter', '--crydroid', '--evilpdf']
 
 tool = sys.argv[1]
 
@@ -765,6 +766,16 @@ if tool == '-cd' or tool == '--crydroid':
     logwrite('--[+]Successfully ran crydroid @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running crydroid @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-vp' or tool == '--evilpdf':
+  try:
+    os.chdir('evilpdf')
+    os.system('sudo python3 evilpdf.py')
+    logwrite('--[+]Successfully ran evilpdf @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running evilpdf @ ' + timecheck() + '--')
   gohome()
   exit()
 
