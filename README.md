@@ -33,7 +33,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
 * [FTPBruter](<https://github.com/GitHackTools/FTPBruter>) - FTP Login Brute Forcer
-* [Tangalang](<https://github.com/elcuervo/tangalanga>) - Zoom Token Brute Forcer
+* [Tangalanga](<https://github.com/elcuervo/tangalanga>) - Zoom Token Brute Forcer
 
 ### Phishing
 * [Blackeye](<https://github.com/thelinuxchoice/blackeye>) - Webpage Phishing Tool
@@ -86,6 +86,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Eviloffice](<https://github.com/thelinuxchoice/eviloffice>) - Injects Macro & DDE Code into Excel & Word Documents
 * [Gtfo](<https://github.com/t0thkr1s/gtfo>) - Unix Binary Search Tool
 * [Evilpdf](<https://github.com/thelinuxchoice/evilpdf>) - Embeds .exe Files into PDF Files
+* [KatroLogger](<https://github.com/Katrovisch/KatroLogger>) - Keylogger for Unix/Linux Systems
 
 ### Ransomeware
 * [Hidden-cry](<https://github.com/sivazozo/hidden-cry>) - Windows AES 256 Bit Encrypter/Decrypter

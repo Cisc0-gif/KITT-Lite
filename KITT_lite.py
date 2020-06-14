@@ -800,6 +800,7 @@ if tool == '-lt' or tool == '--lstools':
   print('[*]Covermyass - Covers Your Tracks on UNIX Systems')
   print('[*]GhostShell - AV Bypass, Anti VM, Anti Disassembly Payload Encoder')
   print('[*]gtfo - Unix Binary Search Tool')
+  print('[*]Katrologger - Keylogger for Unix/Linux Systems')
   gohome()
   exit()
 

@@ -445,6 +445,10 @@ sudo git clone https://github.com/thelinuxchoice/crydroid
 cd crydroid
 sudo chmod 777 crydroid.sh
 cd ..
+printf " ${BLUE}[*]Installing KatroLogger...${NC}\n"
+cd escalate
+sudo git clone https://github.com/Katrovisch/KatroLogger
+cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

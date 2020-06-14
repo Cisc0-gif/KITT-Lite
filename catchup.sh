@@ -602,5 +602,12 @@ else
   sudo chmod 777 crydroid.sh
   cd ..
 fi
+cd escalate
+if [ -d "KatroLogger" ]; then
+  printf "${GREEN}[+] KatroLogger Installed${NC}\n"
+else
+  sudo git clone https://github.com/Katrovisch/KatroLogger
+fi
+cd ..
 printf "${GREEN}[+] All Caught Up!${NC}\n"
 
