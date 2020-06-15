@@ -52,7 +52,22 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Cuteit](<https://github.com/D4Vinci/Cuteit>) - IP Obfuscator
 * [TrevorC2](<https://github.com/trustedsec/trevorc2>) - Cmd Injection Masked Phishing Site
 
-### Enumeration
+### Payloads
+* [Evil-Droid](<https://github.com/M4sc3r4n0/Evil-Droid.git>) - Android APK Payloading & Embedding Framework
+* [Catchyou](<https://github.com/thelinuxchoice/catchyou>) - Undetectable Win32 Payload Generator
+* [Winspy](<https://github.com/Cyb0r9/winspy>) - Windows Reverse Shell Generator w/ IP Poisoning
+* [Evilreg](<https://github.com/thelinuxchoice/evilreg>) - Windows .reg Reverse Shell Generator 
+* [Badlnk](<https://github.com/thelinuxchoice/badlnk>) - Shortcut (.lnk) Reverse Shell Generator
+* [Enigma](<https://github.com/UndeadSec/Enigma>) - Multiplatform Payload Dropper
+* [Avet_Fabric](<https://github.com/govolution/avet>) - Windows AV Evasive Payloads
+* [Eviloffice](<https://github.com/thelinuxchoice/eviloffice>) - Injects Macro & DDE Code into Excel & Word Documents
+* [Evilpdf](<https://github.com/thelinuxchoice/evilpdf>) - Embeds .exe Files into PDF Files
+
+### Keyloggers
+* [HeraKeylogger](<https://github.com/UndeadSec/HeraKeylogger>) - Chrome Keylogger Extension
+* [KatroLogger](<https://github.com/Katrovisch/KatroLogger>) - Keylogger for Unix/Linux Systems
+
+### Privilege Escalation/Exploitation
 * BIOS_UBTU_Rooter.sh - Custom Ubuntu usb boot exploit
 * [LinEnum](<https://github.com/rebootuser/LinEnum>) - Linux shell enumeration tool
 * Linux - Linux Exploits and Enumeration Scripts
@@ -65,28 +80,17 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Chromepass](<https://github.com/darkarp/chromepass>) - AV-Undetectable Chrome Login Extraction Tool (Local exec)
 * [htbenum](<https://github.com/SolomonSklash/htbenum>) - Offline Local Enum Server (Mainly for HTB)
 * [PeekABoo](<https://github.com/Viralmaniar/PeekABoo>) - Enables RDP Service (Only on WinRM Machines - Enabled by default on WinServer machines but not client machines)
-* [Evil-Droid](<https://github.com/M4sc3r4n0/Evil-Droid.git>) - Android APK Payloading & Embedding Framework
-* [Catchyou](<https://github.com/thelinuxchoice/catchyou>) - Undetectable Win32 Payload Generator
 * [firefox_decrypt](<https://github.com/Unode/firefox_decrypt>) - Mozilla Browser Saved Login Extractor
 * [Powershell-reverse-tcp](<https://github.com/ivan-sincek/powershell-reverse-tcp>) - Reverse TCP Powershell Payload w/ Obfuscation
 * [Invoker](<https://github.com/ivan-sincek/invoker>) - Post Windows Non-GUI Shell Utility
 * [HiveJack](<https://github.com/Viralmaniar/HiveJack>) - Windows SAM Dump Tool
-* [Winspy](<https://github.com/Cyb0r9/winspy>) - Windows Reverse Shell Generator w/ IP Poisoning
 * [Impacket](<https://github.com/SecureAuthCorp/impacket>) - Python Network Protocol Tools
 * [Win-Brute-Logon](<https://github.com/DarkCoderSc/win-brute-logon>) - Post Tool For Cracking User Passwords (XP -> 10)
-* [Evilreg](<https://github.com/thelinuxchoice/evilreg>) - Windows .reg Reverse Shell Generator 
-* [Badlnk](<https://github.com/thelinuxchoice/badlnk>) - Shortcut (.lnk) Reverse Shell Generator
-* [HeraKeylogger](<https://github.com/UndeadSec/HeraKeylogger>) - Chrome Keylogger Extension
-* [Enigma](<https://github.com/UndeadSec/Enigma>) - Multiplatform Payload Dropper
 * [Covermyass](<https://github.com/sundowndev/covermyass>) - Covers Your Tracks on UNIX Systems
 * [Leviathan](<https://github.com/leviathan-framework/leviathan.git>) - System Audit Toolkit
-* [Avet_Fabric](<https://github.com/govolution/avet>) - Windows AV Evasive Payloads
 * [ispy](<https://github.com/Cyb0r9/ispy>) - EternalBlue/Bluekeep Scanner/Exploiter
 * [NekoBotV1](<https://github.com/tegal1337/NekoBotV1>) - Auto Exploiter Tool
-* [Eviloffice](<https://github.com/thelinuxchoice/eviloffice>) - Injects Macro & DDE Code into Excel & Word Documents
 * [Gtfo](<https://github.com/t0thkr1s/gtfo>) - Unix Binary Search Tool
-* [Evilpdf](<https://github.com/thelinuxchoice/evilpdf>) - Embeds .exe Files into PDF Files
-* [KatroLogger](<https://github.com/Katrovisch/KatroLogger>) - Keylogger for Unix/Linux Systems
 
 ### Ransomeware
 * [Hidden-cry](<https://github.com/sivazozo/hidden-cry>) - Windows AES 256 Bit Encrypter/Decrypter
@@ -107,12 +111,13 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [PwnSTAR](<https://github.com/SilverFoxx/PwnSTAR>) - Fake AP Tool Framework
 * [HT-WPS](<https://github.com/SilentGhostX/HT-WPS-Breaker>) - WPS Pin Extractor
 * [Linset](<https://github.com/vk496/linset>) - WPA/WPA2 MiTM Attack Tool
+* [PentBox](<https://github.com/H4CK3RT3CH/pentbox-1.8>) - HoneyPot Setup Tool
 
 ### IoT Exploitation
 * [HomePwn](<https://github.com/ElevenPaths/HomePWN>) - IoT Exploitation Framework
-* [PentBox](<https://github.com/H4CK3RT3CH/pentbox-1.8>) - HoneyPot Setup Tool
 * Spooftooph - BT Spoofing
 * BtVerifier - Rfcomm Channel Verifier
+* BlueScan - BT Port/MAC Scanner
 
 ### Hardware Hacking
 * [MouseJack](<https://github.com/BastilleResearch/mousejack>) - BT Keyboard and Mouse Hijacker
