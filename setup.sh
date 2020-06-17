@@ -43,8 +43,8 @@ if [ $ptnvpn == 'y' -o $ptnvpn == 'Y' ]; then
   sudo protonvpn init
   read -p "[*]Do you want to make a cronjob to start ProtonVPN on boot?[y/N]: " ptncron
   if [ $ptncron == 'y' -o $ptncron == 'Y' ]; then
-    printf "${BLUE}[*]Enter '@reboot sudo protonvpn c -f' into crontab...${NC}\n"
-    sudo crontab -e
+    sudo crontab -l | { cat; echo "@reboot sudo protonvpn -c -f"; } | sudo crontab -
+    printf "${GREEN}[+]Cronjob added!${NC}\n"
   else
     printf "${BLUE}[*]Okay!...${NC}\n"
   fi
