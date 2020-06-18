@@ -415,7 +415,7 @@ cd Cuteit
 sudo chmod 777 Cuteit.py
 cd ..
 printf " ${BLUE}[*]Installing HomePWN...${NC}\n"
-sudo git clone https://github.com/ElevenPaths/HomePWN
+sudo git clone https://github.com/ElevenPaths/HomePWN.git
 cd HomePWN
 sudo ./install.sh
 cd ..
@@ -425,38 +425,40 @@ sudo pip3 install -r requirements.txt
 sudo python3 setup.py
 cd ../..
 printf " ${BLUE}[*]Installing eviloffice...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/eviloffice
+sudo git clone https://github.com/thelinuxchoice/eviloffice.git
 printf " ${BLUE}[*]Installing FTPBruter...${NC}\n"
-sudo git clone https://github.com/GitHackTools/FTPBruter
+sudo git clone https://github.com/GitHackTools/FTPBruter.git
 printf " ${BLUE}[*]Installing Gtfo...${NC}\n"
-sudo git clone https://github.com/t0thkr1s/gtfo
+sudo git clone https://github.com/t0thkr1s/gtfo.git
 printf " ${BLUE}[*]Installing TrevorC2...${NC}\n"
-sudo git clone https://github.com/trustedsec/trevorc2
+sudo git clone https://github.com/trustedsec/trevorc2.git
 cd trevorc2
 sudo pip install -r requirements.txt
 cd ..
 printf " ${BLUE}[*]Installing TangaLanga...${NC}\n"
-sudo git clone https://github.com/elcuervo/tangalanga
+sudo git clone https://github.com/elcuervo/tangalanga.git
 cd tangalanga
 sudo make
 cd ..
 printf " ${BLUE}[*]Installing CryDroid...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/crydroid
+sudo git clone https://github.com/thelinuxchoice/crydroid.git
 cd crydroid
 sudo chmod 777 crydroid.sh
 cd ..
 printf " ${BLUE}[*]Installing KatroLogger...${NC}\n"
-sudo git clone https://github.com/Katrovisch/KatroLogger
+sudo git clone https://github.com/Katrovisch/KatroLogger.git
 printf " ${BLUE}[*]Installing Fast-Google-Dork-Scan...${NC}\n"
-sudo git clone https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan
+sudo git clone https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan.git
 cd Fast-Google-Dorks-Scan
 sudo chmod 777 FGDS.sh
 cd ..
 printf " ${BLUE}[*]Installing EvilDLL...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/evildll
+sudo git clone https://github.com/thelinuxchoice/evildll.git
 cd evildll
 sudo chmod 777 evildll.sh
 cd ..
+printf " ${BLUE}[*]Installing SysIntegrity...${NC}\n"
+sudo git clone https://github.com/Cisc0-gif/SysIntegrity.git
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

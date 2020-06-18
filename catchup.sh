@@ -558,7 +558,7 @@ fi
 if [ -d "HomePWN" ]; then
   printf "${GREEN}[+] HomePWN Installed${NC}\n"
 else
-  sudo git clone https://github.com/ElevenPaths/HomePWN
+  sudo git clone https://github.com/ElevenPaths/HomePWN.git
   cd HomePWN
   sudo ./install.sh
   cd ..
@@ -566,22 +566,22 @@ fi
 if [ -d "eviloffice" ]; then
   printf "${GREEN}[+] Eviloffice Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/eviloffice
+  sudo git clone https://github.com/thelinuxchoice/eviloffice.git
 fi
 if [ -d "FTPBruter" ]; then
   printf "${GREEN}[+] FTPBruter Installed${NC}\n"
 else
-  sudo git clone https://github.com/GitHackTools/FTPBruter
+  sudo git clone https://github.com/GitHackTools/FTPBruter.git
 fi
 if [ -d "gtfo" ]; then
   printf "${GREEN}[+] Gtfo Installed${NC}\n"
 else
-  sudo git clone https://github.com/t0thkr1s/gtfo
+  sudo git clone https://github.com/t0thkr1s/gtfo.git
 fi
 if [ -d "trevorc2" ]; then
   printf "${GREEN}[+] TrevorC2 Installed${NC}\n"
 else
-  sudo git clone https://github.com/trustedsec/trevorc2
+  sudo git clone https://github.com/trustedsec/trevorc2.git
   cd trevorc2
   sudo pip install -r requirements.txt
   cd ..
@@ -589,7 +589,7 @@ fi
 if [ -d "tangalanga" ]; then
   printf "${GREEN}[+] TangaLanga Installed${NC}\n"
 else
-  sudo git clone https://github.com/elcuervo/tangalanga
+  sudo git clone https://github.com/elcuervo/tangalanga.git
   cd tangalanga
   sudo make
   cd ..
@@ -597,7 +597,7 @@ fi
 if [ -d "crydroid" ]; then
   printf "${GREEN}[+] CryDroid Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/crydroid
+  sudo git clone https://github.com/thelinuxchoice/crydroid.git
   cd crydroid
   sudo chmod 777 crydroid.sh
   cd ..
@@ -605,12 +605,12 @@ fi
 if [ -d "KatroLogger" ]; then
   printf "${GREEN}[+] KatroLogger Installed${NC}\n"
 else
-  sudo git clone https://github.com/Katrovisch/KatroLogger
+  sudo git clone https://github.com/Katrovisch/KatroLogger.git
 fi
 if [ -d "Fast-Google-Dork-Scan" ]; then
   printf "${GREEN}[+] Fast-Google-Dork-Scan Installed${NC}\n"
 else
-  sudo git clone https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan
+  sudo git clone https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan.git
   cd Fast-Google-Dorks-Scan
   sudo chmod 777 FGDS.sh
   cd ..
@@ -618,10 +618,14 @@ fi
 if [ -d "evildll" ]; then
   printf "${GREEN}[+] EvilDLL Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/evildll
+  sudo git clone https://github.com/thelinuxchoice/evildll.git
   cd evildll
   sudo chmod 777 evildll.sh
   cd ..
 fi
+if [ -d "SysIntegrity" ]; then
+  printf "${GREEN}[+] SysIntegrity Installed${NC}\n"
+else
+  sudo git clone https://github.com/Cisc0-gif/SysIntegrity.git
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"
-
