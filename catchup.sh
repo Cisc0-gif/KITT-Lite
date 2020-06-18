@@ -607,7 +607,7 @@ if [ -d "KatroLogger" ]; then
 else
   sudo git clone https://github.com/Katrovisch/KatroLogger.git
 fi
-if [ -d "Fast-Google-Dork-Scan" ]; then
+if [ -d "Fast-Google-Dorks-Scan" ]; then
   printf "${GREEN}[+] Fast-Google-Dork-Scan Installed${NC}\n"
 else
   sudo git clone https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan.git
