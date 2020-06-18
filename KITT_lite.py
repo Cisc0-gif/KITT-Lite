@@ -798,7 +798,7 @@ if tool == '-el' or tool == '--evildll':
 if tool == '-fi' or tool == '--sysintegrity':
   try:
     os.chdir('SysIntegrity')
-    os.system('sudo ./main.sh')
+    os.system('./main.sh')
     logwrite('--[+]Successfully ran sysintegrity @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running sysintegrity @ ' + timecheck() + '--')
