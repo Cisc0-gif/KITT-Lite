@@ -29,6 +29,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [BlackDir-Framework](<https://github.com/RedVirus0/BlackDir-Framework.git>) - WebApp Vulnerability Scanner
 * [Skiptracer](<https://github.com/xillwillx/skiptracer>) - OSINT Scraping Framework *COMING SOON*
 * [Konan](<https://github.com/m4ll0k/Konan>) - Advanced WebApp Dir Scanner
+* [Fast-Google-Dork-Scan](<https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan>) - Website Dork Enumeration Script
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -62,6 +63,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Avet_Fabric](<https://github.com/govolution/avet>) - Windows AV Evasive Payloads
 * [Eviloffice](<https://github.com/thelinuxchoice/eviloffice>) - Injects Macro & DDE Code into Excel & Word Documents
 * [Evilpdf](<https://github.com/thelinuxchoice/evilpdf>) - Embeds .exe Files into PDF Files
+* [EvilDLL](<https://github.com/thelinuxchoice/evildll>) - DLL Reverse Shell Generator
 
 ### Keyloggers
 * [HeraKeylogger](<https://github.com/UndeadSec/HeraKeylogger>) - Chrome Keylogger Extension

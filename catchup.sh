@@ -602,12 +602,26 @@ else
   sudo chmod 777 crydroid.sh
   cd ..
 fi
-cd escalate
 if [ -d "KatroLogger" ]; then
   printf "${GREEN}[+] KatroLogger Installed${NC}\n"
 else
   sudo git clone https://github.com/Katrovisch/KatroLogger
 fi
-cd ..
+if [ -d "Fast-Google-Dork-Scan" ]; then
+  printf "${GREEN}[+] Fast-Google-Dork-Scan Installed${NC}\n"
+else
+  sudo git clone https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan
+  cd Fast-Google-Dorks-Scan
+  sudo chmod 777 FGDS.sh
+  cd ..
+fi
+if [ -d "evildll" ]; then
+  printf "${GREEN}[+] EvilDLL Installed${NC}\n"
+else
+  sudo git clone https://github.com/thelinuxchoice/evildll
+  cd evildll
+  sudo chmod 777 evildll.sh
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"
 

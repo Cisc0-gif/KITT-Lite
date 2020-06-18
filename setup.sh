@@ -446,8 +446,16 @@ cd crydroid
 sudo chmod 777 crydroid.sh
 cd ..
 printf " ${BLUE}[*]Installing KatroLogger...${NC}\n"
-cd escalate
 sudo git clone https://github.com/Katrovisch/KatroLogger
+printf " ${BLUE}[*]Installing Fast-Google-Dork-Scan...${NC}\n"
+sudo git clone https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan
+cd Fast-Google-Dorks-Scan
+sudo chmod 777 FGDS.sh
+cd ..
+printf " ${BLUE}[*]Installing EvilDLL...${NC}\n"
+sudo git clone https://github.com/thelinuxchoice/evildll
+cd evildll
+sudo chmod 777 evildll.sh
 cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local

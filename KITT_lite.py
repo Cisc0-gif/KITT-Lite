@@ -48,6 +48,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        /opt/KITT-Lite/deep-explorer/        Tor Browser')
   print('        /opt/KITT-Lite/BlackDir-Framework    WebApp Vulnerability Scanner')
   print('        /opt/KITT-Lite/Konan                 Advanced WebApp Dir Scanner')
+  print('      /opt/KITT-Lite/Fast-Google-Dorks-Scan  Website Dork Enumeration Script')
   print('Cracking:')
   print('        -tb, --ftpbruter                     FTP Login Brute Forcer')
   print('        /opt/KITT-Lite/hate_crack/           Automated Hashcat Cracker')
@@ -77,6 +78,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -ea, --enigma                        Multiplatform Payload Dropper')
   print('        -af, --avetfabric                    Windows AV Evasive Payloader')
   print('        -vp, --evilpdf                       Embeds .exe Files into PDF Documents')
+  print('        -el, --evildll                       DLL Reverse Shell Generator')
   print('        /opt/KITT-Lite/eviloffice            Injects Macro & DDE Code into Excel & Word Documents (WINDOWS)')
   print('Keyloggers: ')
   print('        -hk, --herakeylogger                 Chrome Keylogger Extension')
@@ -126,8 +128,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci', '-tb', '-cd', '-vp']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit', '--ftpbruter', '--crydroid', '--evilpdf']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci', '-tb', '-cd', '-vp', '-el']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit', '--ftpbruter', '--crydroid', '--evilpdf', '--evilpdf']
 
 tool = sys.argv[1]
 
@@ -782,6 +784,16 @@ if tool == '-vp' or tool == '--evilpdf':
   gohome()
   exit()
 
+if tool == '-el' or tool == '--evildll':
+  try:
+    os.chdir('evildll')
+    os.system('sudo ./evildll.sh')
+    logwrite('--[+]Successfully ran evilddl @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running evildll @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
 if tool == '-lt' or tool == '--lstools':
   print('[*]BIOS_UBTU_Rooter.sh - Ubuntu BIOS USB Boot Exploit')
   print('[*]LinEnum - Linux Shell Enumeration Tool')
@@ -803,7 +815,6 @@ if tool == '-lt' or tool == '--lstools':
   print('[*]Covermyass - Covers Your Tracks on UNIX Systems')
   print('[*]GhostShell - AV Bypass, Anti VM, Anti Disassembly Payload Encoder')
   print('[*]gtfo - Unix Binary Search Tool')
-  print('[*]Katrologger - Keylogger for Unix/Linux Systems')
   gohome()
   exit()
 
