@@ -641,6 +641,7 @@ else
   sudo git clone https://github.com/thelinuxchoice/DroidTracker
   cd DroidTracker
   sudo bash install.sh
+  sudo chmod 777 droidtracker.sh
   cd ..
 fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

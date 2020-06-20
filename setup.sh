@@ -467,6 +467,7 @@ printf " ${BLUE}[*]Installing DroidTracker...${NC}\n"
 sudo git clone https://github.com/thelinuxchoice/DroidTracker
 cd DroidTracker
 sudo bash install.sh
+sudo chmod 777 droidtracker.sh
 cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
