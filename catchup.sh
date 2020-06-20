@@ -632,16 +632,25 @@ cd escalate
 if [ -d "Grok-backdoor" ]; then
   printf "${GREEN}[+] Grok-backdoor Installed${NC}\n"
 else
-  sudo git clone https://github.com/deepzec/Grok-backdoor
+  sudo git clone https://github.com/deepzec/Grok-backdoor.git
 fi
 cd ..
 if [ -d "DroidTracker" ]; then
   printf "${GREEN}[+] DroidTracker Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/DroidTracker
+  sudo git clone https://github.com/thelinuxchoice/DroidTracker.git
   cd DroidTracker
   sudo bash install.sh
   sudo chmod 777 droidtracker.sh
+  cd ..
+fi
+if [ -d "OWASP-ZSC" ]; then
+  printf "${GREEN}[+] OWASP-ZSC Installed${NC}\n"
+else
+  sudo git clone https://github.com/zscproject/OWASP-ZSC.git
+  cd OWASP-ZSC
+  sudo chmod 777 installer.py
+  sudo ./installer.py
   cd ..
 fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

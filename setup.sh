@@ -461,13 +461,19 @@ printf " ${BLUE}[*]Installing SysIntegrity...${NC}\n"
 sudo git clone https://github.com/Cisc0-gif/SysIntegrity.git
 printf " ${BLUE}[*]Installing Grok-Backdoor...${NC}\n"
 cd escalate
-sudo git clone https://github.com/deepzec/Grok-backdoor
+sudo git clone https://github.com/deepzec/Grok-backdoor.git
 cd ..
 printf " ${BLUE}[*]Installing DroidTracker...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/DroidTracker
+sudo git clone https://github.com/thelinuxchoice/DroidTracker.git
 cd DroidTracker
 sudo bash install.sh
 sudo chmod 777 droidtracker.sh
+cd ..
+printf " ${BLUE}[*]Installing OWASP-ZSC...${NC}\n"
+sudo git clone https://github.com/zscproject/OWASP-ZSC.git
+cd OWASP-ZSC
+sudo chmod 777 installer.py
+sudo ./installer.py
 cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
