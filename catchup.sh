@@ -628,4 +628,19 @@ if [ -d "SysIntegrity" ]; then
 else
   sudo git clone https://github.com/Cisc0-gif/SysIntegrity.git
 fi
+cd escalate
+if [ -d "Grok-backdoor" ]; then
+  printf "${GREEN}[+] Grok-backdoor Installed${NC}\n"
+else
+  sudo git clone https://github.com/deepzec/Grok-backdoor
+fi
+cd ..
+if [ -d "DroidTracker" ]; then
+  printf "${GREEN}[+] DroidTracker Installed${NC}\n"
+else
+  sudo git clone https://github.com/thelinuxchoice/DroidTracker
+  cd DroidTracker
+  sudo bash install.sh
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

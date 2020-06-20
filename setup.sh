@@ -459,6 +459,15 @@ sudo chmod 777 evildll.sh
 cd ..
 printf " ${BLUE}[*]Installing SysIntegrity...${NC}\n"
 sudo git clone https://github.com/Cisc0-gif/SysIntegrity.git
+printf " ${BLUE}[*]Installing Grok-Backdoor...${NC}\n"
+cd escalate
+sudo git clone https://github.com/deepzec/Grok-backdoor
+cd ..
+printf " ${BLUE}[*]Installing DroidTracker...${NC}\n"
+sudo git clone https://github.com/thelinuxchoice/DroidTracker
+cd DroidTracker
+sudo bash install.sh
+cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

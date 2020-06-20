@@ -64,6 +64,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Eviloffice](<https://github.com/thelinuxchoice/eviloffice>) - Injects Macro & DDE Code into Excel & Word Documents
 * [Evilpdf](<https://github.com/thelinuxchoice/evilpdf>) - Embeds .exe Files into PDF Files
 * [EvilDLL](<https://github.com/thelinuxchoice/evildll>) - DLL Reverse Shell Generator
+* [DroidTracker](<https://github.com/thelinuxchoice/DroidTracker>) - Android .APK Locaton Tracker
 
 ### Keyloggers
 * [HeraKeylogger](<https://github.com/UndeadSec/HeraKeylogger>) - Chrome Keylogger Extension
@@ -93,6 +94,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [ispy](<https://github.com/Cyb0r9/ispy>) - EternalBlue/Bluekeep Scanner/Exploiter
 * [NekoBotV1](<https://github.com/tegal1337/NekoBotV1>) - Auto Exploiter Tool
 * [Gtfo](<https://github.com/t0thkr1s/gtfo>) - Unix Binary Search Tool
+* [Grok-backdoor](<https://github.com/deepzec/Grok-backdoor>) - Python-Based Backdoor with Ngrok Tunneling
 
 ### Ransomeware
 * [Hidden-cry](<https://github.com/sivazozo/hidden-cry>) - Windows AES 256 Bit Encrypter/Decrypter
