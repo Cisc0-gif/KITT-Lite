@@ -653,4 +653,25 @@ else
   sudo ./installer.py
   cd ..
 fi
+if [ -d "Zip-Cracker-" ]; then
+  printf "${GREEN}[+] Zip-Cracker Installed${NC}\n"
+else
+  sudo git clone https://github.com/priyankvadaliya/Zip-Cracker-.git
+fi
+if [ -d "Pompem" ]; then
+  printf "${GREEN}[+] Pompem Installed${NC}\n"
+else
+  sudo git clone https://github.com/rfunix/Pompem.git
+  cd Pompem
+  sudo pip3 install -r requirements.txt
+  cd ..
+fi
+if [ -d "hmmcookies" ]; then
+  printf "${GREEN}[+] hmmcookies Installed${NC}\n"
+else
+  sudo git clone https://github.com/thelinuxchoice/hmmcookies.git
+  cd hmmcookies
+  sudo chmod 777 hmmcookies.sh
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

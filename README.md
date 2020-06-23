@@ -30,11 +30,13 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Skiptracer](<https://github.com/xillwillx/skiptracer>) - OSINT Scraping Framework *COMING SOON*
 * [Konan](<https://github.com/m4ll0k/Konan>) - Advanced WebApp Dir Scanner
 * [Fast-Google-Dork-Scan](<https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan>) - Website Dork Enumeration Script
+* [Pompem](<https://github.com/rfunix/Pompem.git>) - Exploit/Vulnerability Search Tool
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
 * [FTPBruter](<https://github.com/GitHackTools/FTPBruter>) - FTP Login Brute Forcer
 * [Tangalanga](<https://github.com/elcuervo/tangalanga>) - Zoom Token Brute Forcer
+* [Zip-Crakcer](<https://github.com/priyankvadaliya/Zip-Cracker->) - Password Protected Zip File Bruteforcer
 
 ### Phishing
 * [Blackeye](<https://github.com/thelinuxchoice/blackeye>) - Webpage Phishing Tool
@@ -65,6 +67,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Evilpdf](<https://github.com/thelinuxchoice/evilpdf>) - Embeds .exe Files into PDF Files
 * [EvilDLL](<https://github.com/thelinuxchoice/evildll>) - DLL Reverse Shell Generator
 * [DroidTracker](<https://github.com/thelinuxchoice/DroidTracker>) - Android .APK Locaton Tracker
+* [hmmcookies](<https://github.com/thelinuxchoice/hmmcookies>) - Grabs Firefox, Chrome, and Opera Cookies
 
 ### Keyloggers
 * [HeraKeylogger](<https://github.com/UndeadSec/HeraKeylogger>) - Chrome Keylogger Extension
