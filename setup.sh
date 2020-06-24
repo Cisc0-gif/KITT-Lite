@@ -4,6 +4,7 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 NC='\033[0m'
+user=$(whoami)
 
 wait_func() {
   read -p "PRESS ENTER TO CONTINUE" wait
@@ -508,5 +509,5 @@ sudo mkdir /opt
 cd ..
 sudo mv KITT-Lite /opt
 printf "${GREEN}[+]Done! ${BLUE} \n[*]Writing KITT_lite.py to alias...${NC}\n"
-echo "alias KITTlite='sudo python3 /opt/KITT-Lite/KITT_lite.py'" >> /home/kali/.bashrc
+echo "alias KITTlite='sudo python3 /opt/KITT-Lite/KITT_lite.py'" >> /home/$user/.bashrc
 printf "${GREEN}[+]Done! \n[+]Execute ${BLUE} 'KITTlite' ${GREEN} to run KITT Lite Framework\n"

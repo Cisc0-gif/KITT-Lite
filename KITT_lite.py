@@ -11,6 +11,10 @@ import requests
 import sys
 import random
 
+username = os.getlogin()
+
+print('[*]Current User: ' + username)
+
 def wait():
   wait = input('PRESS ENTER TO CONTINUE')
 
