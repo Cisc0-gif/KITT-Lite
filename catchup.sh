@@ -674,4 +674,16 @@ else
   sudo chmod 777 hmmcookies.sh
   cd ..
 fi
+cd escalate
+if [ -d "mimikatz_trunk" ]; then
+  printf "${GREEN}[+] mimikatz_trunk Installed${NC}\n"
+else
+  sudo mkdir mimikatz_trunk
+  cd mimikatz_trunk
+  sudo wget https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20200519/mimikatz_trunk.zip
+  sudo unzip mimikatz_trunk.zip
+  sudo rm mimikatz_trunk.zip
+  cd ..
+fi
+cd ..
 printf "${GREEN}[+] All Caught Up!${NC}\n"

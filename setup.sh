@@ -487,6 +487,14 @@ sudo git clone https://github.com/thelinuxchoice/hmmcookies
 cd hmmcookies
 sudo chmod 777 hmmcookies.sh
 cd ..
+printf " ${BLUE}[*]Installing mimikatz_trunk...${NC}\n"
+cd escalate
+sudo mkdir mimikatz_trunk
+cd mimikatz_trunk
+sudo wget https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20200519/mimikatz_trunk.zip
+sudo unzip mimikatz_trunk.zip
+sudo rm mimikatz_trunk.zip
+cd ../..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

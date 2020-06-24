@@ -98,6 +98,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [NekoBotV1](<https://github.com/tegal1337/NekoBotV1>) - Auto Exploiter Tool
 * [Gtfo](<https://github.com/t0thkr1s/gtfo>) - Unix Binary Search Tool
 * [Grok-backdoor](<https://github.com/deepzec/Grok-backdoor>) - Python-Based Backdoor with Ngrok Tunneling
+* [Mimikatz](<https://github.com/gentilkiwi/mimikatz>) - Windows password, hash, PIN, and kerberos ticket extraction tool
 
 ### Ransomeware
 * [Hidden-cry](<https://github.com/sivazozo/hidden-cry>) - Windows AES 256 Bit Encrypter/Decrypter

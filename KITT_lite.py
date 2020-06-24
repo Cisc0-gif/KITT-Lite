@@ -841,6 +841,7 @@ if tool == '-lt' or tool == '--lstools':
   print('[*]GhostShell - AV Bypass, Anti VM, Anti Disassembly Payload Encoder')
   print('[*]gtfo - Unix Binary Search Tool')
   print('[*]Grok-backdoor - Python-Based Backdoor with Ngrok Tunneling')
+  print('[*]Mimikatz - Windows Password, Hash, PIN, and kerberos ticket extraction tool')
   gohome()
   exit()
 
