@@ -120,6 +120,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [HT-WPS](<https://github.com/SilentGhostX/HT-WPS-Breaker>) - WPS Pin Extractor
 * [Linset](<https://github.com/vk496/linset>) - WPA/WPA2 MiTM Attack Tool
 * [PentBox](<https://github.com/H4CK3RT3CH/pentbox-1.8>) - HoneyPot Setup Tool
+* [Espionage](<https://github.com/josh0xA/Espionage>) - Packet Sniffer/ARP Spoofer
 
 ### IoT Exploitation
 * [HomePwn](<https://github.com/ElevenPaths/HomePWN>) - IoT Exploitation Framework

@@ -687,4 +687,12 @@ else
   cd ..
 fi
 cd ..
+if [ -d "Espionage" ]; then
+  printf "${GREEN}[+] Espionage Installed${NC}\n"
+else
+  sudo git clone https://github.com/josh0xA/Espionage
+  cd Espionage
+  sudo pip3 install -r requirements.txt
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

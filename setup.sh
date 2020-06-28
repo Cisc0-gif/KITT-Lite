@@ -496,6 +496,11 @@ sudo wget https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-2020051
 sudo unzip mimikatz_trunk.zip
 sudo rm mimikatz_trunk.zip
 cd ../..
+printf " ${BLUE}[*]Installing Espionage...${NC}\n"
+sudo git clone https://github.com/josh0xA/Espionage
+cd Espionage
+sudo pip3 install -r requirements.txt
+cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart
@@ -509,5 +514,5 @@ sudo mkdir /opt
 cd ..
 sudo mv KITT-Lite /opt
 printf "${GREEN}[+]Done! ${BLUE} \n[*]Writing KITT_lite.py to alias...${NC}\n"
-echo "alias KITTlite='sudo python3 /opt/KITT-Lite/KITT_lite.py'" >> /home/$user/.bashrc
-printf "${GREEN}[+]Done! \n[+]Execute ${BLUE} 'KITTlite' ${GREEN} to run KITT Lite Framework\n"
+echo "alias kittlite='sudo python3 /opt/KITT-Lite/KITT_lite.py'" >> /home/$user/.bashrc
+printf "${GREEN}[+]Done! \n[+]Execute ${BLUE} 'kittlite' ${GREEN} to run KITT Lite Framework\n"

