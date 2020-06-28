@@ -246,7 +246,7 @@ def main():
       except:
         print(Fore.RED + '[*]Error running espionage' + Style.RESET_ALL)
     elif option == 's' or option == 'S':
-    vip = input(Fore.CYAN + '[*]Enter victim IP: ' + Style.RESET_ALL)
+      vip = input(Fore.CYAN + '[*]Enter victim IP: ' + Style.RESET_ALL)
       try:
         os.system('sudo python3 espionage.py --target ' + vip + ' --iface ' + interface)
         print(Fore.GREEN + '[+]Successfully ran espionage' + Style.RESET_ALL)
