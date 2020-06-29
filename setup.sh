@@ -501,6 +501,11 @@ sudo git clone https://github.com/josh0xA/Espionage
 cd Espionage
 sudo pip3 install -r requirments.txt
 cd ..
+printf " ${BLUE}[*]Installing EvilNet...${NC}\n"
+sudo git clone https://github.com/Matrix07ksa/EvilNet
+cd EvilNet
+sudo pip3 install -r requirements.txt
+cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

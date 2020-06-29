@@ -695,4 +695,12 @@ else
   sudo pip3 install -r requirments.txt
   cd ..
 fi
+if [ -d "EvilNet" ]; then
+  printf "${GREEN}[+] EvilNet Installed${NC}\n"
+else
+  sudo git clone https://github.com/Matrix07ksa/EvilNet
+  cd EvilNet
+  sudo pip3 install -r requirements.txt
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"
