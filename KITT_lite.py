@@ -179,9 +179,10 @@ if tool == '-pi' or tool == '--phone_infoga':
 if tool == '-pe' or tool == '--escalate':
   try:
     os.chdir('escalate')
-    print('[*]Starting python SecureHTTPServer on Port 80 to curl payloads')
-    username = input("[*]Enter username for SecureHTTPServer: ")
-    password = input("[*]Enter password for SecureHTTPServer: ")
+    print('[*]Starting python SecureHTTPServer on Port 80 to curl payloads\n')
+    username = input("[*]Enter username for Server Login: ")
+    password = input("[*]Enter password for Server Login: ")
+    print("\n[*]Use 'curl --user username:password IP:80' to access SecureHTTPServer...")
     print('[*]Enter ^C or ^Z To Stop HTTP Server...')
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.connect(("8.8.8.8", 80))
