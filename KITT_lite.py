@@ -179,14 +179,16 @@ if tool == '-pi' or tool == '--phone_infoga':
 if tool == '-pe' or tool == '--escalate':
   try:
     os.chdir('escalate')
-    print('[*]Starting python SimpleHTTPServer on Port 80 to curl payloads')
+    print('[*]Starting python SecureHTTPServer on Port 80 to curl payloads')
+    username = input("[*]Enter username for SecureHTTPServer: ")
+    password = input("[*]Enter password for SecureHTTPServer: ")
     print('[*]Enter ^C or ^Z To Stop HTTP Server...')
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.connect(("8.8.8.8", 80))
     r = requests.get("http://ifconfig.me").text
     print('[*]Private IP: ' + str(s.getsockname()[0]))
     print('[*]Public IP: ' + str(r))
-    os.system("sudo python -m SimpleHTTPServer 80")
+    os.system("sudo python SecureHTTPServer.py 80 " + username + ':' + password)
     s.close()
     logwrite('--[*]Successfully ended SimpleHTTPServer @ ' + timecheck() + '--')
   except:
