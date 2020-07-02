@@ -149,8 +149,6 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 
 ## Getting Started
 
-WARNING: KITT was developed and tested on Kali Linux for RPi, I have not added support for any other distro yet but plan to in the near future.
-
 WARNING: Installation Takes About 20 Minutes To Finish!
 
 To begin, run ``` sudo ./setup.sh ``` to install all necessary libraries and configure PATH usage. Simply follow all instructions in the installer.
@@ -159,7 +157,7 @@ If you want to only install the tools, run ``` sudo ./catchup.sh ```
 
 ### Usage
 
-To begin the framework, type ``` KITTlite ``` and execute in terminal. 
+To begin the framework, type ``` kittlite ``` and execute in terminal. 
 
 ## Legal Disclaimer
 
