@@ -509,6 +509,7 @@ cd ..
 printf " ${BLUE}[*]Installing SayHello...${NC}\n"
 sudo git clone https://github.com/d093w1z/sayhello
 cd sayhello
+sudo curl https://pastebin.com/raw/RPFM5Uqn > sayhello.sh
 sudo chmod 777 sayhello.sh
 cd ..
 printf " ${BLUE}[*]Installing Striker...${NC}\n"

