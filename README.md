@@ -31,6 +31,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Konan](<https://github.com/m4ll0k/Konan>) - Advanced WebApp Dir Scanner
 * [Fast-Google-Dork-Scan](<https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan>) - Website Dork Enumeration Script
 * [Pompem](<https://github.com/rfunix/Pompem.git>) - Exploit/Vulnerability Search Tool
+* [Striker](<https://github.com/s0md3v/Striker>) - Recon and Vulnerability Scanning Suite
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -44,7 +45,8 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [SocialBox](<https://github.com/TunisianEagles/SocialBox.git>) - Social Media Password Bruteforcer
 * [Seeker](<https://github.com/thewhiteh4t/seeker>) - Social Engineering IP GeoLocator (Give/Take 30m)
 * [BruteDum](<https://github.com/GitHackTools/BruteDum>) - Common Protocol Bruteforcer
-* [SayCheese](<https://github.com/thelinuxchoice/saycheese>) - Takes Webcam pic on site visit
+* [SayCheese](<https://github.com/hangetzzu/saycheese>) - Takes Webcam pic on site visit
+* [SayHello](<https://github.com/d093w1z/sayhello>) - Takes audio clip on site visit
 * [Shellphish](<https://github.com/thelinuxchoice/shellphish>) - Blackeye w/ Automated Ngrok
 * [Nexphisher](<https://github.com/htr-tech/nexphisher>) - Webpage Phishing Tool
 * [Lockphish](<https://github.com/thelinuxchoice/lockphish>) - Lock Screen Phishing Tool

@@ -47,6 +47,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -w3, --w3af                          WebApp Security Scanner')
   print('        -ur, --userrecon                     Social Media Username Search')
   print('        -ti, --th3inspector                  Full Stack OSINT Tool')
+  print('        /opt/KITT-Lite/Striker               Recon and Vulnerability Scanning Suite')
   print('        /opt/KITT-Lite/vulnx/                WebApp Bot Auto Shell Injector')
   print('        /opt/KITT-Lite/gitGraber/            Search for Unprotected AWS Tokens')
   print('        /opt/KITT-Lite/deep-explorer/        Tor Browser')
@@ -65,6 +66,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -sb, --socialbox                     Social Media Password Bruteforcer')
   print('        -bd, --brutedum                      Common Protocol Bruteforcer')
   print('        -sy, --saycheese                     Takes Webcam shots on link visit')
+  print('        -yh, --sayhello                      Takes audio clip on link viist')
   print('        -si, --shellphish                    Blackeye w/ Automated Ngrok')
   print('        -np, --nexphisher                    Tool for Hosting Phishing Sites')
   print('        -lp, --lockphish                     Lock Screen Phishing Tool (iPhone/Android Notifications)')
@@ -137,8 +139,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci', '-tb', '-cd', '-vp', '-el', '-dt', '-mc']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit', '--ftpbruter', '--crydroid', '--evilpdf', '--evilpdf', '--droidtracker', '--hmmcookies']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci', '-tb', '-cd', '-vp', '-el', '-dt', '-mc', '-yh']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit', '--ftpbruter', '--crydroid', '--evilpdf', '--evilpdf', '--droidtracker', '--hmmcookies', '--sayhello']
 
 tool = sys.argv[1]
 
@@ -823,6 +825,16 @@ if tool == '-mc' or tool == '--hmmcookies':
     logwrite('--[+]Successfully ran hmmcookies @ ' + timecheck() + '--')
   except:
     logwrite('--[*]Error running hmmcookies @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-yh' or tool == '--sayhello':
+  try:
+    os.chdir('sayhello')
+    os.system('sudo ./sayhello.sh')
+    logwrite('--[+]Successfully ran sayhello @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running sayhello @ ' + timecheck() + '--')
   gohome()
   exit()
 

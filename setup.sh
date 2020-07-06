@@ -230,7 +230,7 @@ cd catchyou
 sudo chmod 777 catchyou.sh
 cd ..
 printf " ${BLUE}[*]Installing saycheese...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/saycheese.git
+sudo git clone https://github.com/hangetzzu/saycheese
 cd saycheese
 sudo chmod 777 *
 cd ..
@@ -505,6 +505,16 @@ printf " ${BLUE}[*]Installing EvilNet...${NC}\n"
 sudo git clone https://github.com/Matrix07ksa/EvilNet
 cd EvilNet
 sudo pip3 install -r requirements.txt
+cd ..
+printf " ${BLUE}[*]Installing SayHello...${NC}\n"
+sudo git clone https://github.com/d093w1z/sayhello
+cd sayhello
+sudo chmod 777 sayhello.sh
+cd ..
+printf " ${BLUE}[*]Installing Striker...${NC}\n"
+sudo git clone https://github.com/s0md3v/Striker
+cd Striker
+sudo chmod 777 *
 cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local

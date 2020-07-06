@@ -263,7 +263,7 @@ fi
 if [ -d "saycheese" ]; then
   printf "${GREEN}[+] Saycheese Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/saycheese.git
+  sudo git clone https://github.com/hangetzzu/saycheese.git
   cd saycheese
   sudo chmod 777 *
   cd ..
@@ -701,6 +701,22 @@ else
   sudo git clone https://github.com/Matrix07ksa/EvilNet
   cd EvilNet
   sudo pip3 install -r requirements.txt
+  cd ..
+fi
+if [ -d "sayhello" ]; then
+  printf "${GREEN}[+] SayHello Installed${NC}\n"
+else
+  sudo git clone https://github.com/d093w1z/sayhello
+  cd sayhello
+  sudo chmod 777 *
+  cd ..
+fi
+if [ -d "Striker" ]; then
+  printf "${GREEN}[+] Striker Installed${NC}\n"
+else
+  sudo git clone https://github.com/s0md3v/Striker
+  cd Striker 
+  sudo chmod 777 *
   cd ..
 fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"
