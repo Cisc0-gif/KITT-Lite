@@ -53,6 +53,26 @@ else
   printf "${BLUE}[*]Use 'sudo protonvpn init' to setup ProtonVPN later...${NC}\n"
 fi
 wait_func
+read -p "[*]Do you want to setup a samba server?[y/N]?: " smbserv
+if [ $smbserv == 'y' -o $smbserv == 'Y' ]; then
+  printf "${BLUE}Installing samba...${NC}\n"
+  sudo apt-get install samba samba-common-bin -y
+  sudo mkdir /home/$user/INTERNAL
+  echo "[INTERNAL]" | sudo tee -a /etc/samba/smb.conf
+  echo "comment = SMB Share" | sudo tee -a /etc/samba/smb.conf
+  echo "browseable = yes" | sudo tee -a /etc/samba/smb.conf
+  echo "path = /home/$user/INTERNAL" | sudo tee -a /etc/samba/smb.conf
+  echo "writeable = Yes" | sudo tee -a /etc/samba/smb.conf
+  echo "create mask = 0777" | sudo tee -a /etc/samba/smb.conf
+  echo "directory mask = 0777" | sudo tee -a /etc/samba/smb.conf
+  echo "browseable = Yes" | sudo tee -a /etc/samba/smb.conf
+  echo "public = yes" | sudo tee -a /etc/samba/smb.conf
+  sudo smbpasswd -a $user
+  printf "${GREEN}[+]Samba Server Configured! Use 'sudo service smbd start/stop' to start the SMB Server!${NC}\n"
+  wait_func
+else
+  printf "${BLUE}[*]Samba Server wasn't installed!${NC}\n"
+fi
 printf " ${BLUE}[*]Setting Up Snort...${NC}\n"
 sudo mkdir snortlogs
 sudo apt-get install snort -y
