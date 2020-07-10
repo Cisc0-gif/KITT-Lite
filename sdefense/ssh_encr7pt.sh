@@ -3,7 +3,7 @@
 figlet -f slant ' SSH_ENCR7PT '
 echo "============================================================="
 echo ":SSH_E: Creating User sshlogin, don't leave password blank!"
-adduser sshlogin
+sudo useradd sshlogin
 echo ":SSH_E: User sshlogin added!"
 sudo curl https://pastebin.com/raw/cpvnkCp4 > /etc/ssh/sshd_config
 echo ':SSH_E: ListenAddress set to 127.0.0.1'
