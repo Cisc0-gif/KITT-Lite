@@ -128,7 +128,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -pc, --proxyconfig                   ProxyChains Config')
   print('        -fb, --fail2ban                      Fail2ban IP Jail Config')
   print('        -di, --dhcpip                        DHCP IP Receiver')
-  print('        /opt/KITT-Lite/SysIntegrity          File MD5sum Integrity Analyzer (dont run as root)')
+  print('        /opt/KITT-Lite/SysIntegrity          File Integrity and Logging System Check (dont run as root)')
   print('        /opt/KITT-Lite/wotop/                Tunnels Traffic Over HTTP ')
   print('        /opt/KITT-Lite/TorghostNG            Filters All Traffic Through Tor Proxy') 
   print('Update Tool:')

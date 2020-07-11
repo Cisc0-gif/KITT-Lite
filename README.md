@@ -137,7 +137,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Brutal](<https://github.com/screetsec/brutal>) - RubberDucky Payload Generator
 
 ### System Security
-* [SysIntegrity](<https://github.com/Cisc0-gif/SysIntegrity>) - File MD5sum Integrity Analyzer
+* [SysIntegrity](<https://github.com/Cisc0-gif/SysIntegrity>) - File Integrity and Logging System Check
 * [snort](<https://www.snort.org>) - Network Intrusion Detection System
 * ssh_port_randomizer - SSHD Port Randomizer
 * ssh rsa_key generator - RSA Key generator
