@@ -130,6 +130,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * Spooftooph - BT Spoofing
 * BtVerifier - Rfcomm Channel Verifier
 * BlueScan - BT Port/MAC Scanner
+* [Dronesploit](<https://github.com/dhondta/dronesploit>) - Drone Exploitation Framework
 
 ### Hardware Hacking
 * [MouseJack](<https://github.com/BastilleResearch/mousejack>) - BT Keyboard and Mouse Hijacker
