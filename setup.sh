@@ -32,7 +32,7 @@ sudo service postgresql start
 printf " ${BLUE}[*]Configuring Universal Firewall (UFW)...${NC}\n"
 sudo ufw default allow outgoing
 sudo ufw default deny incoming
-sudo enable
+sudo ufw enable
 printf " ${BLUE}[*]Initiating YAML Database for Metasploit-Framework...${NC}\n"
 sudo msfdb init
 printf " ${BLUE}[*]Installing python2 and python3 Libraries...${NC}\n"
