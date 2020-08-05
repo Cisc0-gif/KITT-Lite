@@ -720,4 +720,13 @@ else
   sudo chmod 777 *
   cd ..
 fi
+if [ -d "ADB-Toolkit" ]; then
+  printf "${GREEN}[+] ADB-Toolkit Installed${NC}\n"
+else
+  sudo git clone https://github.com/ASHWIN990/ADB-Toolkit
+  cd ADB-Toolkit
+  sudo chmod 777 install.sh
+  sudo ./install.sh -i
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

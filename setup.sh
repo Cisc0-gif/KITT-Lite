@@ -88,6 +88,9 @@ sudo ./install.sh
 cd ..
 sudo git clone https://github.com/dreadlocked/Drupalgeddon2.git
 cd ..
+printf " ${BLUE}[*]Downloading and Writing RustScan to package manager...${NC}\n"
+sudo wget https://github.com/RustScan/RustScan/releases/download/1.6.0/rustscan_1.6.0_amd64.deb
+sudo dpkg -i rustscan_1.6.0_amd64.deb
 printf " ${BLUE}[*]Installing and Initializing MouseJack...${NC}\n"
 sudo git clone https://github.com/BastilleResearch/mousejack.git
 cd mousejack
@@ -536,9 +539,15 @@ sudo curl https://pastebin.com/raw/RPFM5Uqn > sayhello.sh
 sudo chmod 777 sayhello.sh
 cd ..
 printf " ${BLUE}[*]Installing Striker...${NC}\n"
-sudo git clone https://github.com/s0md3v/Striker
+sudo git clone https://github.com/s0md3v/Striker.git
 cd Striker
 sudo chmod 777 *
+cd ..
+printf " ${BLUE}[*]Installing ADB-Toolkit...${NC}\n"
+sudo git clone https://github.com/ASHWIN990/ADB-Toolkit.git
+cd ADB-Toolkit
+sudo chmod 777 install.sh
+sudo ./install.sh -i
 cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local

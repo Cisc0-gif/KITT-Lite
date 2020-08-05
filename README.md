@@ -32,6 +32,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Fast-Google-Dork-Scan](<https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan>) - Website Dork Enumeration Script
 * [Pompem](<https://github.com/rfunix/Pompem.git>) - Exploit/Vulnerability Search Tool
 * [Striker](<https://github.com/s0md3v/Striker>) - Recon and Vulnerability Scanning Suite
+* [RustScan](<https://github.com/RustScan/RustScan>) - Extremely Quick Port Scanner
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -131,6 +132,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * BtVerifier - Rfcomm Channel Verifier
 * BlueScan - BT Port/MAC Scanner
 * [Dronesploit](<https://github.com/dhondta/dronesploit>) - Drone Exploitation Framework
+* [ADB-Toolkit](<https://github.com/ASHWIN990/ADB-Toolkit>) - Android Device Pentesting Framework
 
 ### Hardware Hacking
 * [MouseJack](<https://github.com/BastilleResearch/mousejack>) - BT Keyboard and Mouse Hijacker
