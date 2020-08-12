@@ -549,6 +549,8 @@ cd ADB-Toolkit
 sudo chmod 777 install.sh
 sudo ./install.sh -i
 cd ..
+printf " ${BLUE}[*]Installing Trape v2.0...${NC}\n"
+sudo git clone https://github.com/jofpin/trape.git
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

@@ -54,6 +54,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        /opt/KITT-Lite/BlackDir-Framework    WebApp Vulnerability Scanner')
   print('        /opt/KITT-Lite/Konan                 Advanced WebApp Dir Scanner')
   print('        /opt/KITT-Lite/Pompem                Exploit/Vulnerability Search Tool')
+  print('        /opt/KITT-Lite/trape                 Advanced OSINT Tool')
   print('      /opt/KITT-Lite/Fast-Google-Dorks-Scan  Website Dork Enumeration Script')
   print('Cracking:')
   print('        -tb, --ftpbruter                     FTP Login Brute Forcer')

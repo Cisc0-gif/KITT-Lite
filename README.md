@@ -33,6 +33,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Pompem](<https://github.com/rfunix/Pompem.git>) - Exploit/Vulnerability Search Tool
 * [Striker](<https://github.com/s0md3v/Striker>) - Recon and Vulnerability Scanning Suite
 * [RustScan](<https://github.com/RustScan/RustScan>) - Extremely Quick Port Scanner
+* [Trape](<https://github.com/jofpin/trape>) - Advanced OSINT Tool
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker

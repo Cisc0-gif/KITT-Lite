@@ -729,4 +729,9 @@ else
   sudo ./install.sh -i
   cd ..
 fi
+if [ -d "trape" ]; then
+  printf "${GREEN}[+] Trape v2.0 Installed${NC}\n"
+else
+  sudo git clone https://github.com/jofpin/trape.git
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"
