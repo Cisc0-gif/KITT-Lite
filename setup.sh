@@ -26,7 +26,9 @@ sudo apt-get update
 printf "${GREEN} [+]Sources Configured! ${BLUE} \n [*]Installing Linux Packages...${NC}\n"
 sudo apt-get install figlet metasploit-framework hydra burpsuite tor beef beef-xss nmap cryptcat netcat unicornscan php maltegoce recon-ng cewl crunch redis tshark tcpdump irssi telnet ftp git apache2 ssh weevely strace gdb radare2 arp-scan dirbuster wfuzz ncrack medusa xxd coreutils exiftool masscan dirb steghide proxychains p7zip macchanger hddtemp lm-sensors postgresql sqlmap logrotate kali-linux-full btscanner bluez bluelog redfang bluesnarfer spooftooph ettercap-graphical ettercap-text-only build-essential ntfs-3g cifs.utils mount reaver aircrack-ng libcurl4-openssl-dev libpcap0.8-dev zlib1g zlib1g-dev libssl-dev john snort fierce openvas nikto wpscan mawk curl dhcpd isc-dhcp-server hostapd lighttpd mdk3 php-cgi pyrit unzip xterm openssl rfkill ufw clamav clamav-daemon kismet bully pixiewps mingw-w64 dumpzilla steghide zip -y
 sudo gem install zsteg
-sudo apt-get install fail2ban openvpn dialog python3-setuptools rkhunter lynis truecrypt truecrack htop iotop -y
+sudo apt-get install fail2ban openvpn dialog python3-setuptools rkhunter lynis truecrypt truecrack htop iotop inspircd -y
+printf " ${BLIE}[*]Configuring Local IRC Server...${NC}\n"
+sudo curl https://pastebin.com/raw/V6tSZdrk > /etc/inspircd/inspircd.conf
 printf " ${BLUE}[*]Starting postgresql Service...${NC}\n"
 sudo service postgresql start
 printf " ${BLUE}[*]Configuring Universal Firewall (UFW)...${NC}\n"
