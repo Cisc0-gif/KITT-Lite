@@ -57,9 +57,9 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [EvilApp](<https://github.com/thelinuxchoice/evilapp>) - MiTM Phishing Attack Using APK
 * [Droidfiles](<https://github.com/thelinuxchoice/droidfiles>) - Downloads Files from Android Dirs from .apk payload
 * [Cuteit](<https://github.com/D4Vinci/Cuteit>) - IP Obfuscator
-* [TrevorC2](<https://github.com/trustedsec/trevorc2>) - Cmd Injection Masked Phishing Site
 
 ### Payloads
+* [Ninja C2](<https://github.com/ahmedkhlief/Ninja>) - C&C Software
 * [Evil-Droid](<https://github.com/M4sc3r4n0/Evil-Droid.git>) - Android APK Payloading & Embedding Framework
 * [Catchyou](<https://github.com/thelinuxchoice/catchyou>) - Undetectable Win32 Payload Generator
 * [Winspy](<https://github.com/Cyb0r9/winspy>) - Windows Reverse Shell Generator w/ IP Poisoning
@@ -72,6 +72,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [EvilDLL](<https://github.com/thelinuxchoice/evildll>) - DLL Reverse Shell Generator
 * [DroidTracker](<https://github.com/thelinuxchoice/DroidTracker>) - Android .APK Locaton Tracker
 * [hmmcookies](<https://github.com/thelinuxchoice/hmmcookies>) - Grabs Firefox, Chrome, and Opera Cookies
+* [TrevorC2](<https://github.com/trustedsec/trevorc2>) - C&C Software
 
 ### Keyloggers
 * [HeraKeylogger](<https://github.com/UndeadSec/HeraKeylogger>) - Chrome Keylogger Extension

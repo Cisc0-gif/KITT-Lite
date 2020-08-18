@@ -734,4 +734,9 @@ if [ -d "trape" ]; then
 else
   sudo git clone https://github.com/jofpin/trape.git
 fi
+if [ -d "Ninja" ]; then
+  printf "${GREEN}[+] NinjaC2 Installed${NC}\n"
+else
+  sudo git clone https://github.com/ahmedkhlief/Ninja.git
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

@@ -77,7 +77,6 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -df, --droidfiles                    Android File Downloader Using APK')
   print('        -ci, --cuteit                        IP Obfuscator')
   print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
-  print('        /opt/KITT-Lite/trevorc2              Cmd Injection Masked Phishing Site')
   print('Payloads:')
   print('        -ed, --evildroid                     Android APK Payloading & Embedding Framework')
   print('        -cy, --catchyou                      Undetectable Win32 Payload Generator')
@@ -90,7 +89,9 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -el, --evildll                       DLL Reverse Shell Generator')
   print('        -dt, --droidtracker                  Android .APK Location Tracker')
   print('        -mc, --hmmcookies                    Grabs Firefox, Chrome, and Opera browser cookies')
+  print('        -n2, --ninjac2                       Runs NinjaC2 campaign setup')
   print('        /opt/KITT-Lite/eviloffice            Injects Macro & DDE Code into Excel & Word Documents (WINDOWS)')
+  print('        /opt/KITT-Lite/trevorc2              C&C Software')
   print('Keyloggers: ')
   print('        -hk, --herakeylogger                 Chrome Keylogger Extension')
   print('        /opt/KITT-Lite/KatroLogger           Unix/Linux Keylogger')
@@ -143,8 +144,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci', '-tb', '-cd', '-vp', '-el', '-dt', '-mc', '-yh', '-rs', '-ad', '-ic']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit', '--ftpbruter', '--crydroid', '--evilpdf', '--evilpdf', '--droidtracker', '--hmmcookies', '--sayhello', '--dronesploit', '--adbtoolkit', '--inspircd']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci', '-tb', '-cd', '-vp', '-el', '-dt', '-mc', '-yh', '-rs', '-ad', '-ic', '-n2']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit', '--ftpbruter', '--crydroid', '--evilpdf', '--evilpdf', '--droidtracker', '--hmmcookies', '--sayhello', '--dronesploit', '--adbtoolkit', '--inspircd', '--ninjac2']
 
 tool = sys.argv[1]
 
@@ -858,6 +859,16 @@ if tool == '-ad' or tool == '--adbtoolkit':
     logwrite('--[+]Successfully ran ADB-Toolkit @ ' + timecheck() +  '--')
   except:
     logwrite('--[*]Error running ADB-Toolkit @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-n2' or tool == '--ninjac2':
+  try:
+    os.chdir('Ninja')
+    os.system('sudo python start_campaign.py')
+    logwrite('--[+]Successfully ran NinjaC2 @ ' + timecheck() + '--')
+  except:
+    logwrite('--[*]Error running NinjaC2 @ ' + timecheck() + '--')
   gohome()
   exit()
 
