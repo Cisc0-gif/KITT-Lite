@@ -739,4 +739,9 @@ if [ -d "Ninja" ]; then
 else
   sudo git clone https://github.com/ahmedkhlief/Ninja.git
 fi
+if [ -d "Email-Extract" ]; then
+  printf "${GREEN}[+] Email-Extract Installed${NC}\n"
+else
+  sudo git clone https://github.com/Cisc0-gif/Email-Extract.git
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

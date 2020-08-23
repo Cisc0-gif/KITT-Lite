@@ -559,6 +559,8 @@ cd Ninja
 sudo chmod 777 install.sh
 sudo ./install.sh
 cd ..
+printf " ${BLUE}[*]Installing Email-Extract...${NC}\n"
+sudo git clone https://github.com/Cisc0-gif/Email-Extract.git
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart
