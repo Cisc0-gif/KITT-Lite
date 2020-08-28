@@ -58,6 +58,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [EvilApp](<https://github.com/thelinuxchoice/evilapp>) - MiTM Phishing Attack Using APK
 * [Droidfiles](<https://github.com/thelinuxchoice/droidfiles>) - Downloads Files from Android Dirs from .apk payload
 * [Cuteit](<https://github.com/D4Vinci/Cuteit>) - IP Obfuscator
+* [ntlm_theft](<https://github.com/Greenwolf/ntlm_theft>) - Hash Theft File Generator
 
 ### Payloads
 * [Ninja C2](<https://github.com/ahmedkhlief/Ninja>) - C&C Software

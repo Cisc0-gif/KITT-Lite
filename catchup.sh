@@ -744,4 +744,12 @@ if [ -d "Email-Extract" ]; then
 else
   sudo git clone https://github.com/Cisc0-gif/Email-Extract.git
 fi
+if [ -d "ntlm_theft" ]; then
+  printf "${GREEN}[+] ntlm_theft Installed${NC}\n"
+else
+  sudo git clone https://github.com/Greenwolf/ntlm_theft.git
+  cd ntlm_theft
+  sudo chmod 777 *
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

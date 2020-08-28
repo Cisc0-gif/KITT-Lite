@@ -78,6 +78,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -df, --droidfiles                    Android File Downloader Using APK')
   print('        -ci, --cuteit                        IP Obfuscator')
   print('        /opt/KITT-Lite/seeker                Social Engineering IP GeoLocator (Give/Take 30m)')
+  print('        /opt/KITT-Lite/ntlm_theft            Hash Theft File Generator')
   print('Payloads:')
   print('        -ed, --evildroid                     Android APK Payloading & Embedding Framework')
   print('        -cy, --catchyou                      Undetectable Win32 Payload Generator')
