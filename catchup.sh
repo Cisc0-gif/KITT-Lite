@@ -758,6 +758,7 @@ else
   sudo git clone https://github.com/3v4Si0N/HTTP-revshell.git
   cd HTTP-revshell
   sudo python3 -m pip install -r requirements.txt
+  cd ..
 fi
 if [ -d "nuclei" ]; then
   printf "${GREEN}[+] nuclei Installed${NC}\n"
@@ -766,5 +767,6 @@ else
   cd nuclei
   sudo go build
   sudo mv nuclei /usr/local/bin
+  cd ..
 fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"
