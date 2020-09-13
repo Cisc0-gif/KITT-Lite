@@ -573,7 +573,7 @@ sudo python3 -m pip install -r requirements.txt
 cd ..
 printf " ${BLUE}[*]Installing Nuclei...${NC}\n"
 sudo git clone https://github.com/projectdiscovery/nuclei.git
-cd nuclei
+cd nuclei/cmd/nuclei
 sudo go build
 sudo mv nuclei /usr/local/bin
 cd ..

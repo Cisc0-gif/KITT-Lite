@@ -764,7 +764,7 @@ if [ -d "nuclei" ]; then
   printf "${GREEN}[+] nuclei Installed${NC}\n"
 else
   sudo git clone https://github.com/projectdiscovery/nuclei.git
-  cd nuclei
+  cd nuclei/cmd/nuclei
   sudo go build
   sudo mv nuclei /usr/local/bin
   cd ..
