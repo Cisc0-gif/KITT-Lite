@@ -566,6 +566,16 @@ sudo git clone https://github.com/Greenwolf/ntlm_theft.git
 cd ntlm_theft
 sudo chmod 777 *
 cd ..
+printf " ${BLUE}[*]Installing HTTP-revshell...${NC}\n"
+sudo git clone https://github.com/3v4Si0N/HTTP-revshell.git
+cd HTTP-revshell/
+sudo python3 -m pip install -r requirements.txt
+cd ..
+printf " ${BLUE}[*]Installing Nuclei...${NC}\n"
+sudo git clone https://github.com/projectdiscovery/nuclei.git
+cd nuclei
+sudo go build
+sudo mv nuclei /usr/local/bin
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

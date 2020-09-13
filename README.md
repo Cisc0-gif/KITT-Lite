@@ -35,6 +35,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [RustScan](<https://github.com/RustScan/RustScan>) - Extremely Quick Port Scanner
 * [Trape](<https://github.com/jofpin/trape>) - Advanced OSINT Tool
 * [Email-Extract](<https://github.com/Cisc0-gif/Email-Extract>) - Website Directory Email Extraction Tool
+* [Nuclei](<https://github.com/projectdiscovery/nuclei>) - Template Based Vulnerability Scanner
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
@@ -75,6 +76,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [DroidTracker](<https://github.com/thelinuxchoice/DroidTracker>) - Android .APK Locaton Tracker
 * [hmmcookies](<https://github.com/thelinuxchoice/hmmcookies>) - Grabs Firefox, Chrome, and Opera Cookies
 * [TrevorC2](<https://github.com/trustedsec/trevorc2>) - C&C Software
+* [HTTP-revshell](<https://github.com/3v4Si0N/HTTP-revshell>) - HTTP(S) reverse shell server
 
 ### Keyloggers
 * [HeraKeylogger](<https://github.com/UndeadSec/HeraKeylogger>) - Chrome Keylogger Extension

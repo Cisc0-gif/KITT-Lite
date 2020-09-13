@@ -56,6 +56,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        /opt/KITT-Lite/Pompem                Exploit/Vulnerability Search Tool')
   print('        /opt/KITT-Lite/trape                 Advanced OSINT Tool')
   print('        /opt/KITT-Lite/Email-Extract         Website Directory Email Scanner')
+  print('        /opt/KITT-Lite/nuclei                Template Based Vulnerability Scanner')
   print('      /opt/KITT-Lite/Fast-Google-Dorks-Scan  Website Dork Enumeration Script')
   print('Cracking:')
   print('        -tb, --ftpbruter                     FTP Login Brute Forcer')
@@ -92,6 +93,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -dt, --droidtracker                  Android .APK Location Tracker')
   print('        -mc, --hmmcookies                    Grabs Firefox, Chrome, and Opera browser cookies')
   print('        -n2, --ninjac2                       Runs NinjaC2 campaign setup')
+  print('        -hs, --httprevshell                  HTTP(S) reverse shell server')
   print('        /opt/KITT-Lite/eviloffice            Injects Macro & DDE Code into Excel & Word Documents (WINDOWS)')
   print('        /opt/KITT-Lite/trevorc2              C&C Software')
   print('Keyloggers: ')
@@ -146,8 +148,8 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        KITTlite --netcrack')
   sys.exit(1)
 
-short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci', '-tb', '-cd', '-vp', '-el', '-dt', '-mc', '-yh', '-rs', '-ad', '-ic', '-n2']
-long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit', '--ftpbruter', '--crydroid', '--evilpdf', '--evilpdf', '--droidtracker', '--hmmcookies', '--sayhello', '--dronesploit', '--adbtoolkit', '--inspircd', '--ninjac2']
+short = ['-ds', '-sh', '-pi', '-pe', '-nc', '-ap', '-pd', '-hp', '-pb', '-bt', '-bv', '-bs', '-mj', '-gp', '-sp', '-sc', '-pc', '-fb', '-di', '-up', '-be', '-st', '-ka', '-sb', '-td', '-pf', '-ps', '-bd', '-tx', '-br', '-wk', '-ed', '-cy', '-sy', '-bm', '-si', '-lt', '-np', '-w3', '-ur', '-ws', '-ti', '-wp', '-lp', '-er', '-bl', '-sf', '-hk', '-lc', '-ep', '-lv', '-hc', '-df', '-af', '-sn', '-iy', '-nt', '-ci', '-tb', '-cd', '-vp', '-el', '-dt', '-mc', '-yh', '-rs', '-ad', '-ic', '-n2', '-hs']
+long = ['--domainsticate', '--shodan_search', '--phone_infoga', '--escalate', '--netcrack', '--apspoof', '--packdump', '--homepwn', '--pentbox', '--btspoof', '--btverify', '--bluescan', '--mousejack', '--gpioctl', '--sshportrand', '--sshautoconfig', '--proxyconfig', '--fail2ban', '--dhcpip', '--update', '--blackeye', '--set', '--katana', '--socialbox', '--tidos', '--ptf', '--pwnstar', '--brutedum', '--toolx', '--brutal', '--webkiller', '--evildroid', '--catchyou', '--saycheese', '--badmod', '--shellphish', '--lstools', '--nexphisher', '--w3af', '--userrecon', '--winspy', '--th3inspector', '--wifipumpkin', '--lockphish', '--evilreg', '--badlnk', '--socialfish', '--herakeylogger', '--locator', '--evilapp', '--leviathan', '--hiddencry', '--droidfiles', '--avetfabric', '--snort', '--ispy', '--nekobot', '--cuteit', '--ftpbruter', '--crydroid', '--evilpdf', '--evilpdf', '--droidtracker', '--hmmcookies', '--sayhello', '--dronesploit', '--adbtoolkit', '--inspircd', '--ninjac2', '--httprevshell']
 
 tool = sys.argv[1]
 
@@ -882,6 +884,21 @@ if tool == '-ic' or tool == '--inspircd':
   except:
     print('--[*]Error starting InspIRCd server!')
     logwrite('--[*]Error starting InspIRCd server @ ' + timecheck() + '--')
+  gohome()
+  exit()
+
+if tool == '-hs' or tool == '--httprevshell':
+  try:
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect(("8.8.8.8", 80))
+    os.chdir('HTTP-revshell')
+    print('[*] Starting HTTP-revshell server with SSL encryption on port 4444!\nTo stop the server enter ^C...')
+    os.system("sudo python3 server.py --ssl " + str(s.getsockname()[0]) + " 4444")
+    print('[+]Successfully ran HTTP-revshell server!')
+    logwrite('--[+]Successfully ran HTTP-revshell server @ ' + timecheck() + '--')
+  except:
+    print('[*]Error running HTTP-revshell...')
+    logwrite('--[*]Error running HTTP-revshell @ ' + timecheck() + '--')
   gohome()
   exit()
 
