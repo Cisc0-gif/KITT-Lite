@@ -440,7 +440,7 @@ fi
 if [ -d "locator" ]; then
   printf "${GREEN}[+] Locator Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/locator.git
+  sudo git clone https://github.com/yuhisern7/locator
   cd locator
   sudo chmod 777 locator.sh
   cd ..

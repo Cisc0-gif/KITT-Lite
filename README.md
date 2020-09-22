@@ -55,7 +55,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Nexphisher](<https://github.com/htr-tech/nexphisher>) - Webpage Phishing Tool
 * [Lockphish](<https://github.com/thelinuxchoice/lockphish>) - Lock Screen Phishing Tool
 * [SocialFish](<https://github.com/UndeadSec/SocialFish>) - Common Phishing Tool
-* [Locator](<https://github.com/thelinuxchoice/locator>) - Geolocator and IP Tracker
+* [Locator](<https://github.com/yuhisern7/locator>) - Geolocator and IP Tracker
 * [EvilApp](<https://github.com/thelinuxchoice/evilapp>) - MiTM Phishing Attack Using APK
 * [Droidfiles](<https://github.com/thelinuxchoice/droidfiles>) - Downloads Files from Android Dirs from .apk payload
 * [Cuteit](<https://github.com/D4Vinci/Cuteit>) - IP Obfuscator

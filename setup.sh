@@ -371,7 +371,7 @@ cd ..
 printf " ${BLUE}[*]Installing Idisagree Discord Bot...${NC}\n"
 sudo git clone https://github.com/UndeadSec/Idisagree.git
 printf " ${BLUE}[*]Installing Locator...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/locator.git
+sudo git clone https://github.com/yuhisern7/locator
 cd locator
 sudo chmod 777 locator.sh
 cd ..
