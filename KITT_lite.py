@@ -57,6 +57,7 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        /opt/KITT-Lite/trape                 Advanced OSINT Tool')
   print('        /opt/KITT-Lite/Email-Extract         Website Directory Email Scanner')
   print('        /opt/KITT-Lite/nuclei                Template Based Vulnerability Scanner')
+  print('        /opt/KITT-Lite/b-f-b-D-h             Uses old DNS records to see if server responds to old domain or IP')
   print('      /opt/KITT-Lite/Fast-Google-Dorks-Scan  Website Dork Enumeration Script')
   print('Cracking:')
   print('        -tb, --ftpbruter                     FTP Login Brute Forcer')

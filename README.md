@@ -36,6 +36,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Trape](<https://github.com/jofpin/trape>) - Advanced OSINT Tool
 * [Email-Extract](<https://github.com/Cisc0-gif/Email-Extract>) - Website Directory Email Extraction Tool
 * [Nuclei](<https://github.com/projectdiscovery/nuclei>) - Template Based Vulnerability Scanner
+* [Bypass-Firewalls-By-DNS-History](<https://github.com/vincentcox/bypass-firewalls-by-DNS-history>) - Uses DNS records to check if server replies to old domains (or IP)
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker

@@ -579,6 +579,12 @@ sudo mv nuclei /usr/local/bin
 cd ../../..
 printf " ${BLUE}[*]Installing Wacker...${NC}\n"
 sudo git clone https://github.com/blunderbuss-wctf/wacker
+printf " ${BLUE}[*]Installing bypass-firewalls-by-DNS-history...${NC}\n"
+sudo git clone https://github.com/vincentcox/bypass-firewalls-by-DNS-history
+cd bypass-firewalls-by-DNS-history
+sudo chmod 777 bypass-firewalls-by-DNS-history.sh
+sudo apt install jq
+cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

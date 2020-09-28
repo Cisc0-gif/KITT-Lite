@@ -774,4 +774,13 @@ if [ -d "wacker" ]; then
 else
   sudo git clone https://github.com/blunderbuss-wctf/wacker
 fi
+if [ -d "bypass-firewalls-by-DNS-history" ]; then
+  printf "${GREEN}[+] bypass-firewalls-by-DNS-history Installed${NC}\n"
+else
+  sudo git clone https://github.com/vincentcox/bypass-firewalls-by-DNS-history
+  cd bypass-firewalls-by-DNS-history
+  sudo chmod 777 bypass-firewalls-by-DNS-history
+  sudo apt install jq
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"
