@@ -769,4 +769,9 @@ else
   sudo mv nuclei /usr/local/bin
   cd ..
 fi
+if [ -d "wacker" ]; then
+  printf "${GREEN}[+] wacker Installed${NC}\n"
+else
+  sudo git clone https://github.com/blunderbuss-wctf/wacker
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

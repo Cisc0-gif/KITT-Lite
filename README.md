@@ -131,6 +131,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [PentBox](<https://github.com/H4CK3RT3CH/pentbox-1.8>) - HoneyPot Setup Tool
 * [Espionage](<https://github.com/josh0xA/Espionage>) - Packet Sniffer/ARP Spoofer
 * [EvilNet](<https://github.com/Matrix07ksa/EvilNet>) - ARP Attacks, VLAN Attacks, MAC Flooding, etc.
+* [wacker](<https://github.com/blunderbuss-wctf/wacker>) - WPA3 Password Dictionary Attack
 
 ### IoT Exploitation
 * [HomePwn](<https://github.com/ElevenPaths/HomePWN>) - IoT Exploitation Framework
