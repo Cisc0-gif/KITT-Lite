@@ -9,6 +9,7 @@ def wait():
   wait = input('PRESS ENTER TO CONTINUE')
 
 def main():
+  os.chdir('/opt/KITT-Lite')
   print(Fore.GREEN + Style.BRIGHT + '       _   __     __      ______     ______       __')
   print('      / | / /__  / /_    / ____/____/ ____ \_____/ /__')
   print('     /  |/ / _ \/ __/   / /   / ___/ / __ `/ ___/ //_/')
@@ -33,7 +34,8 @@ def main():
   print('*[15] Linset (WPA/WPA2 MiTM Attack Tool)                 *')
   print('*[16] Espionage (Packet Sniffer/ARP Spoofer)             *')
   print('*[17] EvilNet (VLAN Attack, ARP Attack, MAC Flooding)    *')
-  print('*[18] Exit                                               *' + Style.RESET_ALL)
+  print('*[18] Wacker (WPA3 Password Dictionary Attack)           *')
+  print('*[99] Exit                                               *' + Style.RESET_ALL)
   print('==========================================================')
   in_put = input(': ')
   if in_put == '1':
@@ -264,6 +266,17 @@ def main():
     except:
      print(Fore.RED + "[*]Error running EvilNet" + Style.RESET_ALL)
   if in_put == '18':
+    try:
+      os.chdir('wacker')
+      wordlist = input("Enter filepath to wordlist (Ex. /path/path/word.lst): ")
+      bssid = input("Enter BSSID of network: ")
+      ssid = input("Enter SSID of network: ")
+      chan = input("Enter channel of network: ")
+      os.system("sudo ./wacker.py --wordlist " + wordlist + " --ssid " + ssid + " --bssid " + bssid + " --interface " + interface + " --freq " + chan)
+      print(Fore.GREEN + "[+]Successfully ran wacker" + Style.RESET_ALL)
+    except:
+      print(Fore.RED + "[*]Error running wacker" + Style.RESET_ALL)
+  if in_put == '99':
     print(Fore.CYAN + '[*]Shutting down ' + interface + 'mon...' + Style.RESET_ALL)
     os.system('airmon-ng stop ' + interface)
     os.system('airmon-ng stop ' + interface + 'mon')
