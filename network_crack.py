@@ -35,6 +35,7 @@ def main():
   print('*[16] Espionage (Packet Sniffer/ARP Spoofer)             *')
   print('*[17] EvilNet (VLAN Attack, ARP Attack, MAC Flooding)    *')
   print('*[18] Wacker (WPA3 Password Dictionary Attack)           *')
+  print('*[19] C41N (Automated Rogue AP Setup)                    *')
   print('*[99] Exit                                               *' + Style.RESET_ALL)
   print('==========================================================')
   in_put = input(': ')
@@ -276,6 +277,13 @@ def main():
       print(Fore.GREEN + "[+]Successfully ran wacker" + Style.RESET_ALL)
     except:
       print(Fore.RED + "[*]Error running wacker" + Style.RESET_ALL)
+  if in_put == '19':
+    try:
+      os.chdir('c41n')
+      os.system('sudo ./c41n')
+      print(Fore.GREEN + "[+]Successfully ran c41n" + Style.RESET_ALL)
+    except:
+      print(Fore.RED + "[*]Error running c41n" + Style.RESET_ALL)
   if in_put == '99':
     print(Fore.CYAN + '[*]Shutting down ' + interface + 'mon...' + Style.RESET_ALL)
     os.system('airmon-ng stop ' + interface)

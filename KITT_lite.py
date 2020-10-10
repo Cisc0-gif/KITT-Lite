@@ -120,7 +120,6 @@ if len(sys.argv) != 2 or '--help' in sys.argv:
   print('        -pb, --pentbox                       HoneyPot Tool Suite')
   print('        -ps, --pwnstar                       Fake AP Tool Framework')
   print('        /opt/KITT-Lite/wacker                WPA3 Password Dictionary Attack')
-  print('        /opt/KITT-Lite/c41n                  Automated Rogue AP Setup')
   print('IoT Exploitation:')
   print('        -hp, --homepwn                       IoT Exploit Tool Suite')
   print('        -bt, --btspoof                       BT Spoofer')
