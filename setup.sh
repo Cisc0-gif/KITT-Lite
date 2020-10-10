@@ -585,6 +585,13 @@ cd bypass-firewalls-by-DNS-history
 sudo chmod 777 bypass-firewalls-by-DNS-history.sh
 sudo apt install jq
 cd ..
+printf " ${BLUE}[*]Installing C41N...${NC}\n"
+sudo git clone https://github.com/MS-WEB-BN/c41n.git
+cd c41n
+sudo chmod 777 install.sh
+sudo ./install.sh
+sudo chmod 777 c41n
+cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart
