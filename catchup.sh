@@ -783,4 +783,14 @@ else
   sudo apt install jq
   cd ..
 fi
+if [ -d "c41n" ]; then
+  printf "${GREEN}[+] C41N Installed${NC}\n"
+else
+  sudo git clone https://github.com/MS-WEB-BN/c41n.git
+  cd c41n
+  sudo chmod 777 install.sh
+  sudo ./install.sh
+  sudo chmod 777 c41n
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"
