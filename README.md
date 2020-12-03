@@ -1,4 +1,4 @@
-# KITT Penetration Testing Framework - Lite Version (Regular Updates)
+# KITT Penetration Testing Framework - Lite Version (No longer maintained, may need some edits to function)
 
 The KITT Penetration Testing Framework was developed as an open source solution for pentesters and programmers alike to compile the tools they use with what they know into an open source project.
 With KITT, users are able to easily access a list of commonly used tools to their profession which are all open to configuration in the source code.
