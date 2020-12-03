@@ -927,7 +927,6 @@ if tool == '-lt' or tool == '--lstools':
   print('[*]gtfo - Unix Binary Search Tool')
   print('[*]Grok-backdoor - Python-Based Backdoor with Ngrok Tunneling')
   print('[*]Mimikatz - Windows Password, Hash, PIN, and kerberos ticket extraction tool')
-  print('[*]vlany - ring-3 rootkit using the LD_PRELOAD feature (https://github.com/mempodippy/vlany)')
   gohome()
   exit()
 
