@@ -253,7 +253,7 @@ cd Evil-Droid
 sudo chmod 777 evil-droid
 cd ..
 printf " ${BLUE}[*]Installing catchyou...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/catchyou.git
+sudo git clone https://github.com/jermainlaforce/catchyou.git
 cd catchyou
 sudo chmod 777 catchyou.sh
 cd ..
@@ -275,7 +275,7 @@ sudo chmod 777 -R *
 sudo ./INSTALL
 cd ..
 printf " ${BLUE}[*]Installing shellphish...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/shellphish.git
+sudo git clone https://github.com/suljot/shellphish.git
 cd shellphish
 sudo chmod 777 shellphish.sh
 cd ..
@@ -296,7 +296,7 @@ sudo chmod 777 nexphisher
 sudo ./setup
 cd ..
 printf " ${BLUE}[*]Installing userrecon...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/userrecon.git
+sudo git clone https://github.com/wishihab/userrecon.git
 cd userrecon
 sudo chmod 777 userrecon.sh
 cd ..
@@ -328,17 +328,17 @@ cd escalate
 sudo git clone https://github.com/DarkCoderSc/win-brute-logon.git
 cd ..
 printf " ${BLUE}[*]Installing lockphish...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/lockphish.git
+sudo git clone https://github.com/JasonJerry/lockphish.git
 cd lockphish
 sudo chmod 777 lockphish.sh
 cd ..
 printf " ${BLUE}[*]Installing evilreg...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/evilreg.git
+sudo git clone https://github.com/8L4NK/evilreg.git
 cd evilreg
 sudo chmod 777 evilreg.sh
 cd ..
 printf " ${BLUE}[*]Installing badlnk...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/badlnk.git
+sudo git clone https://github.com/VikasVarshney/badlnk.git
 cd badlnk
 sudo chmod 777 badlnk.sh
 cd ..
@@ -376,7 +376,7 @@ cd locator
 sudo chmod 777 locator.sh
 cd ..
 printf " ${BLUE}[*]Installing EvilApp...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/EvilApp.git
+sudo git clone https://github.com/Ro9ueAdmin/EvilApp.git
 cd EvilApp
 sudo chmod 777 evilapp.sh
 cd ..
@@ -408,7 +408,7 @@ sudo chmod 777 hidden-cry
 sudo apt-get install mingw-w64 -y
 cd ..
 printf " ${BLUE}[*]Installing droidfiles...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/droidfiles.git
+sudo git clone https://github.com/vaginessa/droidfiles.git
 cd droidfiles
 sudo chmod 777 droidfiles.sh
 cd ..
@@ -454,7 +454,7 @@ sudo pip3 install -r requirements.txt
 sudo python3 setup.py
 cd ../..
 printf " ${BLUE}[*]Installing eviloffice...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/eviloffice.git
+sudo git clone https://github.com/srnframe/eviloffice.git
 printf " ${BLUE}[*]Installing FTPBruter...${NC}\n"
 sudo git clone https://github.com/GitHackTools/FTPBruter.git
 printf " ${BLUE}[*]Installing Gtfo...${NC}\n"
@@ -470,7 +470,7 @@ cd tangalanga
 sudo make
 cd ..
 printf " ${BLUE}[*]Installing CryDroid...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/crydroid.git
+sudo git clone https://github.com/benniraj25/crydroid.git
 cd crydroid
 sudo chmod 777 crydroid.sh
 cd ..
@@ -482,7 +482,7 @@ cd Fast-Google-Dorks-Scan
 sudo chmod 777 FGDS.sh
 cd ..
 printf " ${BLUE}[*]Installing EvilDLL...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/evildll.git
+sudo git clone https://github.com/CrackerCat/evildll.git
 cd evildll
 sudo chmod 777 evildll.sh
 cd ..
@@ -493,7 +493,7 @@ cd escalate
 sudo git clone https://github.com/deepzec/Grok-backdoor.git
 cd ..
 printf " ${BLUE}[*]Installing DroidTracker...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/DroidTracker.git
+sudo git clone https://github.com/indexnotfound404/DroidTracker.git
 cd DroidTracker
 sudo bash install.sh
 sudo chmod 777 droidtracker.sh
@@ -512,7 +512,7 @@ cd Pompem
 sudo pip3 install -r requirements.txt
 cd ..
 printf " ${BLUE}[*]Installing hmmcookies...${NC}\n"
-sudo git clone https://github.com/thelinuxchoice/hmmcookies
+sudo git clone https://github.com/swagkarna/hmmcookies.git
 cd hmmcookies
 sudo chmod 777 hmmcookies.sh
 cd ..

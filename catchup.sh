@@ -255,7 +255,7 @@ fi
 if [ -d "catchyou" ]; then
   printf "${GREEN}[+] Catchyou Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/catchyou.git
+  sudo git clone https://github.com/jermainlaforce/catchyou.git
   cd catchyou
   sudo chmod 777 catchyou.sh
   cd ..
@@ -292,7 +292,7 @@ fi
 if [ -d "shellphish" ]; then
   printf "${GREEN}[+] Shellphish Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/shellphish.git
+  sudo git clone https://github.com/suljot/shellphish.git
   cd shellphish
   sudo chmod 777 shellphish.sh
   cd ..
@@ -325,7 +325,7 @@ fi
 if [ -d "userrecon" ]; then
   printf "${GREEN}[+] Userrecon Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/userrecon.git
+  sudo git clone https://github.com/wishihab/userrecon.git
   cd userrecon
   sudo chmod 777 userrecon.sh
   cd ..
@@ -373,7 +373,7 @@ cd ..
 if [ -d "lockphish" ]; then
   printf "${GREEN}[+] Lockphish Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/lockphish.git
+  sudo git clone https://github.com/JasonJerry/lockphish.git
   cd lockphish
   sudo chmod 777 lockphish.sh
   cd ..
@@ -381,7 +381,7 @@ fi
 if [ -d "evilreg" ]; then
   printf "${GREEN}[+] Evilreg Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/evilreg.git
+  sudo git clone https://github.com/8L4NK/evilreg.git
   cd evilreg
   sudo chmod 777 evilreg.sh
   cd ..
@@ -389,7 +389,7 @@ fi
 if [ -d "badlnk" ]; then
   printf "${GREEN}[+] Badlnk Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/badlnk.git
+  sudo git clone https://github.com/VikasVarshney/badlnk.git
   cd badlnk
   sudo chmod 777 badlnk.sh
   cd ..
@@ -448,7 +448,7 @@ fi
 if [ -d "EvilApp" ]; then
   printf "${GREEN}[+] EvilApp Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/EvilApp.git
+  sudo git clone https://github.com/Ro9ueAdmin/EvilApp.git
   cd EvilApp
   sudo chmod 777 evilapp.sh
   cd ..
@@ -499,7 +499,7 @@ fi
 if [ -d "droidfiles" ]; then
   printf "${GREEN}[+] Droidfiles Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/droidfiles.git
+  sudo git clone https://github.com/vaginessa/droidfiles.git
   cd droidfiles
   sudo chmod 777 droidfiles.sh
   cd ..
@@ -567,7 +567,7 @@ fi
 if [ -d "eviloffice" ]; then
   printf "${GREEN}[+] Eviloffice Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/eviloffice.git
+  sudo git clone https://github.com/srnframe/eviloffice.git
 fi
 if [ -d "FTPBruter" ]; then
   printf "${GREEN}[+] FTPBruter Installed${NC}\n"
@@ -598,7 +598,7 @@ fi
 if [ -d "crydroid" ]; then
   printf "${GREEN}[+] CryDroid Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/crydroid.git
+  sudo git clone https://github.com/benniraj25/crydroid.git
   cd crydroid
   sudo chmod 777 crydroid.sh
   cd ..
@@ -619,7 +619,7 @@ fi
 if [ -d "evildll" ]; then
   printf "${GREEN}[+] EvilDLL Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/evildll.git
+  sudo git clone https://github.com/CrackerCat/evildll.git
   cd evildll
   sudo chmod 777 evildll.sh
   cd ..
@@ -639,7 +639,7 @@ cd ..
 if [ -d "DroidTracker" ]; then
   printf "${GREEN}[+] DroidTracker Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/DroidTracker.git
+  sudo git clone https://github.com/indexnotfound404/DroidTracker.git
   cd DroidTracker
   sudo bash install.sh
   sudo chmod 777 droidtracker.sh
@@ -670,7 +670,7 @@ fi
 if [ -d "hmmcookies" ]; then
   printf "${GREEN}[+] hmmcookies Installed${NC}\n"
 else
-  sudo git clone https://github.com/thelinuxchoice/hmmcookies.git
+  sudo git clone https://github.com/swagkarna/hmmcookies.git
   cd hmmcookies
   sudo chmod 777 hmmcookies.sh
   cd ..
