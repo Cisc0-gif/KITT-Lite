@@ -793,4 +793,12 @@ else
   sudo chmod 777 c41n
   cd ..
 fi
+if [ -d "infog" ]; then
+  printf "${GREEN}[+] Infog Installed${NC}\n"
+else
+  sudo git clone https://github.com/OffXec/infog.git
+  cd infog
+  sudo chmod 777 infog.sh
+  cd ..
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

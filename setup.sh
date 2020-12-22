@@ -592,6 +592,11 @@ sudo chmod 777 install.sh
 sudo ./install.sh
 sudo chmod 777 c41n
 cd ..
+printf " ${BLUE}[*]Installing Infog...${NC}\n"
+sudo git clone https://github.com/OffXec/infog.git
+cd infog
+sudo chmod 777 infog.sh
+cd ..
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart
