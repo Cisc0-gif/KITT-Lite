@@ -801,4 +801,9 @@ else
   sudo chmod 777 infog.sh
   cd ..
 fi
+if [ -d "byp4xx" ]; then
+  printf "${GREEN}[+] Byp4xx Installed${NC}\n"
+else
+  sudo git clone https://github.com/lobuhi/byp4xx.git
+fi
 printf "${GREEN}[+] All Caught Up!${NC}\n"

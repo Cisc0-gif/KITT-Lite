@@ -597,6 +597,8 @@ sudo git clone https://github.com/OffXec/infog.git
 cd infog
 sudo chmod 777 infog.sh
 cd ..
+printf " ${BLUE}[*]Installing Byp4xx...${NC}\n"
+sudo git clone https://github.com/lobuhi/byp4xx.git
 printf " ${BLUE}[*]Writing Fail2Ban Configs...${NC}\n"
 sudo curl https://pastebin.com/raw/gYr9pn0w > /etc/fail2ban/jail.local
 sudo service fail2ban restart

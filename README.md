@@ -38,6 +38,7 @@ If you want to check out the full GUI version of KITT its repo can be found [her
 * [Nuclei](<https://github.com/projectdiscovery/nuclei>) - Template Based Vulnerability Scanner
 * [Bypass-Firewalls-By-DNS-History](<https://github.com/vincentcox/bypass-firewalls-by-DNS-history>) - Uses DNS records to check if server replies to old domains (or IP)
 * [Infog](<https://github.com/OffXec/infog>) - General OSINT Tool
+* [Byp4xx](<https://github.com/lobuhi/byp4xx>) - 403 Forbidden probe
 
 ### Cracking
 * [Hate_Crack](<https://github.com/trustedsec/hate_crack.git>) - Automated Hashcat Cracker
