@@ -19,6 +19,6 @@ requests_futures
 soupsieve
 stem
 torrequest
-pillow==7.2.0
+pillow==9.3.0
 sploitkit
 dronesploit
